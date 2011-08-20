@@ -1,0 +1,895 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>爱范儿 · Beats of Bits</title>
+	<atom:link href="http://www.ifanr.com/feed" rel="self" type="application/rss+xml" />
+	<link>http://www.ifanr.com</link>
+	<description>发现创新价值的科技媒体</description>
+	<lastBuildDate>Wed, 03 Aug 2011 08:45:28 +0000</lastBuildDate>
+	<language>en</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>http://wordpress.org/?v=3.0.5</generator>
+	<atom:link rel='hub' href='http://www.ifanr.com/?pushpress=hub'/>
+		<item>
+		<title>打造高效节能的数据中心</title>
+		<link>http://www.ifanr.com/48156</link>
+		<comments>http://www.ifanr.com/48156#comments</comments>
+		<pubDate>Wed, 03 Aug 2011 05:30:29 +0000</pubDate>
+		<dc:creator>陈一斌</dc:creator>
+				<category><![CDATA[Google/Android]]></category>
+		<category><![CDATA[业界趋势/Trend]]></category>
+		<category><![CDATA[公司]]></category>
+
+		<guid isPermaLink="false">http://www.ifanr.com/?p=48156</guid>
+		<description><![CDATA[根据调研人 Jonathan Koomey 的报告，全球数据中心在 2000 年到 2005 年间的电力消耗增长了一倍，而 2005 年到  2010 年间这个增长幅度为 56%，其中美国仅为 36%。这个报告令很多人感到惊奇，因为包括美国环境保护局（EPA）在内都预测 2005  年到 2010  年间，数据中心的电力消耗会增长两倍。这证明众多数据中心采用了很多方式来提高能源的利用率，否则不会出现随着服务器的增长，电力消耗的增加幅度反而不如  出现的情况。
+
+而 Google 的数据中心因为在高效节能方面突出的表现，受到 Koomey 的表扬——作为全球最大的搜索公司，同时也在为全球最大的视频网站 YouTube 提供服务器，其数据中心的电力消耗出奇的低：
+
+<span class="readmore"><a href="http://www.ifanr.com/48156" title="打造高效节能的数据中心">阅读全文——共1284字</a></span>	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/yibie/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/243.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"/></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/yibie/" style="color:#000;text-decoration:none;">陈一斌</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">组织过软件汉化，写过时间管理文章，研究过个人知识管理。关注科技的发展，创投资讯、移动互联网。</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:gunshotbox@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://twitter.com/yibie" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://www.facebook.com/yibie" style="margin-right:14px;text-decoration:none;">Facebook</a>				<a target="_blank" href="http://weibo.com/yibie" style="margin-right:14px;text-decoration:none;">新浪微博</a>			</div>
+		</div>
+	</div>
+]]></description>
+			<content:encoded><![CDATA[<p style="text-align: center;"><img class="aligncenter" src="http://www.ifanr.com/wp-content/uploads/2011/08/1.png" alt="" width="553" height="310" /></p>
+<p>根据调研人 Jonathan Koomey 的报告，全球数据中心在 2000 年到 2005 年间的电力消耗增长了一倍，而 2005 年到  2010 年间这个增长幅度为 56%，其中美国仅为 36%。这个报告令很多人感到惊奇，因为包括美国环境保护局（EPA）在内都预测 2005  年到 2010  年间，数据中心的电力消耗会增长两倍。这证明众多数据中心采用了很多方式来提高能源的利用率，否则不会出现随着服务器的增长，电力消耗的增加幅度反而不如  出现的情况。</p>
+<p>而 Google 的数据中心因为在高效节能方面突出的表现，受到 Koomey 的表扬——作为全球最大的搜索公司，同时也在为全球最大的视频网站 YouTube 提供服务器，其数据中心的电力消耗出奇的低：</p>
+<ul>
+<li> 2005 年，Google 数据中心拥有 35 万台服务器，电力消耗 12 亿度</li>
+<li>2010 年，Google 数据中心拥有 90 万台服务器，电力消耗 19 亿度</li>
+<li>Google 服务器的数量占全球服务器数量的 2.8%，但其电力消耗低于全球的 1%</li>
+</ul>
+<p>可见在 2005 年到 2010 年这几年间，Google 的服务器数量增加了一倍，但电力消耗并没有相应的增长一倍。<span id="more-48156"></span></p>
+<p style="text-align: center;"><img class="aligncenter" src="http://www.ifanr.com/wp-content/uploads/2011/08/Google_data_centers-1.jpg" alt="" width="616" height="351" /></p>
+<p>之前已经有新闻报道过  Google 节电的秘密在于每个服务器里面都内建一个电池，这些电池不仅仅具有备用电源的功能，更为突出的是它们的能源转换率：99.9%，而大型的  UPS 的能源转换率为 92～95% 之间，实际上有了这些电池，Google 的数据中心不再使用  UPS 了。</p>
+<p style="text-align: center;"><img class="aligncenter" src="http://www.ifanr.com/wp-content/uploads/2011/08/efficient_facilities.gif" alt="" width="623" height="328" /></p>
+<p>除此之外，Google 还采用了很多办法来达到节电的目的，比如把服务器机房内部的温度标准提高到 80 华氏摄氏度；采用水冷水塔和“蒸发法”降温等等。Google 每个季度都会将数据中心的 PUE（电力使用效率，可根据该数值衡量数据中心所需的电力和冷却开销的效果，这个数值越接近 1 越好）值公布出来：</p>
+<p style="text-align: center;"><img class="aligncenter" src="http://www.ifanr.com/wp-content/uploads/2011/08/averagepue.gif" alt="" width="437" height="363" /></p>
+<p>由于业界的 PUE 平均数值为 2，从上图可以看出 Google 数据中心的 PUE 值一般不超过 1.5，最近更是低于 1.2，可见 Google 所采用的节电冷却措施十分有效。</p>
+<p style="text-align: center;"><img class="aligncenter" src="http://www.ifanr.com/wp-content/uploads/2011/04/logo.jpg" alt="" width="480" height="187" /></p>
+<p>在业界之中，除了 Google 以外，Facebook 也非常注重打造一个节电高效的数据中心。今年 4 月，Facebook 在 Palo Alto 总部举行发布会，宣布全新的“开放式计算项目”，目的就是让众多厂商加入进来，打造节电高效的数据中心。</p>
+<p style="text-align: center;"><img class="aligncenter" src="http://www.ifanr.com/wp-content/uploads/2011/08/74570_457901052199_9445547199_5367672_4388893_n.jpg" alt="" width="600" height="367" /></p>
+<p>在 2010 年他们就对数据中心进行了一系列的试验。从上图可看出在优化过后，数据中心的电力用于 IT 设备的比例从 63% 提高到 68%，用于冷却的比例从 26%，降低到 15%，成功的降低了 PUE 值。Facebook 宣称其设计的开放性计算设施的 PUE 值能够达到 1.07 这样极端的比例。</p>
+<p>他们所采用的方法有：</p>
+<ul>
+<li>使用 480V 的高电压供电系统，减少能源的损耗</li>
+<li>移除服务器上对效率无贡献的部件</li>
+<li>冬天把热废气用于办公室取暖，引入外界冷空气降温</li>
+<li>消除对中心式 UPS 的需要</li>
+</ul>
+<p>结果数据中心的电力消耗只需过去的 38% 便可以正常运转。</p>
+<p>Google 和 Facebook 在节电技术上的创新，可以为未来搭建越来越多的数据中心提供更多节电的方案，为我们“绿色地球”做出贡献。</p>
+<p>注：PUE 的计算方法如下：</p>
+<p style="text-align: center;"><img class="aligncenter" src="http://www.ifanr.com/wp-content/uploads/2011/08/PUE.png" alt="" width="244" height="46" /></p>
+<p>Via <a target="_blank" href="http://gigaom.com/cleantech/a-sneak-peek-into-googles-servers-energy-efficiency/" target="_blank">GigaOM</a> <a target="_blank" href="http://en.wikipedia.org/wiki/Power_usage_effectiveness">WikiPedia</a> <a target="_blank" href="http://www.facebook.com/green?sk=app_4949752878">Green On Facebook</a></p>
+	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/yibie/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/243.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/yibie/" style="color:#000;text-decoration:none;">陈一斌</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">组织过软件汉化，写过时间管理文章，研究过个人知识管理。关注科技的发展，创投资讯、移动互联网。</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:gunshotbox@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://twitter.com/yibie" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://www.facebook.com/yibie" style="margin-right:14px;text-decoration:none;">Facebook</a>				<a target="_blank" href="http://weibo.com/yibie" style="margin-right:14px;text-decoration:none;">新浪微博</a>			</div>
+		</div>
+	</div>
+<p><small>© 陈一斌 for <a href="http://www.ifanr.com">爱范儿 · Beats of Bits</a> |
+<a href="http://www.ifanr.com/48156">原文链接</a> ·
+<a href="http://www.ifanr.com/48156#comments">6 热评</a> ·
+<a href="http://www.weibo.com/ifanr">新浪微博</a> ·
+<a href="http://www.ifanr.com/feed">订阅全文</a> ·
+<a href="https://plus.google.com/114725869543399343504/">Google+</a> ·
+<a href="http://live.ifanr.com/">#ifanrlive</a> 
+</small></p>
+<div style="text-align:right;border-top:1px dotted #ccc">
+</div> 
+
+需要 Google+ 邀请？请[ <a href="http://goo.gl/qNFzT">点击申请</a> 
+ ] 并填写您的邮件地址，enjoy～]]></content:encoded>
+			<wfw:commentRss>http://www.ifanr.com/48156/feed</wfw:commentRss>
+		<slash:comments>6</slash:comments>
+		</item>
+		<item>
+		<title>Layar Vision，现实增强的下一阶段</title>
+		<link>http://www.ifanr.com/48200</link>
+		<comments>http://www.ifanr.com/48200#comments</comments>
+		<pubDate>Wed, 03 Aug 2011 04:13:02 +0000</pubDate>
+		<dc:creator>Logout</dc:creator>
+				<category><![CDATA[业界趋势/Trend]]></category>
+		<category><![CDATA[应用]]></category>
+		<category><![CDATA[AR]]></category>
+		<category><![CDATA[Layar]]></category>
+		<category><![CDATA[现实增强]]></category>
+
+		<guid isPermaLink="false">http://www.ifanr.com/?p=48200</guid>
+		<description><![CDATA[手机上最流行的 AR（现实增强）应用非 Layar 莫属，这个覆盖 iPhone、Android、Symbian 三大平台的应用将信息附加在手机摄像头实时拍摄的画面之上。
+
+Layar 本身只是一个平台，所调用信息由第三方开发者提供，被形象的称为图层（Layer）。Layar 现在已经有数千款图形，但内容略显单一，基本都是为用户提供信息，例如在视频画面中显示名胜古迹或者餐馆酒店的方向、距离和介绍，最多再来点优惠信息通知。
+
+现在 Layar 的开发者们决定在交互方面更进一步，于昨晚发布 Layar Vision 扩展。Layar Vision 能够将现实中物体的外形——例如海报、杂志封面、餐馆菜单——记录下来、存储在服务器中。当 Layar 在视频画面中发现类似物体时就能弹出交互菜单，下面这段官方演示视频就举了三个场景。
+
+<span class="readmore"><a href="http://www.ifanr.com/48200" title="Layar Vision，现实增强的下一阶段">阅读全文——共774字</a></span>	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/jethorg/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/63.JPG" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"/></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/jethorg/" style="color:#000;text-decoration:none;">Logout (黄俊杰)</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">关注电子阅读、任何有趣的设备、IC 以及“历史的草稿”，相信移动设备与互联网的结合正促成近百年来最重要的一次变革。</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:jethorg@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://twitter.com/logoutx" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://weibo.com/logoutx" style="margin-right:14px;text-decoration:none;">新浪微博</a>			</div>
+		</div>
+	</div>
+]]></description>
+			<content:encoded><![CDATA[<p style="text-align: center;"><img class="aligncenter" style="margin-top: 5px; margin-bottom: 5px; padding-left: 0px; padding-right: 0px; padding-top: 0px;" src="http://www.ifanr.com/wp-content/uploads/2011/08/Layar-Vision_thumb.jpg" border="0" alt="Layar Vision" width="600" height="342" /></p>
+<p>手机上最流行的 AR（现实增强）应用非 <a target="_blank" href="http://www.layar.com/download/" target="_blank">Layar</a> 莫属，这个覆盖 iPhone、Android、Symbian 三大平台的应用将信息附加在手机摄像头实时拍摄的画面之上。</p>
+<p>Layar 本身只是一个平台，所调用信息由第三方开发者提供，被形象的称为图层（Layer）。Layar 现在已经有数千款图形，但内容略显单一，基本都是为用户提供信息，例如在视频画面中显示名胜古迹或者餐馆酒店的方向、距离和介绍，最多再来点优惠信息通知。</p>
+<p>现在 Layar 的开发者们决定在交互方面更进一步，于昨晚<a target="_blank" href="http://www.layar.com/layar-vision/" target="_blank">发布 Layar Vision 扩展</a>。Layar Vision 能够将现实中物体的外形——例如海报、杂志封面、餐馆菜单——记录下来、存储在服务器中。当 Layar 在视频画面中发现类似物体时就能弹出交互菜单，下面这段官方演示视频就举了三个场景。</p>
+<p><span id="more-48200"></span><br />
+<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" width="480" height="400" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=6,0,40,0"><param name="align" value="middle" /><param name="src" value="http://player.youku.com/player.php/sid/XMjkwOTA1OTIw/v.swf" /><param name="allowfullscreen" value="true" /><param name="quality" value="high" /><embed type="application/x-shockwave-flash" width="480" height="400" src="http://player.youku.com/player.php/sid/XMjkwOTA1OTIw/v.swf" quality="high" allowfullscreen="true" align="middle"></embed></object>
+</p>
+<p><a target="_blank" href="http://v.youku.com/v_show/id_XMjkwOTA1OTIw.html" target="_blank">Youku</a> | <a target="_blank" href="http://www.youtube.com/watch?v=AsD0DuPT1GI&amp;feature=player_embedded#at=20" target="_blank">Youtube</a></p>
+<ol>
+<li>分享内容。用户通过 Layar Vision 直接将当前阅读的杂志内容分享到 Facebook 等社交网络，Layar 会自动识别文字标题，省去输入之苦； </li>
+<li>隐藏菜单。用户来到一家餐馆，根据提示用手机对着菜单，Layar 会自动在屏幕上调出 Layar 专享的鸡尾酒品类，下单过程直接在幕后完成，方便且刺激消费； </li>
+<li>打分。就餐结束后用户在出门时看见“是否满意”的招贴，此时 Layar 会自动在屏幕上生成满意/不满意的手势图形，直接点击即可完成打分。 </li>
+</ol>
+<p>这些只是参考而已，Layar Vision 既能识别 2D 画面也能识别 3D 模型，带来无限可能。比如任天堂 3DS 令人惊叹的 <a target="_blank" href="http://v.youku.com/v_show/id_XMjU1MzAzNDc2.html" target="_blank">AR 卡片游戏</a>就有可能出现在这里。</p>
+<p>为了激发 Layar Vision 的潜能。针对 Layar Vision 的<a target="_blank" href="http://www.layar.com/layar-creation-challenge/" target="_blank">创造挑战赛</a>也在昨晚一并公布，头奖 15000 美元现金。</p>
+<p>显示增强技术放在十年前基本只会让人联想到 <a target="_blank" href="http://www.army-technology.com/projects/land_warrior/" target="_blank">Land Warrior 计划</a>。现在?大多数智能手机再加一个免费应用所实现的显示增强效果都比军队当时的期望更高。</p>
+	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/jethorg/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/63.JPG" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/jethorg/" style="color:#000;text-decoration:none;">Logout (黄俊杰)</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">关注电子阅读、任何有趣的设备、IC 以及“历史的草稿”，相信移动设备与互联网的结合正促成近百年来最重要的一次变革。</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:jethorg@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://twitter.com/logoutx" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://weibo.com/logoutx" style="margin-right:14px;text-decoration:none;">新浪微博</a>			</div>
+		</div>
+	</div>
+<p><small>© 黄俊杰 for <a href="http://www.ifanr.com">爱范儿 · Beats of Bits</a> |
+<a href="http://www.ifanr.com/48200">原文链接</a> ·
+<a href="http://www.ifanr.com/48200#comments">4 热评</a> ·
+<a href="http://www.weibo.com/ifanr">新浪微博</a> ·
+<a href="http://www.ifanr.com/feed">订阅全文</a> ·
+<a href="https://plus.google.com/114725869543399343504/">Google+</a> ·
+<a href="http://live.ifanr.com/">#ifanrlive</a> 
+</small></p>
+<div style="text-align:right;border-top:1px dotted #ccc">
+</div> 
+
+需要 Google+ 邀请？请[ <a href="http://goo.gl/qNFzT">点击申请</a> 
+ ] 并填写您的邮件地址，enjoy～]]></content:encoded>
+			<wfw:commentRss>http://www.ifanr.com/48200/feed</wfw:commentRss>
+		<slash:comments>4</slash:comments>
+		</item>
+		<item>
+		<title>Google 即将赢得智能手机之战？</title>
+		<link>http://www.ifanr.com/48145</link>
+		<comments>http://www.ifanr.com/48145#comments</comments>
+		<pubDate>Wed, 03 Aug 2011 03:00:56 +0000</pubDate>
+		<dc:creator>黄龙中</dc:creator>
+				<category><![CDATA[Apple/iOS]]></category>
+		<category><![CDATA[Google/Android]]></category>
+		<category><![CDATA[观点]]></category>
+		<category><![CDATA[App Store]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[Apple&iOS]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[iCloud]]></category>
+
+		<guid isPermaLink="false">http://www.ifanr.com/?p=48145</guid>
+		<description><![CDATA[Google 2005 年买下 Android，2008年作为手机系统发布，短短三年时间，从无到有，如今占据全球智能手机市场半壁江山，并继续保持快速增长。Forbes 专栏作者蒂莫西·李（Timothy B.Lee）认为： Google 即将赢得智能手机之战。
+
+如果把计算平台比作一个漏斗，小的一头是用户通过有限的渠道获得有限的信息，大的一头是整个世界——网络、设备、人、组织等等。计算平台像一个漏斗一样把信息过滤给用户。
+
+苹果处在漏斗的小口一端。它以设计师为中心，为用户提供了简洁、直观、优美的交互界面，为用户搭建了一套封闭的系统—— iPod、iPhone、iPad、iCloud、AppStore、Mac OS X 等等，它们之间的互通性那么好，用户在这套系统里自得其乐。
+
+<span class="readmore"><a href="http://www.ifanr.com/48145" title="Google 即将赢得智能手机之战？">阅读全文——共1338字</a></span>	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/sclonzon/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/1359.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"/></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/sclonzon/" style="color:#000;text-decoration:none;">黄龙中 (黄龙中)</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">左手激情右手专业主义，拥抱移动互联网。关注并发掘瞬息万变移动互联网中弥久不变的东西。</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D北京" style="margin-right:14px;text-decoration:none;">所在地</a>				<a target="_blank" href="mailto:sclonzon@163.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://weibo.com/biigyellow" style="margin-right:14px;text-decoration:none;">新浪微博</a>			</div>
+		</div>
+	</div>
+]]></description>
+			<content:encoded><![CDATA[<p><a rel="attachment wp-att-48146" href="http://www.ifanr.com/48145/android-success-way"><img class="aligncenter size-full wp-image-48146" title="Android Success Way" src="http://www.ifanr.com/wp-content/uploads/2011/08/Android-Success-Way.jpg" alt="" width="500" height="297" /></a></p>
+<p>Google 2005 年买下 Android，2008年作为手机系统发布，短短三年时间，从无到有，如今占据全球智能手机市场<a target="_blank" href="http://www.reuters.com/article/2011/08/01/us-smartphones-research-idUSTRE7704MS20110801">半壁江山</a>，并继续保持快速增长。Forbes 专栏作者蒂莫西·李（Timothy B.Lee）认为： <strong>Google <a target="_blank" href="http://blogs.forbes.com/timothylee/2011/08/01/why-google-is-winning-the-smartphone-wars/">即将赢得</a>智能手机之战</strong>。</p>
+<p>如果把计算平台比作一个漏斗，小的一头是用户通过有限的渠道获得有限的信息，大的一头是整个世界——网络、设备、人、组织等等。计算平台像一个漏斗一样把信息过滤给用户。</p>
+<p>苹果处在漏斗的小口一端。它以设计师为中心，为用户提供了简洁、直观、优美的交互界面，为用户搭建了一套封闭的系统—— iPod、iPhone、iPad、iCloud、AppStore、Mac OS X 等等，它们之间的互通性那么好，用户在这套系统里自得其乐。</p>
+<p>Google 处在漏斗的大口一端。它以工程师为中心，只做系统不生产硬件，既不绑定运营商也不限定 app store，它的合作伙伴不仅可以深度定制 Android OS，甚至也可以像 Amazon 那样拥有自己的 App Store，它的低端价位尤其对新兴市场吸引力巨大。</p>
+<p><span id="more-48145"></span></p>
+<p>Android 的优势在于它讨好了三方：厂商，运营商，用户。厂商利益于其免费系统，可定制的权限，良好的成本控制，可深度对接的 app store，极大推广Android OS；运营商不受独家签约的限制，任何运营商都可以为用户提供签约计划；用户可以选择自己喜欢的运营商，可以选择更低的价位，可以刷更多版本的 ROM。</p>
+<p>漏斗另一端的苹果没有这些优势：它刚上市的时候，在每个国家只有一家独立的签约运营商，为了技术保密又不与第三方平台进行深度合作，用户的选择被限定在一家运营商、一家硬件生产商、一个价位。</p>
+<p>当然，单一产品线的苹果优势也很明显。首先是专注于用户界面设计，用户体验非常棒，这培养了用户的忠诚度，所以当发现<a href="http://www.ifanr.com/46743">更多的人愿意购买 iOS 设备</a>的时候一点也不奇怪；其次是硬件单一、软件共通性好，开发者需要开发的 app 版本单一，节省人力财力物力。与其对应的是 Google 手机系统的弱点：用户体验不佳，用户界面都感觉是半成品（half baked），在 iPhone 入门级的功能在 Android 上也得鼓捣半天；然后是开发者开发一款 app，需要考虑几十家硬件厂商几百款不同配置的终端。此外，Android 的开放性也招来了黑客和恶意木马的兴趣，虽然<a href="http://www.ifanr.com/47278">为杀毒厂商提供了生意</a>，但用户体验走向更糟。</p>
+<p>Android 的明显优势——灵活的运营商，灵活的硬件配置（实体键盘、可卸载电池），多层次的价位，更开放的 app store。尤其在饱和的美国市场以外扩张的时候，这些优势更加凸现出来。</p>
+<p>不过“打江山容易守江山难”。Android 现时的扩张，建立在“蛮荒时代”基础之上，发达国家尚且有<a href="http://www.ifanr.com/46215">众多非智能手机用户</a>，新兴市场潜力更大，抓住这些用户换代升级机会，就能扩张地盘。这与中国互联网应用服务提供商面对庞大的用户基础，只需满足用户基本需求就足以成就霸业一样。但是如果未能及时提升用户体验，一次升级转向 Android，二次、三次升级时难免倒戈。况且 Google 时时面临着专利诉讼可能导致的 Android 成本升级的风险，价格优势缩小甚至不存在的时候，唯有靠创新取胜，尤如眼下的中国互联网。</p>
+<p>由此看来，Google 已经赢了吗？才刚刚上路呢。</p>
+	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/sclonzon/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/1359.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/sclonzon/" style="color:#000;text-decoration:none;">黄龙中 (黄龙中)</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">左手激情右手专业主义，拥抱移动互联网。关注并发掘瞬息万变移动互联网中弥久不变的东西。</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="http://map.baidu.com/?newmap=1&ie=utf-8&s=s%26wd%3D北京" style="margin-right:14px;text-decoration:none;">所在地</a>				<a target="_blank" href="mailto:sclonzon@163.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://weibo.com/biigyellow" style="margin-right:14px;text-decoration:none;">新浪微博</a>			</div>
+		</div>
+	</div>
+<p><small>© 黄龙中 for <a href="http://www.ifanr.com">爱范儿 · Beats of Bits</a> |
+<a href="http://www.ifanr.com/48145">原文链接</a> ·
+<a href="http://www.ifanr.com/48145#comments">37 热评</a> ·
+<a href="http://www.weibo.com/ifanr">新浪微博</a> ·
+<a href="http://www.ifanr.com/feed">订阅全文</a> ·
+<a href="https://plus.google.com/114725869543399343504/">Google+</a> ·
+<a href="http://live.ifanr.com/">#ifanrlive</a> 
+</small></p>
+<div style="text-align:right;border-top:1px dotted #ccc">
+</div> 
+
+需要 Google+ 邀请？请[ <a href="http://goo.gl/qNFzT">点击申请</a> 
+ ] 并填写您的邮件地址，enjoy～]]></content:encoded>
+			<wfw:commentRss>http://www.ifanr.com/48145/feed</wfw:commentRss>
+		<slash:comments>37</slash:comments>
+		</item>
+		<item>
+		<title>Windows Phone 新 LOGO 小记</title>
+		<link>http://www.ifanr.com/48219</link>
+		<comments>http://www.ifanr.com/48219#comments</comments>
+		<pubDate>Wed, 03 Aug 2011 02:11:38 +0000</pubDate>
+		<dc:creator>张恒</dc:creator>
+				<category><![CDATA[Microsoft/WinPhone]]></category>
+		<category><![CDATA[公司]]></category>
+		<category><![CDATA[前缀分类]]></category>
+		<category><![CDATA[Microsoft]]></category>
+		<category><![CDATA[windows phone]]></category>
+
+		<guid isPermaLink="false">http://www.ifanr.com/?p=48219</guid>
+		<description><![CDATA[微软 Windows Phone 的徽标要变形，这已经不是秘密了。前天终于听到了官方人士的说法，微软日本的高桥忍在博客中说明，方形 LOGO 将合入到 Mango 7700 以后的版本，成为 Windows Phone 7.5 的识别特征。今天就让我们回顾一下这几个月来它的各种露脸。
+
+方形 LOGO 的首次亮相，是在今年 5 月 24 号。纽约和伦敦同时举办了 Mango 的 “VIP Preview ”，微软邀请了一些媒体和开发者体验新版操作系统。当时的邀请函上绘制的 LOGO 是这样的：
+
+<span class="readmore"><a href="http://www.ifanr.com/48219" title="Windows Phone 新 LOGO 小记">阅读全文——共717字</a></span>	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/zhangh109/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/314.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"/></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/zhangh109/" style="color:#000;text-decoration:none;">张恒</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">先后在华为技术和炬力集成做码农和 PM，并在华强北摆弄过手机档口。致力移动互联网，LBS，垂直社区，新媒体观察，致力于 iSeed 访谈的推动和建设。</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:zhangh109@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://www.twitter.com/zhangh109" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://www.facebook.com/zhangh109" style="margin-right:14px;text-decoration:none;">Facebook</a>				<a target="_blank" href="http://www.zhihu.com/people/zhangh109" style="margin-right:14px;text-decoration:none;">知乎</a>			</div>
+		</div>
+	</div>
+]]></description>
+			<content:encoded><![CDATA[<p style="text-align: center;"><img style="margin: 2px auto 0px; padding-left: 0px; padding-right: 0px; float: none; padding-top: 0px; border: 0px;" src="http://www.ifanr.com/wp-content/uploads/2011/08/windowsphone_lo.jpg" border="0" alt="windowsphone_lo" width="500" height="75" /></p>
+<p>微软 Windows Phone 的徽标要变形，这已经不是秘密了。前天终于听到了官方人士的说法，微软日本的<a target="_blank" href="http://blogs.msdn.com/b/shintak/archive/2011/08/01/10191547.aspx">高桥忍</a>在博客中说明，方形 LOGO 将合入到 Mango 7700 以后的版本，成为 Windows Phone 7.5 的识别特征。今天就让我们回顾一下这几个月来它的各种露脸。</p>
+<p>方形 LOGO 的首次亮相，是在今年 5 月 24 号。纽约和伦敦同时举办了 Mango 的 “VIP Preview ”，微软邀请了一些媒体和开发者体验新版操作系统。当时的邀请函上绘制的 LOGO 是这样的：</p>
+<p style="text-align: center;"><img style="margin: 2px auto 0px; padding-left: 0px; padding-right: 0px; float: none; padding-top: 0px; border: 0px;" src="http://www.ifanr.com/wp-content/uploads/2011/08/New-logo-V21.png" border="0" alt="New-logo-V21" width="310" height="181" /></p>
+<p>Windows 和 Phone 这两个单词仍然分两行排布，只有 Windows 徽标的轮廓变成了方形。圆形是 WP 中按钮的形状，方形是菜单和 Tile 的形状，更新之后的风格更加统一。</p>
+<p>5 月 24 号当天，现场展出了三星的样机设计图，记者偷拍到机身上的红色 LOGO 。</p>
+<p><span id="more-48219"></span></p>
+<p style="text-align: center;"><img style="margin: 2px auto 0px; padding-left: 0px; padding-right: 0px; float: none; padding-top: 0px; border: 0px;" src="http://www.ifanr.com/wp-content/uploads/2011/08/samf.jpg" border="0" alt="samf" width="607" height="268" /></p>
+<p>然后在 6 月份，诺基亚 CEO 埃洛普（Elop）在新加坡的亚洲通信展亮相，宣传了诺基亚的 WP 平台战略，在他的演讲幻灯片中出现了这个 LOGO：</p>
+<p style="text-align: center;"><img style="margin: 2px auto 0px; padding-left: 0px; padding-right: 0px; float: none; padding-top: 0px; border: 0px;" src="http://www.ifanr.com/wp-content/uploads/2011/08/Windows-Phone-square-logo-Nokia1.jpg" border="0" alt="Windows-Phone-square-logo-Nokia1" width="310" height="174" /></p>
+<p>埃洛普手上的新 LOGO 变得素雅起来，也许是为了配合幻灯片的整体风格吧。不过在上个月泄露的诺基亚  <a href="http://www.ifanr.com/46777">Sea Ray</a> 和日本 <a href="http://www.ifanr.com/47445">IS12T</a> 启动画面中看到，仍然是红色和橙色。</p>
+<p style="text-align: center;"><img style="margin: 2px auto 0px; padding-left: 0px; padding-right: 0px; float: none; padding-top: 0px; border: 0px;" src="http://www.ifanr.com/wp-content/uploads/2011/08/rao.jpg" border="0" alt="rao" width="339" height="311" /></p>
+<p>微软要刻意把红色打造成 Mango 的识别色，所以在 Beta 2 时把红色主题设置为默认。但是把红色印在机身上确实不好看，于是 IS12T 处理成这样，比三星的样机 LOGO 顺眼多了：</p>
+<p style="text-align: center;"><img style="margin: 2px auto 0px; padding-left: 0px; padding-right: 0px; float: none; padding-top: 0px; border: 0px;" src="http://www.ifanr.com/wp-content/uploads/2011/08/image4.jpg" border="0" alt="image4" width="301" height="251" /></p>
+<p>红色（代码 #E51400）成为微软 WP 官网的主色调：</p>
+<p style="text-align: center;"><img style="margin: 2px auto 0px; padding-left: 0px; padding-right: 0px; float: none; padding-top: 0px; border: 0px;" src="http://www.ifanr.com/wp-content/uploads/2011/08/image8.png" border="0" alt="image8" width="480" height="287" /></p>
+<p>因此我们有理由相信，经过这几个月的筛选和改进，在 Windows Phone Mango 正式上架时，“方形”和“红色”将成为关键的元素，出现在微软的各种广告中。你还惦记着去年的主题色“蓝”和“绿”？恐怕已经 Out 了。</p>
+<p>via <a target="_blank" href="http://nanapho.jp/archives/2011/08/red-and-square-logo-to-re-brand-windows-phone/">nanapho</a></p>
+	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/zhangh109/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/314.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/zhangh109/" style="color:#000;text-decoration:none;">张恒</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">先后在华为技术和炬力集成做码农和 PM，并在华强北摆弄过手机档口。致力移动互联网，LBS，垂直社区，新媒体观察，致力于 iSeed 访谈的推动和建设。</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:zhangh109@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://www.twitter.com/zhangh109" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://www.facebook.com/zhangh109" style="margin-right:14px;text-decoration:none;">Facebook</a>				<a target="_blank" href="http://www.zhihu.com/people/zhangh109" style="margin-right:14px;text-decoration:none;">知乎</a>			</div>
+		</div>
+	</div>
+<p><small>© 张恒 for <a href="http://www.ifanr.com">爱范儿 · Beats of Bits</a> |
+<a href="http://www.ifanr.com/48219">原文链接</a> ·
+<a href="http://www.ifanr.com/48219#comments">21 热评</a> ·
+<a href="http://www.weibo.com/ifanr">新浪微博</a> ·
+<a href="http://www.ifanr.com/feed">订阅全文</a> ·
+<a href="https://plus.google.com/114725869543399343504/">Google+</a> ·
+<a href="http://live.ifanr.com/">#ifanrlive</a> 
+</small></p>
+<div style="text-align:right;border-top:1px dotted #ccc">
+</div> 
+
+需要 Google+ 邀请？请[ <a href="http://goo.gl/qNFzT">点击申请</a> 
+ ] 并填写您的邮件地址，enjoy～]]></content:encoded>
+			<wfw:commentRss>http://www.ifanr.com/48219/feed</wfw:commentRss>
+		<slash:comments>21</slash:comments>
+		</item>
+		<item>
+		<title>Microsoft Store 开的妙！！！</title>
+		<link>http://www.ifanr.com/48186</link>
+		<comments>http://www.ifanr.com/48186#comments</comments>
+		<pubDate>Wed, 03 Aug 2011 00:30:39 +0000</pubDate>
+		<dc:creator>吴 晔飞</dc:creator>
+				<category><![CDATA[业界趋势/Trend]]></category>
+		<category><![CDATA[前缀分类]]></category>
+		<category><![CDATA[观点]]></category>
+		<category><![CDATA[Microsoft Store]]></category>
+
+		<guid isPermaLink="false">http://www.ifanr.com/?p=48186</guid>
+		<description><![CDATA[微软近期宣布了拓展旗下 Microsoft Store 的计划，目标是在三年内从目前的11 家店拓展到86家。尽管目前微软的产品在市场上的能见度很高，但 Microsoft Store 决心提供更好的服务，帮助用户获得更高端的产品体验。
+
+第一家 Microsoft Store
+
+2009年10月22日，就在 Windows 7 上市的同一天，第一家 Microsoft Store 在美国亚利桑那州的斯科茨代尔开业。微软专门聘请了服务于 Apple Store 的设计师来担当零售商店的设计顾问，因此从店内设计上或多或少都有些 Apple Store 的影子。
+
+<span class="readmore"><a href="http://www.ifanr.com/48186" title="Microsoft Store 开的妙！！！">阅读全文——共2501字</a></span>	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/issawu/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/1287.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"/></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/issawu/" style="color:#000;text-decoration:none;">吴 晔飞 (faytoday)</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">像 Palm一样追求效率，iOS 一样注重风格，android 一样勇于挑战，BlackBerry 一样淡定自若。新的科技浪潮已经涌起，让我们一同下海冲浪吧！</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:faytoday@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://twitter.com/faytoday" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://weibo.com/1679273612" style="margin-right:14px;text-decoration:none;">新浪微博</a>			</div>
+		</div>
+	</div>
+]]></description>
+			<content:encoded><![CDATA[<p><!-- p.p1 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px 'Heiti SC Light'} p.p2 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica; min-height: 14.0px} p.p3 {margin: 0.0px 0.0px 0.0px 0.0px; font: 12.0px Helvetica} span.s1 {font: 12.0px Helvetica} span.s2 {font: 12.0px 'Heiti SC Light'} span.Apple-tab-span {white-space:pre} --></p>
+<p style="text-align: center;"><img class="aligncenter" title="Microsoft Store" src="http://farm5.static.flickr.com/4002/5076097182_956569b561.jpg" alt="" width="500" height="333" /></p>
+<p>微软近期宣布了拓展旗下 Microsoft Store 的计划，目标是在三年内从目前的11 家店拓展到86家。尽管目前微软的产品在市场上的能见度很高，但 Microsoft Store 决心提供更好的服务，帮助用户获得更高端的产品体验。</p>
+<h3>第一家 Microsoft Store</h3>
+<p>2009年10月22日，就在 Windows 7 上市的同一天，第一家 Microsoft Store 在美国亚利桑那州的斯科茨代尔开业。微软专门聘请了服务于 Apple Store 的设计师来担当零售商店的设计顾问，因此从店内设计上或多或少都有些 Apple Store 的影子。</p>
+<p>这家商店的主要任务是展示微软旗下面向普通消费者的一切尖端产品，Surface （一种以触摸为唯一操作界面的概念性产品），Xbox 360 （最新款的微软家用游戏机）皆有展示，当然真正的明星产品当属最新上市的 Windows 7，这款现在为微软一扫 Vista 失利阴霾的产品，在当时获得了公司营销上极大支持。为了 Windows 7 造势应该是建立 Microsoft Store 一个很大的原因。</p>
+<p>但3年过去了， Microsoft Store 并没有引起消费者的关注。</p>
+<p><span id="more-48186"></span></p>
+<h3>3年了，全球只有11家</h3>
+<p>Microsoft Store 的发展速度很慢，至今没有走出美国范围，而时间已经过去 3 年之久了。这三年里 Windows7 创下了很多精彩的记录，但我想问，Microsoft Store 的贡献有多大呢？或者说，Microsoft Store 对旗下哪款产品（无论软件或硬件）起到了非常大的营销作用呢？通过一位网友的表述，我想答案很清晰了：</p>
+<blockquote><p>我不太清楚 Microsoft Store 的用意是什么？提供技术支持吗？销售 Zunes 音乐播放器？根本没人用它。销售 Xbox？这个游戏机到处都在卖。卖 Windows 软件？用户们在买电脑的时候就顺带一起买了。究竟这个商店是用来做什么的呢？</p>
+</blockquote>
+<p>也只能可能在没有具体运营目标的情况下，Microsoft Store 项目才会停滞不前。</p>
+<h3>加速开店，为什么从现在开始</h3>
+<p>2009年之后是移动互联网飞速发展的时期，尽管在新的桌面操作系统上微软尝到了一些甜头，但这并不能减少他们对未来个人电脑发展的担心，因为一个新市场的升温让他们看到自己的落后：平板电脑。2011年6月2日D9会议上，微软着重展示了平板界面下的 Windows8，巨人正在用实际行动表明自己参战的决心。</p>
+<p>另一方面，Windows Phone 7 已经获得了诺基亚的挺身支持，这款推倒重来的手机系统与其说集合了微软的智慧，不如说凝聚了微软的勇气。今年年底是这两位巨人交出答卷的时候。</p>
+<p>以上两个产品都需要营销，而且是新营销。Apple Store 在手机、平板营销上取得了丰厚的收获。照猫画虎，微软通过开设和竞争对手相似的 Microsoft Store 是一个明智的选择。</p>
+<h3><strong>Store 的含义</strong></h3>
+<ul>
+<li>字面上理解 Store ，首先这是一个名词：商店。和 Mall 不同，Store 无论在规模上和销售的品种上都是走精致路线。这种精致正是微软所渴望的。</li>
+</ul>
+<p>微软曾经依赖的 PC 卖场正在改变，品牌专门店获得了最好的销售位置，而以组装为生的传统零件销售商则被推到了次席。</p>
+<p>PC 想卖出好价格，不能再是密密麻麻地堆在货架上，而是要进入橱窗，摆出漂亮的造型。Microsoft Store 的出现顺应了这个消费趋势，让产品以更高的姿态展示在消费者目前。</p>
+<ul>
+<li>Store 作为动词，意为：储存。对于一个品牌而言，时代的改变也会做出相应的变化，那么如何将这种变化植入消费者脑中，就是一门艺术了。</li>
+</ul>
+<p>营销是一门艺术，那么苹果公司就是一位巨匠，而 Apple Store 就是这位巨匠工作的地方。现在微软是时候向这位巨匠学习如何利用环境感化消费者的时候了。</p>
+<p>Windows 产品走过了这么多年，不知不觉形成了一种倡导消费者互助解决问题的文化。你宁愿向朋友咨询解决方法也不乐意去找一位专家解决问题。等等，很可能你不知道专家在哪里。Microsoft Store 将提供一系列课程，旨在帮助消费者真正入门，这和苹果店的做法一样，让消费者变成专家，同时也成了品牌战士。</p>
+<h3>为什么消费者们喜欢 Store ？</h3>
+<p>在美国，2011年1-3月间有 7110万人前往 Apple Store ，这个数字比上一年美国职业棒球大联盟赛季的入场球迷人数还多，Store 的受欢迎程度可见一斑。在 Store 里你可以试玩各种产品，没有人会悄悄地提醒你：先生需要购买什么吗？你可以叫上一位工作人员，陪你玩上一个下午，或者在傍晚的授课时间里不停的向专家提问。</p>
+<p>这些才是 Store 销售的产品：友好。这是其他渠道里所没有的东西，是微软产品的销售软肋所在。</p>
+<h3>为什么 Store 会提高销售额 ？</h3>
+<p>有报道称，运营商对于微软手机的支持不够导致了潜在客户的流失。作为 Windows Phone 7 的使用者，我相信在没有专业介绍的情况下，很少有消费者会被这些陌生的设备所打动，特别是有 iPhone 4 和众多安卓手机围绕的情况下。微软不能再继续放任这种不可把控的销售方式，他们需要更加专注的导购员，他们需要100% 忠于自己产品的说客。</p>
+<p>Microsoft Store 就是这类全心为自己服务的销售渠道。</p>
+<h3>还会有更多 Store 吗？</h3>
+<p>当然会。IT界是最早受到在线消费冲击的行业，也是很敏感的行业。通过在线销售实现降低成本，而 Store 则可以作为品牌忠诚度的城堡。</p>
+<ul>
+<li>陆家嘴的 Apple Store 里的 iPhone 开箱使用课程总是人满为患，用户不仅得到了手机，还学会了如何正常使用它。</li>
+<li>位于上海南京西路上的 Sony Style （Sony 的 Store ）经常开展摄影公开课程，和影音新产品推介会活动，在聚拢人气的同时，让消费者更加喜爱自己手中的产品。</li>
+</ul>
+<p>以上两个例子的共同之处是：让用户学习如何使用产品是最好的广告。</p>
+<p>让我们来看看市场上还有哪些厂商需要打广告的？</p>
+<ul>
+<li>西部数据硬盘，如何选择组建办公电脑的硬盘，如何清理硬盘碎片，如何辨识硬盘异响？看来他们需要打广告。</li>
+<li>海盗船内存条，如何安装笔记本内存条，内存条参数又是怎么来的，哪些软件需要大缓存？看来他们需要打广告。</li>
+<li>罗技键鼠，左撇子改用怎样的鼠标，如何清洁键盘，无线鼠标真的不能用来打游戏？看来他们需要打广告。</li>
+</ul>
+<p>他们需要打广告，他们需要开 Store。</p>
+	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/issawu/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/1287.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/issawu/" style="color:#000;text-decoration:none;">吴 晔飞 (faytoday)</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">像 Palm一样追求效率，iOS 一样注重风格，android 一样勇于挑战，BlackBerry 一样淡定自若。新的科技浪潮已经涌起，让我们一同下海冲浪吧！</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:faytoday@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://twitter.com/faytoday" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://weibo.com/1679273612" style="margin-right:14px;text-decoration:none;">新浪微博</a>			</div>
+		</div>
+	</div>
+<p><small>© faytoday for <a href="http://www.ifanr.com">爱范儿 · Beats of Bits</a> |
+<a href="http://www.ifanr.com/48186">原文链接</a> ·
+<a href="http://www.ifanr.com/48186#comments">12 热评</a> ·
+<a href="http://www.weibo.com/ifanr">新浪微博</a> ·
+<a href="http://www.ifanr.com/feed">订阅全文</a> ·
+<a href="https://plus.google.com/114725869543399343504/">Google+</a> ·
+<a href="http://live.ifanr.com/">#ifanrlive</a> 
+</small></p>
+<div style="text-align:right;border-top:1px dotted #ccc">
+</div> 
+
+需要 Google+ 邀请？请[ <a href="http://goo.gl/qNFzT">点击申请</a> 
+ ] 并填写您的邮件地址，enjoy～]]></content:encoded>
+			<wfw:commentRss>http://www.ifanr.com/48186/feed</wfw:commentRss>
+		<slash:comments>12</slash:comments>
+		</item>
+		<item>
+		<title>Google 如何盈利？</title>
+		<link>http://www.ifanr.com/48155</link>
+		<comments>http://www.ifanr.com/48155#comments</comments>
+		<pubDate>Wed, 03 Aug 2011 00:00:02 +0000</pubDate>
+		<dc:creator>积木</dc:creator>
+				<category><![CDATA[Google/Android]]></category>
+		<category><![CDATA[信息图]]></category>
+		<category><![CDATA[ad]]></category>
+		<category><![CDATA[Adwords]]></category>
+		<category><![CDATA[Google]]></category>
+		<category><![CDATA[Keywords]]></category>
+
+		<guid isPermaLink="false">http://www.ifanr.com/?p=48155</guid>
+		<description><![CDATA[提到 Google 的盈利模式，大家都知道是广告。但是对于具体情况，多数人可能不太了然。WordSteam 这幅信息图提供了一个不错的视角。
+
+Google 从 2010 年第三季度到 2011 年第二季度，总收入是 333 亿美元，其中广告收入是 322 亿美元。也就是说，Google 收入的 97% 来自广告。
+
+虽然许多人都认为搜索不再重要，但 Google 的 Adwords 广告给公司带来的利润仍不可忽视。在关键字竞购中，那些关键字是最热门的，价格最高呢？
+
+<span class="readmore"><a href="http://www.ifanr.com/48155" title="Google 如何盈利？">阅读全文——共725字</a></span>	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/merlin/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/427.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"/></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/merlin/" style="color:#000;text-decoration:none;">积木</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">Google+ has a Garden of Eden feel about it, especially compared with the overdeveloped, uncontrolled sprawl of Facebook.(by Harry McCracken )</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:jimmerlin@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://twitter.com/jimmerlin" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://facebook.com/jimmerlin" style="margin-right:14px;text-decoration:none;">Facebook</a>				<a target="_blank" href="http://weibo.com/jimmerlin" style="margin-right:14px;text-decoration:none;">新浪微博</a>				<a target="_blank" href="https://plus.google.com/112637572621202585213" style="margin-right:14px;text-decoration:none;">Google+</a>			</div>
+		</div>
+	</div>
+]]></description>
+			<content:encoded><![CDATA[<p style="text-align: center;"><a href="http://www.ifanr.com/wp-content/uploads/2011/08/wordstreamCPCv9c660x1413.png"><img class="aligncenter" style="float: none; margin-left: auto; margin-right: auto; border-width: 0px;" src="http://www.ifanr.com/wp-content/uploads/2011/08/wordstreamCPCv9c660x1413_thumb.png" border="0" alt="wordstream-CPC-v9c--660x1413" width="600" height="370" /></a></p>
+<p>提到 Google 的盈利模式，大家都知道是广告。但是对于具体情况，多数人可能不太了然。WordSteam 这幅信息图提供了一个不错的视角。</p>
+<p>Google 从 2010 年第三季度到 2011 年第二季度，总收入是 333 亿美元，其中广告收入是 322 亿美元。也就是说，Google 收入的 97% 来自广告。</p>
+<p>虽然许多人都认为搜索不再重要，但 Google 的 Adwords 广告给公司带来的利润仍不可忽视。在关键字竞购中，那些关键字是最热门的，价格最高呢？</p>
+<p>排名前三位的是保险(Insurance)、贷款(Loans)、抵押借款(Mortgage)。</p>
+<ul>
+<li>“保险”的“每次点击费用”最高出价是 54.91 美元，该关键字带来的收入占 Adwords 总收入的 24%。 </li>
+<li>“贷款”的“每次点击费用”最高出价是 44.28 美元，该关键字带来的收入占 Adwords 总收入的 12.8%。 </li>
+<li>“抵押借款”的“每次点击费用”最高出价是 47.12 美元，该关键字带来的收入占 Adwords 总收入的 9%。 </li>
+</ul>
+<p><span id="more-48155"></span></p>
+<ul>
+</ul>
+<p>紧跟其后，最贵关键词的第四位是“律师”(Attorney)。</p>
+<p>Wordstream 的分析师 Larry Kim 说</p>
+<blockquote><p>许多律师在寻找客户，为了得到一个客户，他们可以支付 50-100 次点击产生的费用，因为他们可以在一个持续数年的官司上赚回来， 同时开价 $500/小时。</p>
+</blockquote>
+<p>出现在前 20 位的一个比较奇怪的关键词是“脐带血”(Cord Blood)。Kim 告诉 Wired 网站，有这样为那些富人父母保存孩子脐带的产业，他们认为脐带中的干细胞能够治愈未来产生的疾病。脐带血的保存需要大量的费用支出。</p>
+<p>前 20 位关键字产生的收入占 Adwords 总收入的 70%，剩下的 30% 的收入产生于 1000 左右的分类中的各种关键字，或者说是“长尾关键词”。</p>
+<p style="text-align: left;"><a href="http://www.ifanr.com/wp-content/uploads/2011/08/wordstreamCPCv9c660x14131.png"><img class="aligncenter" style="float: none; margin-left: auto; margin-right: auto; border-width: 0px;" src="http://www.ifanr.com/wp-content/uploads/2011/08/wordstreamCPCv9c660x1413_thumb1.png" border="0" alt="wordstream-CPC-v9c--660x1413" width="600" height="1289" /></a>via <a target="_blank" href="http://www.wired.com/epicenter/2011/07/google-revenue-sources/">Wired</a></p>
+	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/merlin/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/427.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/merlin/" style="color:#000;text-decoration:none;">积木</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">Google+ has a Garden of Eden feel about it, especially compared with the overdeveloped, uncontrolled sprawl of Facebook.(by Harry McCracken )</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:jimmerlin@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://twitter.com/jimmerlin" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://facebook.com/jimmerlin" style="margin-right:14px;text-decoration:none;">Facebook</a>				<a target="_blank" href="http://weibo.com/jimmerlin" style="margin-right:14px;text-decoration:none;">新浪微博</a>				<a target="_blank" href="https://plus.google.com/112637572621202585213" style="margin-right:14px;text-decoration:none;">Google+</a>			</div>
+		</div>
+	</div>
+<p><small>© 积木 for <a href="http://www.ifanr.com">爱范儿 · Beats of Bits</a> |
+<a href="http://www.ifanr.com/48155">原文链接</a> ·
+<a href="http://www.ifanr.com/48155#comments">15 热评</a> ·
+<a href="http://www.weibo.com/ifanr">新浪微博</a> ·
+<a href="http://www.ifanr.com/feed">订阅全文</a> ·
+<a href="https://plus.google.com/114725869543399343504/">Google+</a> ·
+<a href="http://live.ifanr.com/">#ifanrlive</a> 
+</small></p>
+<div style="text-align:right;border-top:1px dotted #ccc">
+</div> 
+
+需要 Google+ 邀请？请[ <a href="http://goo.gl/qNFzT">点击申请</a> 
+ ] 并填写您的邮件地址，enjoy～]]></content:encoded>
+			<wfw:commentRss>http://www.ifanr.com/48155/feed</wfw:commentRss>
+		<slash:comments>15</slash:comments>
+		</item>
+		<item>
+		<title>探索新的 LBS 商业模式：超越地理位置的束缚</title>
+		<link>http://www.ifanr.com/48130</link>
+		<comments>http://www.ifanr.com/48130#comments</comments>
+		<pubDate>Tue, 02 Aug 2011 12:00:22 +0000</pubDate>
+		<dc:creator>张恒</dc:creator>
+				<category><![CDATA[业界趋势/Trend]]></category>
+		<category><![CDATA[前缀分类]]></category>
+		<category><![CDATA[应用]]></category>
+		<category><![CDATA[foursquare]]></category>
+		<category><![CDATA[GPS]]></category>
+		<category><![CDATA[LBS]]></category>
+
+		<guid isPermaLink="false">http://www.ifanr.com/?p=48130</guid>
+		<description><![CDATA[著名的地理位置签到服务 Foursquare 在本周开放了一项新业务：允许任何人建立品牌和商户专属页面，并逐渐脱离地理位置展开互动。
+
+“在这项业务之前，每周有约 70 个品牌页面被创建。但是现在，任何人都能建立这样的页面，并且大家可以 Follow 这个页面。”Foursquare 的产品经理 Noah Weiss 如是说，目前共有 2500 个品牌入驻。
+
+LBS 签到服务的盈利模式一直是令众多创业者头疼的问题，现在 Foursquare 的这步棋提供了怎样的新思路呢？
+
+<span class="readmore"><a href="http://www.ifanr.com/48130" title="探索新的 LBS 商业模式：超越地理位置的束缚">阅读全文——共800字</a></span>	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/zhangh109/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/314.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"/></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/zhangh109/" style="color:#000;text-decoration:none;">张恒</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">先后在华为技术和炬力集成做码农和 PM，并在华强北摆弄过手机档口。致力移动互联网，LBS，垂直社区，新媒体观察，致力于 iSeed 访谈的推动和建设。</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:zhangh109@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://www.twitter.com/zhangh109" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://www.facebook.com/zhangh109" style="margin-right:14px;text-decoration:none;">Facebook</a>				<a target="_blank" href="http://www.zhihu.com/people/zhangh109" style="margin-right:14px;text-decoration:none;">知乎</a>			</div>
+		</div>
+	</div>
+]]></description>
+			<content:encoded><![CDATA[<p style="text-align: center;"><img style="border-bottom: 0px;border-left: 0px;margin: 2px auto 0px;padding-left: 0px;padding-right: 0px;float: none;border-top: 0px;border-right: 0px;padding-top: 0px" border="0" alt="4sq" src="http://www.ifanr.com/wp-content/uploads/2011/08/4sq.jpg" width="577" height="347" /></p>
+<p>著名的地理位置签到服务 <a href="http://www.ifanr.com/tag/foursquare">Foursquare</a> 在本周开放了一项新业务：允许任何人建立品牌和商户专属页面，并逐渐脱离地理位置展开互动。</p>
+<p>“在这项业务之前，每周有约 70 个品牌页面被创建。但是现在，任何人都能建立这样的页面，并且大家可以 Follow 这个页面。”Foursquare 的产品经理 <a target="_blank" href="http://adage.com/article/digital/foursquare-users-nice-check-write/229026/">Noah Weiss</a> 如是说，目前共有 2500 个品牌入驻。</p>
+<p>LBS 签到服务的盈利模式一直是令众多创业者头疼的问题，现在 Foursquare 的这步棋提供了怎样的新思路呢？</p>
+<p>先从品牌页面的分类说起，仔细观察可以发现 Foursquare 上的品牌页面分为两类：</p>
+<ul>
+<li>一类就是传统商家，例如星巴克，麦当劳，红牛。它们用优惠券或徽章来鼓励用户在自己的店面里签到。</li>
+<li>另一类是媒体或产品，例如 MTV，纽约时报，华尔街日报，Windows Live。它们热衷于展示品牌形象和产品新闻。</li>
+</ul>
+<p>OK，对于第一类客户（大多是连锁店）来说，商业模式很清晰：Foursquare 的作用就是一台打印优惠券的机器。而对于第二类客户来说，Foursquare 正努力成为一个基于用户关系的广告平台。</p>
+<h3>这会带来什么灵感？</h3>
+<p>比如说，一部好莱坞影片即将上映了，想利用 Foursquare 投放广告。它能做哪些事儿？</p>
+<p><span id="more-48130"></span></p>
+<ul>
+<li>建立一个影片相关的专属页面，让大家来关注。</li>
+<li>对影片中出现的特定地点给出背景描述，鼓励粉丝们去这些地方签到。</li>
+<li>讲述影片背后的故事，并利用 Foursquare 的关系网传播。</li>
+<li>在官网上添加 Foursquare 按钮，用户点击之后添加到 To-Do 列表。</li>
+</ul>
+<p>这就做成了高级别的“互动广告”，比 Twitter 和 Facebook 中的插入式广告更有趣一些，而且可实现广告直接转化为销售额（或下载量），广告主乐意看到这种结果。正因为有了品牌页面，Foursquare 也超越了通常意义上的 LBS 服务，让它的适用范围更广，扩展性更强。</p>
+<p>“在恰当的时间和恰当的地点做精细化的推广”，Foursquare 的尝试会有效吗？</p>
+	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/zhangh109/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/314.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/zhangh109/" style="color:#000;text-decoration:none;">张恒</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">先后在华为技术和炬力集成做码农和 PM，并在华强北摆弄过手机档口。致力移动互联网，LBS，垂直社区，新媒体观察，致力于 iSeed 访谈的推动和建设。</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:zhangh109@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://www.twitter.com/zhangh109" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://www.facebook.com/zhangh109" style="margin-right:14px;text-decoration:none;">Facebook</a>				<a target="_blank" href="http://www.zhihu.com/people/zhangh109" style="margin-right:14px;text-decoration:none;">知乎</a>			</div>
+		</div>
+	</div>
+<p><small>© 张恒 for <a href="http://www.ifanr.com">爱范儿 · Beats of Bits</a> |
+<a href="http://www.ifanr.com/48130">原文链接</a> ·
+<a href="http://www.ifanr.com/48130#comments">8 热评</a> ·
+<a href="http://www.weibo.com/ifanr">新浪微博</a> ·
+<a href="http://www.ifanr.com/feed">订阅全文</a> ·
+<a href="https://plus.google.com/114725869543399343504/">Google+</a> ·
+<a href="http://live.ifanr.com/">#ifanrlive</a> 
+</small></p>
+<div style="text-align:right;border-top:1px dotted #ccc">
+</div> 
+
+需要 Google+ 邀请？请[ <a href="http://goo.gl/qNFzT">点击申请</a> 
+ ] 并填写您的邮件地址，enjoy～]]></content:encoded>
+			<wfw:commentRss>http://www.ifanr.com/48130/feed</wfw:commentRss>
+		<slash:comments>8</slash:comments>
+		</item>
+		<item>
+		<title>iOS 越狱者的故事</title>
+		<link>http://www.ifanr.com/48090</link>
+		<comments>http://www.ifanr.com/48090#comments</comments>
+		<pubDate>Tue, 02 Aug 2011 08:22:28 +0000</pubDate>
+		<dc:creator>陈一斌</dc:creator>
+				<category><![CDATA[Apple/iOS]]></category>
+		<category><![CDATA[人物]]></category>
+		<category><![CDATA[Apple]]></category>
+		<category><![CDATA[ios]]></category>
+		<category><![CDATA[JaibreakMe]]></category>
+		<category><![CDATA[jailbreak]]></category>
+		<category><![CDATA[Nicholas Allegra]]></category>
+
+		<guid isPermaLink="false">http://www.ifanr.com/?p=48090</guid>
+		<description><![CDATA[自从 iPhone 诞生以来，越狱和反越狱的战争一直没有停止。最近 iOS 4.3.3 和 iPad 2 只需要通过 JailbreakMe 这个网页就可以简单的越狱了，真是出奇地方便，那么到底是谁设计出这个网页的呢？
+
+《福布斯》打探到它的作者是 19 岁的 Nicholas Allegra 。Allegra 是布朗大学（Brown University）的学生，去年冬天因为实习离开学校。除了学生、实习生的身份，他还是计算机安全方面的专家，他所做的就是：寻找 iPhone 的源代码里面的漏洞。Allegra 形容他的工作就像是“在写论文，你只需要寻找和检查错误”，而他其实“不知道为什么看起来比较在行。”对外，Allegra 的另外一个身份是“ Comex ”，这也是他唯一为外人所知的身份。
+
+<span class="readmore"><a href="http://www.ifanr.com/48090" title="iOS 越狱者的故事">阅读全文——共1665字</a></span>	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/yibie/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/243.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"/></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/yibie/" style="color:#000;text-decoration:none;">陈一斌</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">组织过软件汉化，写过时间管理文章，研究过个人知识管理。关注科技的发展，创投资讯、移动互联网。</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:gunshotbox@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://twitter.com/yibie" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://www.facebook.com/yibie" style="margin-right:14px;text-decoration:none;">Facebook</a>				<a target="_blank" href="http://weibo.com/yibie" style="margin-right:14px;text-decoration:none;">新浪微博</a>			</div>
+		</div>
+	</div>
+]]></description>
+			<content:encoded><![CDATA[<p style="text-align: center;"><a rel="attachment wp-att-48097" href="http://www.ifanr.com/48090/nicholas-comex"><img class="size-full wp-image-48097  aligncenter" title="Nicholas-Comex" src="http://www.ifanr.com/wp-content/uploads/2011/08/Nicholas-Comex.jpg" alt="" width="400" height="400" /></a></p>
+<p>自从 iPhone 诞生以来，越狱和反越狱的战争一直没有停止。最近 iOS 4.3.3 和 iPad 2 只需要通过 <a target="_blank" href="http://jailbreakme.com">JailbreakMe</a> 这个网页就可以简单的越狱了，真是出奇地方便，那么到底是谁设计出这个网页的呢？</p>
+<p>《福布斯》打探到它的作者是 19 岁的 Nicholas Allegra 。Allegra 是布朗大学（Brown University）的学生，去年冬天因为实习离开学校。除了学生、实习生的身份，他还是计算机安全方面的专家，他所做的就是：寻找 iPhone 的源代码里面的漏洞。Allegra 形容他的工作就像是“在写论文，你只需要寻找和检查错误”，而他其实“不知道为什么看起来比较在行。”对外，Allegra 的另外一个身份是“ Comex ”，这也是他唯一为外人所知的身份。</p>
+<p>他的成果就是两次放出 JailbreakMe，帮助成千上万台 iOS 设备越狱，而这个工具的目的并不是为了盗窃用户的信息或者是破坏系统的文件，它的存在是为了让用户能够安装任何他喜欢的应用。然而这损害了苹果（Apple）对他们产品的控制力。结果在 JailBreakMe 3 发布后仅仅 9 天，苹果就马上对系统进行升级，修补了漏洞，而且禁止 Apple Store 里面的 Wi-Fi 访问 JailbreakMe 网站。</p>
+<p>世界上第一个让 iPhone 越狱的黑客 Charlie Miller 评价说：“这些年来，我从不觉得有谁可以做到像他那样。小孩子们做到了我们完全没有听过的事情。他真的完全甩开我了。”</p>
+<p>有越狱的方法，就一定有防越狱方法，理论上苹果的设备的安全系数是很高的。<span id="more-48090"></span>根据《Mac Hacker&#8217;s Handbook》的作者之一 Dion Dai Zovi ，苹果为了防止黑客在 iOS 设备上运行任何他们自己的命令，从 2008 年开始成立了一个快速反应安全部门——code-singing，该部门做到了即使黑客找到了安全方面的漏洞，取得访问系统的权限，但也只能利用苹果预设在软件内部的命令来进行操作。上一年 JailbreakMe 2 出来之后，苹果对安全机制又进行一次升级，让黑客无法定位系统命令。</p>
+<p>JailbreakMe 3 如何做到别人做不到的呢？Allerga 发现 iOS 系统在调用 PDF 字体时存在一个漏洞，这个漏洞让他找到了隐藏起来的系统命令。通过这样的方式越狱，用户不仅仅对设备拥有完全的控制权，他们的机器在越狱之后每次重启后都不必运行额外代码，无疑大大增强了系统的稳定性。</p>
+<p>Dion Dai Zovi 认为 Allerga 的技艺相当高，JailbreakMe 的复杂程度，可媲美 Stuxnet 这个怀疑由美国政府或是以色列研制的，用于摧毁伊朗核设施的蠕虫病毒。Dai Zovi 对比了 Allerga 和国防部所资助的那些具备“持久领先优势”的黑客之间的技术水平，他说：“他（Allerga）差不多领先他们 5 年。”实际上，从 9 岁开始，Allerga 就开始自学微软开发的 Visual Basic 语言，当到大学修计算机科学这门课的时候，“我已经知道一切”。除了给 iOS 设备越狱之外，他以前还玩过 Wii Hacks。</p>
+<p>对于 Allerga 而言，这么做并不能给他带来经济利益，JailbreakMe 这个网站是免费的。他自认自己是“果粉“，他称 Android 为“敌人”。对他而言，越狱“只和挑战有关，远远超过其他东西”。</p>
+<p>然而，JailbreakMe 有可能违反了美国版权局（Copyright Office）制定的相关条例，让 Allerga 面临法律的指控。<a target="_blank" href="http://www.engadget.com/2011/01/12/sony-follows-up-officially-sues-geohot-and-fail0verflow-over-ps/">索尼（Sony）此前就运用这个条例起诉 George Hotz</a> ——这位既给 iPhone 又给 PS 3 越狱的人，结果是 Hotz 以后再也不允许进行任何和索尼产品有关的破解工作。尽管如此，Allerga 坚持他所做的工作是合法的。但他自己也承认，让手机越狱和黑客恶意的行为之间相差不大。</p>
+<p>至少 Allerga 在发布 JailbreakMe 3 之后，还发布了一个针对性的补丁，用于修补他越狱所利用的漏洞，这样用户就可以防止别的黑客出于恶意的目的利用这个漏洞。在苹果发布系统升级之前，他尽最大的努力保护了越狱 iOS 设备的安全。</p>
+<p>Via <a target="_blank" href="http://blogs.forbes.com/andygreenberg/2011/08/01/meet-comex-the-iphone-uber-hacker-who-keeps-outsmarting-apple/">Forbes</a></p>
+	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/yibie/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/243.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/yibie/" style="color:#000;text-decoration:none;">陈一斌</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">组织过软件汉化，写过时间管理文章，研究过个人知识管理。关注科技的发展，创投资讯、移动互联网。</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:gunshotbox@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://twitter.com/yibie" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://www.facebook.com/yibie" style="margin-right:14px;text-decoration:none;">Facebook</a>				<a target="_blank" href="http://weibo.com/yibie" style="margin-right:14px;text-decoration:none;">新浪微博</a>			</div>
+		</div>
+	</div>
+<p><small>© 陈一斌 for <a href="http://www.ifanr.com">爱范儿 · Beats of Bits</a> |
+<a href="http://www.ifanr.com/48090">原文链接</a> ·
+<a href="http://www.ifanr.com/48090#comments">20 热评</a> ·
+<a href="http://www.weibo.com/ifanr">新浪微博</a> ·
+<a href="http://www.ifanr.com/feed">订阅全文</a> ·
+<a href="https://plus.google.com/114725869543399343504/">Google+</a> ·
+<a href="http://live.ifanr.com/">#ifanrlive</a> 
+</small></p>
+<div style="text-align:right;border-top:1px dotted #ccc">
+</div> 
+
+需要 Google+ 邀请？请[ <a href="http://goo.gl/qNFzT">点击申请</a> 
+ ] 并填写您的邮件地址，enjoy～]]></content:encoded>
+			<wfw:commentRss>http://www.ifanr.com/48090/feed</wfw:commentRss>
+		<slash:comments>20</slash:comments>
+		</item>
+		<item>
+		<title>ifanr 访谈：租借来的钢琴梦</title>
+		<link>http://www.ifanr.com/47981</link>
+		<comments>http://www.ifanr.com/47981#comments</comments>
+		<pubDate>Tue, 02 Aug 2011 06:57:56 +0000</pubDate>
+		<dc:creator>吴 晔飞</dc:creator>
+				<category><![CDATA[iSeed]]></category>
+		<category><![CDATA[业界趋势/Trend]]></category>
+		<category><![CDATA[前缀分类]]></category>
+		<category><![CDATA[租琴吧]]></category>
+
+		<guid isPermaLink="false">http://www.ifanr.com/?p=47981</guid>
+		<description><![CDATA[最近和 租琴吧 的合伙人之一陈雷聊起了他的项目，这是个在线租借钢琴的服务，试图用低廉的价格把钢琴普及到每个家庭。相比他以往所从事的线下租琴服务，通过网络会有多少孩子的圆满钢琴梦呢？他的创业经历，能够给垂直类电商网站带来什么样的启发？
+
+同时，我们将持续进行国内创业团队的报道，这个板块被命名为 iSeed，希望看到更多创新的种子，如果你希望在 ifanr 展示你的创业理念和有趣之处，欢迎联系 info@ifanr.com。
+
+
+
+<span class="readmore"><a href="http://www.ifanr.com/47981" title="ifanr 访谈：租借来的钢琴梦">阅读全文——共2012字</a></span>	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/issawu/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/1287.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"/></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/issawu/" style="color:#000;text-decoration:none;">吴 晔飞 (faytoday)</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">像 Palm一样追求效率，iOS 一样注重风格，android 一样勇于挑战，BlackBerry 一样淡定自若。新的科技浪潮已经涌起，让我们一同下海冲浪吧！</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:faytoday@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://twitter.com/faytoday" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://weibo.com/1679273612" style="margin-right:14px;text-decoration:none;">新浪微博</a>			</div>
+		</div>
+	</div>
+]]></description>
+			<content:encoded><![CDATA[<h3><span style="font-weight: normal;"> </span></h3>
+<blockquote><p><img style="margin: 5px; padding-left: 0px; padding-right: 0px; float: left; padding-top: 0px; border: 0px;" src="http://www.ifanr.com/wp-content/uploads/2011/08/logo.jpg" border="0" alt="logo" width="150" height="61" align="left" />最近和 <a target="_blank" href="http://www.pianorent.cn/">租琴吧</a> 的合伙人之一陈雷聊起了他的项目，这是个在线租借钢琴的服务，试图用低廉的价格把钢琴普及到每个家庭。相比他以往所从事的线下租琴服务，通过网络会有多少孩子的圆满钢琴梦呢？他的创业经历，能够给垂直类电商网站带来什么样的启发？</p>
+<p>同时，我们将持续进行国内创业团队的报道，这个板块被命名为 iSeed，希望看到更多创新的种子，如果你希望在 ifanr 展示你的创业理念和有趣之处，欢迎联系 <a target="_blank" href="mailto:info@ifanr.com" target="_blank">info@ifanr.com</a>。</p>
+</blockquote>
+<h3>ifanr：通过网络平台租借钢琴的想法是在什么情况下产生的？</h3>
+<p><strong>陈雷：</strong>2003 至 2004 年期间我们通过销售钢琴体会到这个市场的饥渴，在简单尝试后我们开始向外界租借钢琴。随着规模不断扩大，我们也体会到了其中的困难。</p>
+<p>起初，二手钢琴是主要的租借来源，由于成色、品牌上的差异，使得我们很难给客户统一的价格。大部分的时候，我们的时间消耗在陪客户选琴、议价上。我们意识到，如果生意要做大，照这个方法下去是不行的。于是就有了租琴吧这个项目的想法。</p>
+<p><a rel="attachment wp-att-48021" href="http://www.ifanr.com/47981/cl"><img class="aligncenter size-large wp-image-48021" src="http://www.ifanr.com/wp-content/uploads/2011/08/cl-1024x764.jpg" alt="" width="491" height="366" /></a></p>
+<h3>ifanr：租赁包含了各个方面，比如钢琴成本、质量的控制，还有物流体系，你们是如何处理这些环节的？</h3>
+<p><strong>陈雷：</strong>从有租琴吧的想法，到产品上线实际上有几年过程，在这期间我们一直在探索这些环节的解决方法。</p>
+<p>成本方面，由于积累了数年销售钢琴的经验和渠道关系，我们基本掌握了定制优质钢琴的费用。这是我们低价的原因。</p>
+<p>质量方面，我们的团队有一套价格合理，耐用稳定的材料方案。我们研究过不同材质的音质，最终确定了几个理想的组合。</p>
+<p>物流方面，我们在长三角地区设立了几个运转仓库，并且依靠自建的运输队伍派送钢琴。我们也在考虑物流外包，但就目前尚未就价格方面达成协议。<span id="more-47981"></span></p>
+<h3>ifanr：现在是否已经遇到了同行竞争？</h3>
+<p><strong>陈雷：</strong>我们是第一批在线下开展租赁服务的琴行，那个时候竞争很激烈，由于琴源不同租售的价格很不稳定。就像前面说的，这种竞争最大的伤害还是客户对于琴行的信任，他们总觉得价格可以再低。</p>
+<p>如果我说，现在还没有遇到线上竞争者，你会相信吗？想要提供质量标准，音质可靠的钢琴不是那么容易的事情。你不仅需要音乐家的耳朵，还需要材料学家的渊博知识。如果你还在听任制造商提供给你的制造方案，那么我只能说，你已经出局了。</p>
+<p>但我相信，同行竞争一定会有的，我们从一开始就打价格牌，也是为了在这个行业树立较高的进入门槛。</p>
+<h3>ifanr：和线下租赁相比，线上租赁的客户群有什么不同？</h3>
+<p><strong>陈雷：</strong>当你要开一家琴行，无论是销售还是租借，你会选择哪个地方？商业小区周边，农田边？显然是前者。</p>
+<p>线下租赁因为盈利的需要必须坐落在购买力相对集中的区域，而人口基数还需要足够大。这种选择本身就造就了一种不公平：城里的孩子会弹琴，乡下孩子不懂琴。</p>
+<p>租琴吧的用户不再受到地域限制：</p>
+<p>郊区，农村的用户很多。自建的物流体系这个时候就非常有力了，对于覆盖范围内的农村家庭，我们不会说 No!</p>
+<p>然后是海归群体，他们有很强的成本意识。了解孩子对钢琴的需求并不稳定，对分期付款的方式非常欢迎。</p>
+<p>当然，普通白领家庭也是少不了的，我们把这些家庭从购买钢琴的负担里解脱出来，让孩子学习钢琴的机会和学习画画一样大。</p>
+<h3>ifanr：你们是如何推广租琴吧项目的？</h3>
+<p><strong>陈雷：</strong>线上广告为主，目前每月的花费在万元附近，百度广告为主，也会去社区里面发一些帖子。由于产品的特点很明显，只要有几个案例就很容易片地开花。</p>
+<p>线下则以客户口口相传为主，我相信，花 200 元把一台钢琴请回家这个故事还是有一定传诵度的。</p>
+<h3>ifanr：租琴吧项目现在遇到什么困难吗？资金方面的？人员方面的？</h3>
+<p><strong>陈雷：</strong>现在遇到的第一个困难是产能。当初设定的生产订单已经不能满足用户租赁订单的需求。由于钢琴不能一下线就送去客户家，还需要在工厂内经过一个稳定期才可以。所以我们预计还要有些时间才能达到供需平衡点。</p>
+<p>另一个困难是物流。我们的杭州、南京仓库已经在筹备中，但我们需要更快的速度去覆盖长三角。普通的物流公司无法解决钢琴的仓储问题，所以我们必须自己负担起来。</p>
+<p>还有就是市场的教育问题：如何说服家长让孩子学琴成了我们最头痛的问题。因为无论我们的价格做到多低，没有学琴的需求一切都是空谈。</p>
+<h3>ifanr：既然谈到了教育市场，你觉得现在市场对钢琴教育的误解是什么？</h3>
+<p><strong>陈雷：</strong>孩子学琴就象学游泳，学骑车一样，应该是一个基础技能。不一定要很精通，但至少要会。音乐让人高尚，这句话虽然很空，但你一定认可会音乐的人比不会音乐的人气质要好些。这就是会和不会的区别，我们希望通过租琴吧让更多的孩子学的上琴。</p>
+<p>租琴吧的目的是盈利，但因为我们让学琴的门槛足够低，这就给了很多家庭选择的权利。他们依然可以选择不学，但摆在面前的事实是：钢琴已经不是贵族教育了。</p>
+<h3>ifanr：感谢你接受我们的访问，祝租琴吧运营顺利。</h3>
+<p><strong>陈雷：</strong>感谢！</p>
+<p><br class="spacer_" /></p>
+<blockquote><p>最后，也邀请广大读者为陈雷出谋划策，为租琴吧提供金点子，我们将从中选出三位读者向其提供 99元/月，合同期为1年包含免费送琴服务（限定长江三角洲地区）的<strong>特别优惠</strong>。请在文章后参与评论，谢谢。</p>
+</blockquote>
+	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/issawu/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/1287.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/issawu/" style="color:#000;text-decoration:none;">吴 晔飞 (faytoday)</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">像 Palm一样追求效率，iOS 一样注重风格，android 一样勇于挑战，BlackBerry 一样淡定自若。新的科技浪潮已经涌起，让我们一同下海冲浪吧！</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:faytoday@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://twitter.com/faytoday" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://weibo.com/1679273612" style="margin-right:14px;text-decoration:none;">新浪微博</a>			</div>
+		</div>
+	</div>
+<p><small>© faytoday for <a href="http://www.ifanr.com">爱范儿 · Beats of Bits</a> |
+<a href="http://www.ifanr.com/47981">原文链接</a> ·
+<a href="http://www.ifanr.com/47981#comments">14 热评</a> ·
+<a href="http://www.weibo.com/ifanr">新浪微博</a> ·
+<a href="http://www.ifanr.com/feed">订阅全文</a> ·
+<a href="https://plus.google.com/114725869543399343504/">Google+</a> ·
+<a href="http://live.ifanr.com/">#ifanrlive</a> 
+</small></p>
+<div style="text-align:right;border-top:1px dotted #ccc">
+</div> 
+
+需要 Google+ 邀请？请[ <a href="http://goo.gl/qNFzT">点击申请</a> 
+ ] 并填写您的邮件地址，enjoy～]]></content:encoded>
+			<wfw:commentRss>http://www.ifanr.com/47981/feed</wfw:commentRss>
+		<slash:comments>14</slash:comments>
+		</item>
+		<item>
+		<title>诺基亚 500 的细节变化</title>
+		<link>http://www.ifanr.com/48054</link>
+		<comments>http://www.ifanr.com/48054#comments</comments>
+		<pubDate>Tue, 02 Aug 2011 02:26:53 +0000</pubDate>
+		<dc:creator>张恒</dc:creator>
+				<category><![CDATA[Nokia/Symbian/MeeGo]]></category>
+		<category><![CDATA[前缀分类]]></category>
+		<category><![CDATA[设备]]></category>
+		<category><![CDATA[500]]></category>
+		<category><![CDATA[Symbian]]></category>
+
+		<guid isPermaLink="false">http://www.ifanr.com/?p=48054</guid>
+		<description><![CDATA[诺基亚极少强调自家手机的应用处理器（AP）运行频率，但这一次是例外。官方博客的标题是《诺基亚 500 —— 开启塞班手机1G 时代》，其中最亮眼的关键词就是 1GHz 。
+
+这是一个不寻常的举动。
+
+如果把诺基亚 5800 开始的这套 434MHz 硬件配置算成第一代 Symbian^3 硬件（另一个名字是 S60 5th），N8 的 680MHz 算作第二代，今天 500 的 1GHz 算作第三代——它们共同的特点是：都属于 ARM 11 的范畴。
+
+<span class="readmore"><a href="http://www.ifanr.com/48054" title="诺基亚 500 的细节变化">阅读全文——共964字</a></span>	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/zhangh109/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/314.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"/></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/zhangh109/" style="color:#000;text-decoration:none;">张恒</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">先后在华为技术和炬力集成做码农和 PM，并在华强北摆弄过手机档口。致力移动互联网，LBS，垂直社区，新媒体观察，致力于 iSeed 访谈的推动和建设。</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:zhangh109@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://www.twitter.com/zhangh109" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://www.facebook.com/zhangh109" style="margin-right:14px;text-decoration:none;">Facebook</a>				<a target="_blank" href="http://www.zhihu.com/people/zhangh109" style="margin-right:14px;text-decoration:none;">知乎</a>			</div>
+		</div>
+	</div>
+]]></description>
+			<content:encoded><![CDATA[<p style="text-align: center;"><img style="margin: 2px auto 0px; padding-left: 0px; padding-right: 0px; float: none; padding-top: 0px; border: 0px;" src="http://www.ifanr.com/wp-content/uploads/2011/08/nokia500-2.jpg" border="0" alt="nokia500-2" width="580" height="374" /></p>
+<p>诺基亚极少强调自家手机的应用处理器（AP）运行频率，但这一次是例外。官方博客的标题是《<a target="_blank" href="http://blog.nokia.com.cn/2011/08/01/nuojiya-500-1g/">诺基亚 500 —— 开启塞班手机1G 时代</a>》，其中最亮眼的关键词就是 1GHz 。</p>
+<p>这是一个不寻常的举动。</p>
+<p>如果把诺基亚 5800 开始的这套 434MHz 硬件配置算成第一代 Symbian^3 硬件（另一个名字是 S60 5th），N8 的 680MHz 算作第二代，今天 500 的 1GHz 算作第三代——它们共同的特点是：都属于 ARM 11 的范畴。</p>
+<p>在 iPhone ，Android ，webOS 都选用 ARM Cortex A8 的今天，Symbian 仍然固守 ARM 11 ，这也从侧面印证了埃洛普以前的言论：“Symbian 庞大而不可维护，修改一些代码需要花很大的力气才能让它稳定下来，牵一发而动全身，难以为继。”诺基亚用户如果要享受 ARM Cortex A8 ，就等待 N9 和 Windows Phone 吧，或者买台 N900 怀旧。</p>
+<p>接着让我们好好瞧瞧这个平台，从诺基亚官方的<a target="_blank" href="http://www.developer.nokia.com/Devices/Device_specifications/500/">规格表</a>中寻找一些有用的信息。</p>
+<ul>
+<li>高端的 Symbian^3 机型支持蓝牙 3.0 标准，但诺基亚 500 只支持 2.1</li>
+<li>高端的 Symbian^3 机型支持 802.11 b/g/n ，但诺基亚 500 只支持 802.11b/g</li>
+<li>在 3G 网络连接上有进步，支持 HSDPA Cat10 14.4 Mbps 和 HSUPA Cat6 5.76 Mbps</li>
+<li>摄像头是 500 万像素 EoF 镜头</li>
+<li>整机重量 93 克</li>
+</ul>
+<p><span id="more-48054"></span></p>
+<p>这足以说明 500 这部机器在射频和基带上有较大的改动，主要目的还是为了降成本。这颗 500 万像素镜头也是大家很熟悉的低端配置了，跟 X3 这种级别的手机一样。重量减轻到了 93 克，说明内部电路的整合程度进一步提高，用料材质也朝着廉价方向发展。有消息称它的售价是 150 欧元，所以不要被 1GHz 这个字眼给迷惑了，它仍然主打中低端市场。</p>
+<p>再看系统和软件方面，也有很多细节：逐步抛弃 Ovi 品牌，把 Ovi Maps 称为 Nokia Maps，裁剪 Ovi Mail 和 Ovi Chat。并且预装 <a target="_blank" href="http://www.whatsapp.com">WhatsApp</a> 这款聊天软件，用它发送文字和图片信息可比短信便宜多了。</p>
+<p>至此，可以用一段话对它进行总结：</p>
+<p>以诺基亚 500 为代表的新一代 Symbian 平台，本着降低成本，低价快销的策略，试图在退出历史舞台之前尽力侵占中低端市场，用作掩护是的 1GHz  这个关键词。同时也开始树立诺基亚新的硬件配置标杆，成为打击其他中低端智能手机的宣传武器。</p>
+	<div id="ifanr_profile" style="border:1px solid #ccc;font-size:14px;margin:27px auto;font-family:Arial;">
+		<div style="overflow:hidden"> <a target="_blank" href="http://www.ifanr.com/author/zhangh109/" style="color:#000;text-decoration:none;"><img src="http://www.ifanr.com/wp-content/uploads/avatar/314.jpg" width="50" height="50" style="display:block;float:left;padding:0;margin:15px;_margin-left:7px;"></a>
+			<div style="text-align:left;line-height:23px;margin-left:80px">
+				<div style="padding:10px 10px 10px 0">
+					<div style="margin:0;font-size: 14px;"><strong><a target="_blank" href="http://www.ifanr.com/author/zhangh109/" style="color:#000;text-decoration:none;">张恒</a></strong></div>
+					<div style="font-size: 13px; line-height:20px;">先后在华为技术和炬力集成做码农和 PM，并在华强北摆弄过手机档口。致力移动互联网，LBS，垂直社区，新媒体观察，致力于 iSeed 访谈的推动和建设。</div>
+				</div>
+			</div>
+		</div>
+		<div style="text-align:right;border-top:1px dotted #ccc;padding:2px 10px; font-size:12px;">
+			<div>
+								<a target="_blank" href="mailto:zhangh109@gmail.com" style="margin-right:14px;text-decoration:none;">邮箱</a>				<a target="_blank" href="http://www.twitter.com/zhangh109" style="margin-right:14px;text-decoration:none;">Twitter</a>				<a target="_blank" href="http://www.facebook.com/zhangh109" style="margin-right:14px;text-decoration:none;">Facebook</a>				<a target="_blank" href="http://www.zhihu.com/people/zhangh109" style="margin-right:14px;text-decoration:none;">知乎</a>			</div>
+		</div>
+	</div>
+<p><small>© 张恒 for <a href="http://www.ifanr.com">爱范儿 · Beats of Bits</a> |
+<a href="http://www.ifanr.com/48054">原文链接</a> ·
+<a href="http://www.ifanr.com/48054#comments">35 热评</a> ·
+<a href="http://www.weibo.com/ifanr">新浪微博</a> ·
+<a href="http://www.ifanr.com/feed">订阅全文</a> ·
+<a href="https://plus.google.com/114725869543399343504/">Google+</a> ·
+<a href="http://live.ifanr.com/">#ifanrlive</a> 
+</small></p>
+<div style="text-align:right;border-top:1px dotted #ccc">
+</div> 
+
+需要 Google+ 邀请？请[ <a href="http://goo.gl/qNFzT">点击申请</a> 
+ ] 并填写您的邮件地址，enjoy～]]></content:encoded>
+			<wfw:commentRss>http://www.ifanr.com/48054/feed</wfw:commentRss>
+		<slash:comments>35</slash:comments>
+		</item>
+	</channel>
+</rss>

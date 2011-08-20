@@ -1,0 +1,835 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<feed xmlns='http://www.w3.org/2005/Atom'
+      xmlns:thr='http://purl.org/syndication/thread/1.0'
+      xml:base='http://www.tbray.org/ongoing/ongoing.atom'
+      xml:lang='en-us'>
+ <title>ongoing by Tim Bray</title>
+ <link rel='hub' href='http://pubsubhubbub.appspot.com/' />
+ <id>http://www.tbray.org/ongoing/</id>
+ <link href='./' />
+ <link rel='self' href='' />
+ <link rel='replies'       thr:count='101'       href='/home/tbray.org/www/html/ongoing/comments.atom' />
+ <logo>rsslogo.jpg</logo>
+ <icon>/favicon.ico</icon>
+ <updated>2011-08-01T13:48:24-07:00</updated>
+ <author><name>Tim Bray</name></author>
+ <subtitle>ongoing fragmented essay by Tim Bray</subtitle>
+ <rights>All content written by Tim Bray and photos by Tim Bray Copyright Tim Bray, some rights reserved, see /ongoing/misc/Copyright</rights>
+ <generator uri='/misc/Colophon'>Generated from XML source code using Perl, Expat, Emacs, Mysql, Ruby, Java, and ImageMagick.  Industrial-strength technology, baby.</generator>
+
+<entry xml:base='When/201x/2011/07/31/'>
+ <title>Still Life Paintings of Daisies</title>
+ <link href='Still-Life-Paintings-of-Daisies' />
+ <link rel='replies'        thr:count='0'        type='application/xhtml+xml'        href='Still-Life-Paintings-of-Daisies#comments' />
+ <id>http://www.tbray.org/ongoing/When/201x/2011/07/31/Still-Life-Paintings-of-Daisies</id>
+ <published>2011-07-31T12:00:00-07:00</published>
+ <updated>2011-07-31T22:58:28-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Arts/Photos' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Arts' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Photos' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>One of my favorite online activities is the discussion of photography and (often very loosely) related subjects over at  <a href='http://pdml.net'>PDML</a>.  A thread last March made me want to take pictures of daisies to serve as examples to support a point I was trying to make on the subject of nothing less than Art Itself.  Unfortunately, this far north (and with a cool spring) they&#x2019;ve been hard to come by.  But I found some.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>One of my favorite online activities is the discussion of photography and
+(often very loosely) related subjects over at 
+<a href="http://pdml.net">PDML</a>.  A thread last March made me want
+to take pictures of daisies to serve as examples to support a point I was
+trying to make on the subject of nothing less
+than Art Itself.  Unfortunately, this far north (and with a cool spring)
+they’ve been hard to come by.  But I found some.</p>
+<img src="RUNE2415.png" alt="Daisies" />
+<p>I’d posted some other shots of flowers, acknowledging that they were
+steeped in cliché.  This provoked a polite storm of only moderately-cynical
+argument, in which one gentleman offered “I think about the retirement home
+with little old ladies taking oil paint lessons so that they can do still life
+paintings of daisies.”  Since then I’ve been hell-bent on making a still-life
+of some daisies.</p>
+<img src="RUNE2419.png" alt="Daisies" />
+<p>This probably isn’t it, since the subjects of Still Lives are often
+inanimate not to mention dead, and these here daisies were swaying
+briskly in the wind and drinking in the sun.  But still, I’ve been hunting these little
+suckers for months, so here they are.</p>
+<img src="RUNE2421.png" alt="Daisies" />
+<p>Now I have to remember what it was I was trying to say about Art.</p>
+</div></content></entry>
+
+<entry xml:base='When/201x/2011/07/31/'>
+ <title>Good News-Biz News</title>
+ <link href='Talking-Points-Memo' />
+ <link rel='replies'        thr:count='3'        type='application/xhtml+xml'        href='Talking-Points-Memo#comments' />
+ <id>http://www.tbray.org/ongoing/When/201x/2011/07/31/Talking-Points-Memo</id>
+ <published>2011-07-31T12:00:00-07:00</published>
+ <updated>2011-07-31T10:20:31-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Business/Publishing' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Business' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Publishing' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World/Politics' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Politics' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>People still read news, but the howls of pain from the  business grow always louder; the news about the news is all layoffs and paywalls.  I&#x2019;d like to offer a cheery counter-example.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>People still read news, but the howls of pain from the 
+business grow always louder; the news about the news is all layoffs
+and paywalls.  I’d like to offer a cheery counter-example.</p>
+<p>Let’s start with a boring corporate press release:
+<a href="http://talkingpointsmemo.com/tpm-ad-sales-revenue-up-88-in.php">TPM
+Ad Sales Revenue Up 88% In First Half of 2011</a>.  “TPM” 
+stands for
+<a href="http://talkingpointsmemo.com/">Talking Points Memo</a>.  I’m a fan.
+Like most people who find politics and policy interesting, I’ve enjoyed the
+last few years of US politics.  In particular I’ve been 
+watching America’s self-induced “debt-ceiling” meltdown with a sick
+fascination.
+And like most people with interesting jobs, I don’t have that
+much time to invest in being a politics junkie.</p>
+<p>So, what I do is read TPM.</p>
+<h2 id='p-1'>Back Story</h2>
+<p>TPM started as the personal blogging vehicle of
+<a href="http://en.wikipedia.org/wiki/Josh_Marshall">Josh Marshall</a>; I
+followed a link from somewhere to the blog back in 2003 or so and was pretty
+well instantly hooked.</p>
+<p>So were a lot of other people, and several times a year on TPM there are
+stories about how they’re opening a new office or hiring a new reporter or
+whatever.</p>
+<p>Also, within a few weeks of my starting at Google, I noticed on
+<a href="http://twitter.com/joshtpm">Josh Marshall’s tweetstream</a> that they
+were having severe pain with an upgrade in their Google ads machinery.  I
+managed to get lucky and find the right Googler to tell, and the story had a
+reasonably happy ending.  But along the way, I learned the realities
+about the kind of dollars a successful site like TPM can pull in, and let me
+tell you, they’re eye-opening.</p>
+<h2 id='p-2'>Conclusion</h2>
+<p>It’s obvious: Right now in the twenty-first century, it’s perfectly
+possible to run a healthy, profitable, growing business built entirely on news
+and opinion.  Thus, the incumbents who are shrinking and screaming and cutting
+and charging must, in some respect, be doing it wrong.</p>
+<p>The reasons why TPM has succeeded seem straightforward; let me try to
+capture a few:</p>
+<h2 id='p-4'>Voice</h2>
+<p>TPM’s is strong and personal. Originally it was just
+Marshall’s, but he has brought other voices to the fore who, while broadly
+consistent with his, are clear and distinct.</p>
+<h2 id='p-5'>Writing</h2>
+<p>It’s good; polished, well-proofread, nearly 100% free of grammar and usage
+glitches.  And at the same time, lighthearted, colloquial, transparent.</p>
+<h2 id='p-8'>Reporting</h2>
+<p>I’ve read a lot of different sources on this subject matter, and I think
+TPM offers the best reporting you can get.
+They tell the story, in a way that’s free of cant and
+jargon, of what the dynamics are in any of Washington’s debates; who matters,
+which issues are the sticking points, and what’s likely to happen.</p>
+<p>They find out first, then they dive deeper.  That’s what reporting’s
+supposed to be.</p>
+<h2 id='p-6'>Passion</h2>
+<p>There is a school of thought out there holding that all politicians are
+thieves, wastrels, and fools; so hopelessly corrupt that “don’t bother voting;
+it just encourages them”.</p>
+<p>Which is bullshit.  Politicians are <em>people</em>
+and sure enough, some are corrupt or foolish or just mean.  But a high
+proportion really do think that government is something that is not only
+necessary but a good place to invest effort with the goal of improving
+the world.  And the ones I’ve known have been, by and large, pretty smart.</p>
+<p>TPM is appropriately (and amusingly) cynical about
+misbehaving politicoes (check out the hilarious
+<a href="http://talkingpointsmemo.com/news/2010/12/your_nominees_for_the_2010_golden_duke_awards.php">Golden
+Duke Awards</a>).  But it’s obvious at every moment that they really do
+believe in politics as a grand civic process; that what happens in
+Washington is real and matters; and that on most of the big issues, some of
+the proposed paths are better and some are worse.</p>
+<h2 id='p-7'>Transparency</h2>
+<p>TPM is not neutral; its viewpoint is mainstream-US-liberal,
+which is to say they’re right-wing by world standards, and baby-eating commies
+in Republican eyes.</p>
+<p>They are remorseless in their attacks on Republican illogic, stupidity, and
+duplicity.  But they are also pretty ruthless with misbehaving Democrats, both
+on matters of policy and (increasingly, of late) tactics.</p>
+<p>They are 100% transparent in their biases, and I’m certain many Republican insiders,
+who disagree profoundly, still read TPM because they value the quality of the
+reporting and analysis.</p>
+<p>There may be one or two Republican readers out there, and to them I’m
+sorry, but in the Dubya-and-since era, treating that party as substantially
+either crazy or 
+stupid is a fairly mainstream position.  Possibly the Republicans are
+right that homosexuality weakens marriage and tax cuts don’t cause deficits
+and imprisoning a world-leading proportion of your population increases public
+safety and deregulating the finance industry is good economics and invading
+large Middle-Eastern nations (then staying) improves America’s security, as does spending
+more on the military than the rest of the world put together. And
+maybe the 
+rest of the world is wrong on these things.  I doubt it, though.</p>
+<p>But I digress.</p>
+<h2 id='p-9'>The Good News</h2>
+<p>We need the news business to keep us informed and manage democracy
+in a sane way.  Here we have an existence proof that the business, run
+correctly, is still a good one to be in.</p>
+</div></content></entry>
+
+<entry xml:base='When/201x/2011/07/27/'>
+ <title>Suggestions and Additions</title>
+ <link href='Suggestions' />
+ <link rel='replies'        thr:count='3'        type='application/xhtml+xml'        href='Suggestions#comments' />
+ <id>http://www.tbray.org/ongoing/When/201x/2011/07/27/Suggestions</id>
+ <published>2011-07-27T12:00:00-07:00</published>
+ <updated>2011-07-27T22:28:39-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World/Life Online' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Life Online' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>These are the ways that you circle people on <a href='https://plus.google.com'>Google+</a>.   The streams of names, most with little photos but some naked, burn time but I can&#x2019;t stop.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>These are the ways that you circle people on
+<a href="https://plus.google.com">Google+</a>.  
+The streams of names, most
+with little photos but some naked, burn time but I can’t stop.</p>
+<ol>
+<li><p>The word “friend” groans under an overload of meaning.</p></li>
+<li><p>There are so many names that I think I should know but probably I really
+don’t, they’re just names that sound like you should know them.</p></li>
+<li><p>Some people have funny names.  We all know the controversy about G+ and
+Real Names, but some of the funny names are really Real.</p>
+<p>Sometimes the humor
+is a tribal thing; to an English speaker, names from the Balkans and
+parts of Africa are most inclined to be humorous.
+I wonder if having a
+funny name changes your life?</p></li>
+<li><p>I have a short attention span; have never held a job for a
+decade. I’m sad, watching names go by of
+people who were colleagues, realizing in so many cases that there’s
+little connection left.</p>
+<p>I should hang on tighter to people.</p></li>
+<li><p>There’s a real pleasure in dismissing suggestions for people you
+despise.  
+Sometimes they come back and you can reject them again!</p></li>
+<li><p>Sometimes a name pops up and you’ll smile because they’re good
+people you haven’t thought of recently.</p></li>
+<li><p>Putting a name in circle is a Secret Activity. 
+I wonder how well you have to get to know someone before they “Show you
+their circles”?</p></li>
+</ol>
+<p>After I typed this, I checked those lists and found the names of
+<a href="https://plus.google.com/104869833877339397479">Ken Gardner</a>, 
+<a href="https://plus.google.com/105703208184646222757">Jarrad Blackshear</a>, 
+<a href="https://plus.google.com/101505889021595741586">主役ちゃん</a>,
+<a href="https://plus.google.com/105770711929721820826">Caron Levy</a>,
+<a href="https://plus.google.com/108704215810307213851">Bor Fekon</a>, 
+<a href="https://plus.google.com/110112795725092334951">Ed Giblett</a>, 
+<a href="https://plus.google.com/114899845560334637612">Jon Bosak</a>,
+<a href="https://plus.google.com/109301427702438627230">Ricardo Acuña</a>, and 
+<a href="https://plus.google.com/107429251778993111827">Jilliana Natalie</a>.</p>
+</div></content></entry>
+
+<entry xml:base='When/201x/2011/07/21/'>
+ <title>Japanese Brazilian Market</title>
+ <link href='Liberdade-Market' />
+ <link rel='replies'        thr:count='3'        type='application/xhtml+xml'        href='Liberdade-Market#comments' />
+ <id>http://www.tbray.org/ongoing/When/201x/2011/07/21/Liberdade-Market</id>
+ <published>2011-07-21T12:00:00-07:00</published>
+ <updated>2011-07-21T23:30:41-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Arts/Photos' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Arts' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Photos' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World/Places/Brazil' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Places' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Brazil' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>S&#xe3;o Paulo claims to have the largest &#x201c;Japantown&#x201d; in the world; it&#x2019;s called <a href='http://en.wikipedia.org/wiki/Liberdade'>Liberdade</a>.  Herewith three photos of items on sale there.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>São Paulo claims to have the largest “Japantown” in the world; it’s called
+<a href="http://en.wikipedia.org/wiki/Liberdade">Liberdade</a>.  Herewith
+three photos of items on sale there.</p>
+<img src="RUNE2056.png" alt="On sale in Liberdade, São Paulo" />
+<p>It’s a big city; claims to be the largest, with fifteen million souls or
+more,
+in both the Western and Southern hemispheres. It’s not scenic or glamorous or
+touristic or fashionable, mostly; it’s about people focusing on working their
+way into the First World.</p>
+<h2 id='p-1'>Liberdade</h2>
+<p>It’s jam-packed and cheery and culturally variegated to a
+ridiculous extreme; worth walking around.  This visitor from the other
+hemisphere and perimeter of the New World felt at home; I’m used to a crowd
+where the faces represent every possible permutation of the gene pool.  On the
+other hand I’m also used to a cheery cacaphony of languages; but São Paulo is
+almost as unilingually Portuguese as Tokyo is Japanese.</p>
+<img src="RUNE2064.png" alt="On sale in Liberdade, São Paulo" />
+<p>Anyone who’s studied a South-European language will be able to make out
+quite a bit of Portuguese text, but the vowels and consonants might as well
+come from Timbuktu or Kuala Lumpur.</p>
+<img src="RUNE2065.png" alt="On sale in Liberdade, São Paulo" />
+<p>Our Brazilian host Bruno, a Google colleague with whom I’ve spent
+considerable time, showed me some sort of official document and I saw that
+his middle name was Takahashi.  A fresh glance at his face and I realized I’d
+been blinded by name and accent; he wouldn’t draw a second glance on a Tokyo
+subway car. We see through our minds not our eyes.</p>
+</div></content></entry>
+
+<entry xml:base='When/201x/2011/07/18/'>
+ <title>Piracy</title>
+ <link href='Piracy' />
+ <link rel='replies'        thr:count='12'        type='application/xhtml+xml'        href='Piracy#comments' />
+ <id>http://www.tbray.org/ongoing/When/201x/2011/07/18/Piracy</id>
+ <published>2011-07-18T12:00:00-07:00</published>
+ <updated>2011-07-18T22:20:41-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Business/Mobile' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Business' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Mobile' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>I&#x2019;d like to draw your attention to <a href='http://blog.gameized.com/2011/07/12/the-huge-success-of-an-appstore-failure/'>The huge success of an AppStore failure</a> by Lu&#xed;s Fonseca of <a href='http://gameized.com/'>GAMEized</a>. It&#x2019;s the sad story of a mobile-game developer running into the reality that there&#x2019;s a lot of pirated software out there. I think the obvious conclusions are wrong, mostly.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>I’d like to draw your attention to
+<a href="http://blog.gameized.com/2011/07/12/the-huge-success-of-an-appstore-failure/">The
+huge success of an AppStore failure</a> by Luís Fonseca of
+<a href="http://gameized.com/">GAMEized</a>.
+It’s the sad story of a mobile-game developer running into the reality that
+there’s a lot of pirated software out there.
+I think the obvious conclusions are wrong, mostly.</p>
+<p>(GAMEized had perhaps the worst possible outcome, observing piracy rates on
+the order of 90%.  They got unlucky, having been prominently
+featured on one of the biggest steal-apps-here sites.)</p>
+<p>Let me start by saying that this isn’t an Apple-specific problem; there are
+pirates on the Android side, too.  It’s not even a mobile-apps problem,
+<i>per se</i>, but a monetizing-bags-of-bits problem.</p>
+<p>Countermeasures are the conventional response:  Keep the pirates from
+getting their hands on the bits, stop ’em getting the warez to
+their customers, and prevent the customers from using these ill-gotten goods.
+What GAMEized in their blog calls “functional counter-piracy safeguards”.</p>
+<h2 id='p-4'>What I Don’t Believe</h2>
+<p>Let me call out two quotes from that 
+post:</p>
+<blockquote><p><i>It’s reasonable to assume that many if not most of the
+16,000 users playing FingerKicks on Apple’s Game Center probably wouldn’t be
+playing a pirated version if it weren’t so readily available</i></p>
+<p><i>The game’s popularity was skyrocketing but the losses from piracy were
+mounting</i></p> 
+</blockquote>
+<p>The first quote sort of makes sense: if you could stop piracy, fewer people
+would play pirated games.  But consider the second, in particular the phrase “losses
+from piracy”.  It presupposes that there was a ton of potential revenue out
+there that GAMEized would have taken home, but for the pirates.</p>
+<p>Why on earth would anyone believe that?  This postulates that there are
+a significant number of people who <em>could</em> pay for software if they
+wanted to, <em>would</em> have paid $0.99 for this game, and thus
+GAMEized lost that money.</p>
+<p>I don’t buy it.  The pirates’ customers are people who go to the
+trouble of signing up 
+with flagrantly-illegal warez sites, either because they’re penniless
+teenagers or just sleazy; people whose time is worth so little they’re
+willing to skulk around the dark side to save a buck.  Once again, let me
+borrow words from the blog: “people who willingly crack existing apps just to
+save — or steal — 99¢”.  Well, yeah; and you seriously think that you’re going
+to make money on one-time sales of bags-of-bits to this flavor of pond scum?
+On what planet?</p>
+<p>Fortunately, the planet contains huge numbers of people who <em>will</em>
+cough up a buck for a nifty-looking app.  Enough to have taken this market
+from zero to billions since 2007.  There’s business out there for
+smart, creative people.  But let’s draw the right lessons.</p>
+<h2 id='p-1'>Choose Your Business Model</h2>
+<p>I’m still convinced that free downloads followed up by in-app revenue
+is an immensely better approach than a one-time charge for
+access to a bag of bits.</p>
+<p>Yes, the <i>banditos</i> can sometimes hack the in-app buying
+transaction, but it’s a <em>lot</em> more work so the economics are against
+them.</p>
+<h2 id='p-2'>Competing With “Free”</h2>
+<p>Apple, with the iTunes store and its successors, proved that 
+you can do this; “easy and convenient” can win.</p>
+<p>So maybe the single
+best thing the app retailers can do is to make the buying experience
+increasingly quick, lightweight, friction-free, and delightfully
+entertaining.  After all, most people like to shop sometimes.</p>
+<p>It’s still worthwhile for the Apple and Android communities to
+whack the pirate moles whenever our hammers have a target in reach.</p>
+<p>But still, the best antipiracy tactic isn’t a negative countermeasure,
+it’s being proactively and positively delightful.</p>
+</div></content></entry>
+
+<entry xml:base='When/201x/2011/07/17/'>
+ <title>Tisa</title>
+ <link href='Tisa' />
+ <link rel='replies'        thr:count='13'        type='application/xhtml+xml'        href='Tisa#comments' />
+ <id>http://www.tbray.org/ongoing/When/201x/2011/07/17/Tisa</id>
+ <published>2011-07-17T12:00:00-07:00</published>
+ <updated>2011-07-17T23:04:31-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Technology/Web' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Technology' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Web' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Technology/Publishing' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Publishing' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>A couple of days ago <a href='/ongoing/When/201x/2011/07/15/Gone-Neuton'>I switched</a> the <a href='http://www.google.com/webfonts/specimen/Neuton'>Neuton</a> typeface into this space, via <a href='http://www.google.com/webfonts/#ChoosePlace:select'>Google Web Fonts</a>.  I liked it but a lot of others didn&#x2019;t, and it turned out that for some reason, on Windows it just didn&#x2019;t work as a body font; I suspect it&#x2019;d be fine for display purposes (as in, for headlines).  So, on to Plan B: <a href='http://typekit.com/fonts/ff-tisa-web-pro'>FF Tisa Web Pro</a>, from <a href='http://typekit.com/'>Typekit</a>.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>A couple of days ago
+<a href="/ongoing/When/201x/2011/07/15/Gone-Neuton">I switched</a> the
+<a href="http://www.google.com/webfonts/specimen/Neuton">Neuton</a> typeface
+into this space, via
+<a href="http://www.google.com/webfonts/#ChoosePlace:select">Google Web
+Fonts</a>.  I liked it but a lot of others didn’t, and it turned out that for
+some reason, on Windows it just didn’t work as a body font; I suspect it’d be fine for
+display purposes (as in, for headlines).  So, on to Plan B:
+<a href="http://typekit.com/fonts/ff-tisa-web-pro">FF Tisa Web Pro</a>, from
+<a href="http://typekit.com/">Typekit</a>.</p>
+<h2 id='p-1'>Why Tisa?</h2>
+<p>I spent a really excessive amount of time trying this font and that, but
+at the end of the day the choice was easy.  I wanted something that was really
+easy to read, unobtrusive, and yet struck my eye as “modern”, whatever that
+means.</p>
+<p>I was also struck by the narrative: “Mitja Miklavčič drew FF Tisa to meet
+the technological and aesthetic requirements of modern magazine use.” Because,
+all these years into the blog experience, I now think that’s what this wants to
+be: a modern magazine.  This has become clearer with the rise of Twitter
+and Tumblr pushing the limits of the short form, and then of Facebook and
+Google+, working on publishing-as-conversation.</p>
+<p>Also, I’m prone to italics, and some otherwise-great fonts
+tend to crumble when bent over. That’s a big problem with Georgia,
+which has otherwise served me pretty well here all these years.</p>
+<h2 id='p-2'>Mechanics</h2>
+<p>Setting up Typekit fonts is not quite as much of a no-brainer as are Google
+Web Fonts.  Their “Kit Editor” Web application is nicely-designed but
+accumulates entropy and has to be relaunched every so often.</p>
+<p>The real pain-in-the-butt is caching.  The font download for Tisa (I left
+out the bold-italic variant) is 110K; so yes, please cache it.
+Except for when I’m twiddling CSS
+selectors, or trying to A/B back and forth between a couple of fonts.  For Safari
+in particular, if you want to un-cache a font, you have to take the ship up
+and nuke the site from orbit; <i>it’s the only way to be sure</i>.</p>
+<p>What I eventually did for A/B testing was to set up three copies
+of the same page, and hand-edit them to put <code>class="F1"</code> on each
+paragraph tag in the first, <code>class="F2"</code> in the second, and so on.
+Then I set up a Typekit kit including all three fonts with <code>.F1</code>,
+<code>.F2</code>, and <code>.F3</code> selectors.  Kind of gross, but it got
+me there; there’s just no substitute for looking at the options
+side-by-side.</p>
+<h2 id='p-3'>Finance</h2>
+<p>I signed up for Typekit’s “Portfolio” package at $49.99/year. This strikes
+me as a fair price for what they offer, and I have no urge to “own” a font.
+If Typekit becomes unreasonable down the road, I’m sure there will be lots of
+competitive options.</p>
+</div></content></entry>
+
+<entry xml:base='When/201x/2011/07/10/'>
+ <title>Women&#x2019;s World Cup Quarterfinals</title>
+ <link href='Womens-World-Cup' />
+ <link rel='replies'        thr:count='3'        type='application/xhtml+xml'        href='Womens-World-Cup#comments' />
+ <id>http://www.tbray.org/ongoing/When/201x/2011/07/10/Womens-World-Cup</id>
+ <published>2011-07-10T12:00:00-07:00</published>
+ <updated>2011-07-15T17:19:12-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Sports/Soccer' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Sports' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Soccer' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>I hadn&#x2019;t planned it, but am having a slow single-parent weekend and tuned in by accident. I was hooked in the first 30 seconds and watched three of the four.  I probably won&#x2019;t be able to take in any more, but I&#x2019;d unhesitatingly recommend that you do if you can.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>I hadn’t planned it, but am having a slow single-parent weekend and
+tuned in by accident. I was hooked in the first 30 seconds and watched three of
+the four.  I probably won’t be
+able to take in any more, but I’d unhesitatingly recommend that you do if you
+can.</p>
+<p>Compared to the men’s event, it lacks some power and pace; but
+there’s no shortage of elegance or precision or passion or courage or
+desperation.  My heart was in my throat over and over.</p>
+<p>There’s less of the childish cowardly diving and related
+sleaze that taints the men’s version; but it’s not entirely on the up-and-up.
+In particular the Brazilian women need to un-learn some of the lessons they’ve
+absorbed from those other players with Y chromosomes.</p>
+<p>One thing the women’s game does have is a small but noticeable contingent
+in warpaint; I’m talking makeup, and not just a little bit either.  It’s
+interesting that some wear it but others don’t.  I can’t, as a mainstream straight
+man, claim that I look at women the same way I do at men, and that’s just
+fine.
+The faces that touched my heart were mostly without warpaint; but not entirely.</p>
+<h2 id='p-1'>France over England, on penalties</h2>
+<p>Fair result.  The English were gallant but the French were deeper and
+better conditioned.  It really shouldn’t have needed the penalties,
+particularly since England was hardly there in the overtime.  Both of the
+regular-time goals were brilliant, particularly Jill Scott’s opener.</p>
+<h2 id='p-2'>Germany 0 Japan 1</h2>
+<p>I started watching this match neutral but the Japanese women won my
+heart with their extreme courage against the heavily-favored (not to mention larger)
+hosts.</p>
+<p>Maruyama’s extra-time goal combined raw speed and neurosurgical finesse.  I
+don’t see any of the postgame write-ups bowing in the direction of Japan’s
+back line and keeper Kaihori Ayumi; which is stupid, because you don’t take home
+a 1-0 win against Germany without something special there.  Kaihori was quiet but I
+thought magical.</p>
+<h2 id='p-3'>USA over Brazil, on penalties</h2>
+<p>OMG. This game had more drama than the last two or three rounds’ worth of
+games in the last men’s World Cup.</p>
+<p>I went in mildly pro-Brazil because they were the underdogs and after all I
+spent last week there.  But, like the German audience, I was more and more in
+the US camp the further the game went on.</p>
+<p>A few points:</p>
+<ul>
+<li><p>The US opener was technically an own-goal, which is irrelevant.
+That cross in from the left was totally lethal; put the ball in at that angle
+and pace ten times and you’ll score five of them, doesn’t matter who it went
+off.</p></li>
+<li><p>I’m not sure if the ref’s call on the repeated penalty shot was right
+or wrong, but I respectfully disagree with Jason Snell’s take in
+<a href="http://americanmccarver.com/post/7465221334">There’s Always Hope</a>
+on the excellent new <cite>American McCarver</cite>.  Marta was going to score
+and was dragged down and the right outcome was a red card and Brazilian goal.</p></li>
+<li><p>If FIFA doesn’t like people like Snell instantly assuming corruption on
+every vaguely-shady play, they should stop being so lame and corrupt.</p></li>
+<li><p>Brazil’s Marta is a story that writes itself. She runs faster and
+shoots better than anyone else in women’s football and it’s not close;
+that second goal was pure voodoo. But on the pitch
+she’s a nasty piece of work; I thought the whistles and boos she was getting
+from the German stands were well-earned.  Still, it’s a pity that she won’t
+be playing in the semis and final.</p></li>
+<li><p>That Rapinoe-Wambach nuclear strike in the dying seconds. Wow... things like
+that are why live sports is about the only thing I turn on the TV for.
+Nobody could ever dream of scripting it.</p></li>
+</ul>
+<p>Anyhow, the better team on the day won, and yep, Hope Solo is a
+superstar, warpaint or not.</p>
+<p>I probably can’t spare the time off Wednesday for the semis, and hope to be
+on an island next weekend, so that’s about it for me and the Women’s World
+Cup.  But I want to thank them all for giving so much of themselves this
+weekend; I was enthralled.</p>
+</div></content></entry>
+
+<entry xml:base='When/201x/2011/07/15/'>
+ <title>Somewhat Dutch-inspired</title>
+ <link href='Gone-Neuton' />
+ <link rel='replies'        thr:count='15'        type='application/xhtml+xml'        href='Gone-Neuton#comments' />
+ <id>http://www.tbray.org/ongoing/When/201x/2011/07/15/Gone-Neuton</id>
+ <published>2011-07-15T12:00:00-07:00</published>
+ <updated>2011-07-15T12:00:00-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Technology/Web' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Technology' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Web' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Technology/Publishing' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Publishing' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>The full quote reads &#x201c;Neuton is a clean, dark, somewhat Dutch-inspired serif font which reminds you a little of Times.&#x201d;  I just now stripped the old serif/sans choice out of my blog (less marginalia!) and dropped in <a href='http://www.google.com/webfonts/specimen/Neuton'>Neuton</a> for all the body text.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>The full quote reads “Neuton is a clean, dark, somewhat Dutch-inspired
+serif font which reminds you a little of Times.”  I just now stripped the old
+serif/sans choice out of my blog (less marginalia!) and dropped in
+<a href="http://www.google.com/webfonts/specimen/Neuton">Neuton</a> for all
+the body text.</p>
+<p><i>[Update: Neuton, we hardly knew ye. It’s gonzo,
+<a href="/ongoing/When/201x/2011/07/17/Tisa">replaced by FF Tisa Web Pro</a>.]</i></p>
+<p><i>[Update: I have verified that Neuton has horribly-malformed lower-case
+t’s on Windows, both XP and Win7, both IE and Firefox.  Blecch.]</i></p>
+<p><i>[Update: There was a horrible editing error that caused severe breakage in
+the HTML header. I have no idea how it ever worked. Fixed, I think.]</i></p>
+<p>Using a
+<a href="http://www.google.com/webfonts/">Google web font</a> is just as
+simple as they claim.  I haven’t noticed a slowdown in the page load but I haven’t
+tested yet on a slow network.</p>
+<p>This follows some weeks of
+<a href="http://en.wikipedia.org/wiki/Decision_theory#Paradox_of_choice">paradox-of-choice</a>
+paralysis; there are just too many typefaces there that tickle my eye.  So I
+sucked it up and pulled the trigger.  I can always change my mind later.</p>
+<p>I have two next-steps in mind.  First, to find another pretty face for the
+headers.  Second, to go poke around
+<a href="http://typekit.com/">Typekit</a>, drop a few bucks, and adopt one of
+the high-gloss classics.</p>
+<p>I had been rendering the body text in Georgia at 0.95em.  Neuton really
+didn’t seem happy at anything less than a full 1.0em, which required a bunch
+of irritating little adjustments to margins and line-heights all over the page.</p>
+<p>In conclusion: First of all, thanks and goodbye to
+<a href="http://en.wikipedia.org/wiki/Georgia_(typeface)">Georgia</a>, which
+has served me well for years and remains a damn fine all-purpose Web serif
+choice.
+Second, thanks to
+<a href="https://profiles.google.com/artistenator/posts">Brian Zick</a> for
+Neuton.</p>
+<p>And finally, all this is mostly irrelevant, since almost everyone
+who reads this blog is, like you, reading it in whatever some feed reader
+thinks will make it look good, not the way I set it up.</p>
+</div></content></entry>
+
+<entry xml:base='When/201x/2011/07/08/'>
+ <title>Porto Alegre &#x2014; Usina do Gas&#xf4;metro</title>
+ <link href='Porto-Alegre-Usino-Gasometro' />
+ <link rel='replies'        thr:count='2'        type='application/xhtml+xml'        href='Porto-Alegre-Usino-Gasometro#comments' />
+ <id>http://www.tbray.org/ongoing/When/201x/2011/07/08/Porto-Alegre-Usino-Gasometro</id>
+ <published>2011-07-08T12:00:00-07:00</published>
+ <updated>2011-07-08T19:47:41-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World/Places/Brazil' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Places' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Brazil' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Arts/Photos' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Arts' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Photos' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>This is a power-generating plant on the waterfront that has been converted for art-and-culture purposes; there&#x2019;s a cinema, a caf&#xe9;, a children&#x2019;s space, and lots of nice walls for hanging pictures.  We got there as dusk was beginning to fall; a treat for the eyes and camera.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>This is a power-generating plant on the waterfront that has been
+converted for art-and-culture purposes; there’s a cinema, a café, a children’s
+space, and lots of nice walls for hanging pictures.  We got there as dusk was
+beginning to fall; a treat for the eyes and camera.</p>
+<p>Geeks will agree that there’s a vaguely Aperture-Science feel to the place
+(for the rest, that’s a videogame allusion).  These three shots are just me
+admiring the space.</p>
+<img src="RUNE1930.png" alt="The interior of Porto Alegre’s Usina do Gasômetro" />
+<img src="RUNE1962.png" alt="The interior of Porto Alegre’s Usina do Gasômetro" />
+<img src="RUNE1972.png" alt="The interior of Porto Alegre’s Usina do Gasômetro" />
+<p>There were at least three art presentations; this is from <cite>gravetos
+armados</cite>, an installation by
+<a href="http://antonioaugustobueno.blogspot.com/">Antônio Augusto Bueno</a> that really reached
+out to me. I had actually picked this one to show
+before I noticed the shape in the shadows.</p>
+<img src="RUNE1941.png" alt="From “gravetos armados” by Antônio Augusto Bueno" />
+<p>Here are a couple of eye-candy morsels; shadows and shapes.</p>
+<img src="RUNE1936.png" alt="Shadowed portaled wall at Porto Alegre’s Usina do Gasômetro" />
+<img src="RUNE1994.png" alt="Intersecting shadowed beams at Porto Alegre’s Usina do Gasômetro" />
+<p>The citizens of Porto Alegre should be proud of this space, it’s a fine
+thing.</p>
+<img src="RUNE1985.png" alt="Blue window on shadowed wall at Porto Alegre’s Usina do Gasômetro" />
+</div></content></entry>
+
+<entry xml:base='When/201x/2011/07/08/'>
+ <title>Porto Alegre&#x2019;s Central Market</title>
+ <link href='Porto-Alegre-Market' />
+ <link rel='replies'        thr:count='0'        type='application/xhtml+xml'        href='Porto-Alegre-Market#comments' />
+ <id>http://www.tbray.org/ongoing/When/201x/2011/07/08/Porto-Alegre-Market</id>
+ <published>2011-07-08T12:00:00-07:00</published>
+ <updated>2011-07-08T14:27:56-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World/Places/Brazil' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Places' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Brazil' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Arts/Photos' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Arts' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Photos' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>Like the rest of town, it lacks the extremes of drama and beauty that conventionally attract tourists. We went there on Wikipedia&#x2019;s recommendation and I&#x2019;m glad, since I got that you&#x2019;re-a-<em>long</em>-way-away-from-home shiver too rarely enjoyed by over-frequent travelers, but always by those who find their photographs rather than planning them.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>Like the rest of town, it lacks the extremes of drama and beauty that
+conventionally attract tourists. We went there on Wikipedia’s recommendation
+and I’m glad, since I got that you’re-a-<em>long</em>-way-away-from-home
+shiver too rarely enjoyed by over-frequent travelers, but always by those who
+find their photographs rather than planning them.</p>
+<p>Boy, was it ever packed on a Friday afternoon.</p>
+<img src="RUNE1893.png" alt="Central market at Porto Alegre" />
+<p>It’s mostly about raw materials for food and drink.  This being Brazil,
+“drink” includes
+<a href="http://en.wikipedia.org/wiki/Mate_(beverage)">mate</a>, and here are some of your options for making it; I
+enjoyed the polished hand-lettering.  I have so far failed to appreciate mate,
+but I think I’m in a majority; most people (not just Brazilians) seem to like it.</p>
+<img src="RUNE1889.png" alt="Tea leaves for  maté at Porto Alegre central market" />
+<p>This isn’t the only picture where I had to squeeze between strangers to get
+any sort of view of the goods on offer.</p>
+<p>There was bric-a-brac as well as food.</p>
+<img src="RUNE1907.png" alt="Bric-a-brac for sale at Porto Alegre central market" />
+<p>Over at Google+ I ran a
+<a href="https://plus.google.com/107606703558161507946/posts/BPgAQrHrphy">picture of an antique-camera stand</a>, worth a glance if you
+care about such things.</p>
+<p>But really, it was mostly food.  This gentleman had enough English to
+tell me that the cod on offer was Norwegian. <em>The best in the world!</em> he
+claimed.</p>
+<img src="RUNE1891.png" alt="Cod for sale at Porto Alegre central market" />
+<p>Elsewhere in the market was a smallish low-roofed L-shaped alley
+where all the stalls sold fish; the fishmongers thumped their countertops and
+cried their wares with cheery intensity.  But the pictures didn’t come out.</p>
+<p>Some of the food was appetizing in essence and presentation.</p>
+<img src="RUNE1902.png" alt="Butcher stand at Porto Alegre central market" />
+<p>Then there was this.</p>
+<img src="RUNE1913.png" alt="Pigs’ heads for sale at Porto Alegre central market" />
+<p>I tweeted about this one, remarking “The birds are no longer angry.”  Some
+wag tweeted back: “No, they’re around the corner in the poultry section.”</p>
+<p>If you’re in town, it’s worth a visit.</p>
+</div></content></entry>
+
+<entry xml:base='When/201x/2011/07/06/'>
+ <title>Porto Alegre &#x2014; Around Town</title>
+ <link href='Porto-Alegre-1' />
+ <link rel='replies'        thr:count='1'        type='application/xhtml+xml'        href='Porto-Alegre-1#comments' />
+ <id>http://www.tbray.org/ongoing/When/201x/2011/07/06/Porto-Alegre-1</id>
+ <published>2011-07-06T12:00:00-07:00</published>
+ <updated>2011-07-06T19:50:11-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World/Places/Brazil' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Places' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Brazil' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Arts/Photos' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Arts' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Photos' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>It&#x2019;s not the most glamorous or glittery place in the world, but it&#x2019;s nice and friendly.  For one reason or another I took a whole lot of pictures in <a href='http://en.wikipedia.org/wiki/Porto_Alegre'>Porto Alegre</a>.  I think I&#x2019;ll have to break them up across a few entries here.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>It’s not the most glamorous or glittery place in the world, but it’s nice
+and friendly.  For one
+reason or another I took a whole lot of pictures in
+<a href="http://en.wikipedia.org/wiki/Porto_Alegre">Porto Alegre</a>.  I think
+I’ll have to break them up across a few entries here.</p>
+<p>It’s a waterfront town, but the water’s fresh, where a bunch of rivers come
+together and bunch up enough to be
+<a href="http://en.wikipedia.org/wiki/Gua%C3%ADba_Lake">called a lake</a>.  I noticed a few
+nice-looking cottages on islands, and it works just as well as the ocean for
+hosting sunsets.</p>
+<img src="RUNE1862.png" alt="Sunset from Porto Alegre over the Rio Guaíba" />
+<p>There are a whole lot of places to eat, and the food we got was pretty good.
+I particularly enjoyed this one; the band jammed into the corner
+pumping out the Brazilian beats while the waiters swarmed the floor with
+Brazilian beers.  The beats, which were melodious and hot, pleased me more
+than the beers, which were bland.</p>
+<img src="RUNE1869.png" alt="An upscale sandwich joint with bear and beats in Porto Alegre" />
+<p>Over on Google Plus I published
+<a href="https://plus.google.com/107606703558161507946/posts/fb6ZAa3Vid6">another picture of the band</a> with a couple dancing.</p>
+<p>The food at this joint was upscale sandwiches, really big but surprisingly
+light and airy; I didn’t walk away feeling over-stuffed.</p>
+<p>I mentioned that the town isn’t strong on glamor and glitter; in fact, it’s
+kind of beat-up looking.  This didn’t bother me because it made for
+interesting pictures.  Here we have some graffiti that I liked.</p>
+<img src="RUNE1878.png" alt="Graffiti in Porto Alegre" />
+<p>And here the central market (I’ll have some pictures from inside in
+another post) with a really interesting (I thought)
+background.</p>
+<img src="RUNE1883.png" alt="Central Market in Porto Alegre with elderly buildings behind" />
+<p>One evening the sponsors of FISL put on a big <cite>Churrasco</cite> meal.
+This is the “Brazilian-style” barbecue that’s penetrated the
+world, where the waiters circulate with chunks of meat on swords and you eat as
+much as you want.  This meal was accompanied by a song-and-dance performance,
+and I’ll leave you with a picture from that.</p>
+<img src="RUNE2006.png" alt="Brazilian traditional dancer at Porto Alegre" />
+</div></content></entry>
+
+<entry xml:base='When/201x/2011/07/06/'>
+ <title>FISL12</title>
+ <link href='FISL' />
+ <link rel='replies'        thr:count='2'        type='application/xhtml+xml'        href='FISL#comments' />
+ <id>http://www.tbray.org/ongoing/When/201x/2011/07/06/FISL</id>
+ <published>2011-07-06T12:00:00-07:00</published>
+ <updated>2011-07-06T07:38:59-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World/Places/Brazil' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Places' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Brazil' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Arts/Photos' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Arts' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Photos' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>I&#x2019;m not sure what the F and I stand for, but the last two letters are for &#x201c;Software Livre&#x201d;; <a href='http://softwarelivre.org/fisl12'>FISL</a> is the largest <a href='http://en.wikipedia.org/wiki/Free_and_open_source_software'>FLOSS</a> event in the Southern Hemisphere, and brought me to <a href='http://en.wikipedia.org/wiki/Porto_Alegre'>Porto Alegre</a> for a few days.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>I’m not sure what the F and I stand for, but the last two letters are for
+“Software Livre”;
+<a href="http://softwarelivre.org/fisl12">FISL</a> is the largest
+<a href="http://en.wikipedia.org/wiki/Free_and_open_source_software">FLOSS</a>
+event in the Southern Hemisphere, and brought me to
+<a href="http://en.wikipedia.org/wiki/Porto_Alegre">Porto Alegre</a> for a few
+days.</p>
+<p>The crowd is young (a lot of students) and serious.  You’d think setting up
+a Tux-cart would be fun.</p>
+<img src="RUNE1855.png" alt="Setting up a Tux-cart at FISL" />
+<p>Along with all the talks, which are pretty similar in content to what you’d
+find at a FLOSS event anywhere, there’s a trade show, which I found kind of
+baffling.  Big Oracle booth... huh?  Various organs of government... well, OK,
+I guess.  Little Web shops of one flavor or another, sure enough.  But where I
+come from, free-software organizations don’t have gleaming glass booths, and
+GNU/Linux distros don’t use Russian politicians in their marketing.</p>
+<img src="RUNE1849.png" alt="Glossy glass free-software booth at FISL" />
+<img src="RUNE1852.png" alt="Alt Linux advertises their use by Putin and Medvedev" />
+<p>There was some cool geek fun.</p>
+<img src="RUNE1857.png" alt="Technology with sparkly lights at FISL" />
+<p>And the speakers were, obviously enough, my very own tribe.</p>
+<img src="RUNE1859.png" alt="In the speakers’ room at FISL" />
+<p>The people who’ve been pulling this together (for 12 years now!) should be
+proud of themselves.  It’s so nice to mingle with herds of geeks who are doing
+the thing for its own sake.</p>
+</div></content></entry>
+
+<entry xml:base='When/201x/2011/07/05/'>
+ <title>Road Music</title>
+ <link href='Traveling-Music' />
+ <link rel='replies'        thr:count='13'        type='application/xhtml+xml'        href='Traveling-Music#comments' />
+ <id>http://www.tbray.org/ongoing/When/201x/2011/07/05/Traveling-Music</id>
+ <published>2011-07-05T12:00:00-07:00</published>
+ <updated>2011-07-05T21:05:09-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Technology/Audio' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Technology' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Audio' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>I spend quite a bit of time in hotel rooms.  This is how I arrange my musical backdrop.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>I spend quite a bit of time in hotel rooms.  This is how I arrange my
+musical backdrop.</p>
+<p>I’m sure this is painfully obvious to most of you, but there are a couple
+of new-ish technologies involved, and it can be a real quality-of-life
+improver, so here goes anyhow.</p>
+<p>First of all, you need to go buy a wire like this.  I forget what it’s
+called at the nearest big box, but it’s cheap; there’s a small modern headphone jack at each end.  Six
+feet (2m) or so seems about right.</p>
+<img src="RUNE2072.png" alt="Audio connection cable" />
+<p>Next, you need to have a lot of music available.  Since I now have eleven
+thousand songs in the
+<a href="http://music.google.com/music/">Google Music Beta</a>, and usually
+there’s one way or another to manage Internet, I’m set.  But a
+normal MP3 player’s worth of tunes will do.</p>
+<p>Finally, you need to poke around behind the TV and clock radio in the hotel
+room to find an audio jack.  This is where the recipe most often breaks
+down, because you need at least one such device in the room.  Every such
+product built in the last couple of years has one, but obviously there are
+rooms without the necessary.
+My average isn’t
+100%, but it’s better than half.</p>
+<p>These devices will have smallish non-audiophile speakers, but they are
+guaranteed to be better than those on whatever mobile device is hosting (or
+streaming) your music.</p>
+<p>That’s all folks; plug A into B, figure out how to switch the music box’s
+input, and tune out the traffic or neighbor or hallway or elevator noise.
+Sweet dreams.</p>
+</div></content></entry>
+
+<entry xml:base='When/201x/2011/07/04/'>
+ <title>Things About Google+</title>
+ <link href='Google-plus' />
+ <link rel='replies'        thr:count='21'        type='application/xhtml+xml'        href='Google-plus#comments' />
+ <id>http://www.tbray.org/ongoing/When/201x/2011/07/04/Google-plus</id>
+ <published>2011-07-04T12:00:00-07:00</published>
+ <updated>2011-07-04T20:14:39-07:00</updated>
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World/Life Online' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='The World' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Life Online' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Technology/Publishing' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Technology' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Publishing' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Business/Google' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Business' />
+ <category scheme='http://www.tbray.org/ongoing/What/' term='Google' />
+ <summary type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>No, I haven&#x2019;t figured it out.  Neither has the rest of the world.  Which means that now is a good time to write about it, while our impressions remain plastic.</div></summary>
+<content type='xhtml'><div xmlns='http://www.w3.org/1999/xhtml'>
+<p>No, I haven’t figured it out.  Neither has the rest of the world.  Which
+means that now is a good time to write about it, while our impressions remain
+plastic.</p>
+<ol>
+<li><p><b>Famous people</b>: The “Suggestions” list kept including them, and I
+kept adding them reflexively, because I follow some of them on Twitter.  Then
+I stopped, because I follow some of them on Twitter.  I particularly enjoyed declining
+the opportunity to add Jason Calacanis.</p></li>
+<li><p><b>Pictures</b>: I publish the ones I really care about here on the
+blog.  “Really care about” means thinking a bit and some time in
+Lightroom color-correcting, cropping, and so on.  I don’t see any reason to
+change that part; I want stuff that I care about on my own piece of the
+Internet, not anybody else’s, even my employer’s.</p>
+<p>But for lightweight picture sharing, where I want to attach some words and
+maybe bring a smile to a few faces, G+ seems just the ticket.  Consider
+<a href="https://plus.google.com/107606703558161507946/posts/j2CnP6whtBk">The
+birds are no longer angry</a>.</p></li>
+<li><p><b>Apologies are in order</b>:
+There were people, both outsiders and insiders, who went on
+the record with statements about how “Google will never get social” or how the
+G+ approach was totally stupid.  <em>Eat them words.</em>
+I’m not brave enough to predict how the G+ story is going to play
+out, but it’s an outstanding piece of design and engineering work; I tip my
+hat to the team.</p></li>
+<li><p><b>Circles</b>: So far, I’ve mostly posted to the world, but I think
+I’m doing it wrong.  I have this blog and Twitter for broadcasting purposes.
+So I’ve cooked up a few circles and I’ll make a point of trying to cut the
+“Public” posts to maybe just the picture sharing, and route the rest to one
+circle or another.</p></li>
+<li><p><b>Math math math</b>: I’d rather not join the parade of people
+shouting for one new feature or another, because it seems to me that G+ as it
+stands hits a decent
+<a href="/ongoing/When/200x/2004/01/14/TPSM-8020">80/20 point</a>.  Having said that, Circles
+are, mathematically speaking,
+<a href="http://en.wikipedia.org/wiki/Set_(mathematics)">sets</a>, and I think
+set arithmetic would come in real handy: “Post this to the intersection of my
+Photogeeks circle and my Vancouver circle”.  I can think of lots of other
+amusing permutations.  The reason I bring this up is because I smile, envisioning a
+future in which math teachers use social-network constructs to explain Set
+Theory.</p></li>
+<li><p><b>At-Work+</b>: Would a sandboxed internal version of something like G+ be useful where
+you work?</p></li>
+</ol>
+<h2 id='p-2'>Lucky</h2>
+<p>Us, I mean; lucky to be alive just now, watching these big games play
+out.  Billions of dollars are at stake but that’s a sideshow. We’re working
+out ways for the people of the future to talk with each other.  There are
+lots of possible outcomes; the ones that seem likely to me
+look mostly pretty decent.</p>
+</div></content></entry>
+
+</feed>

@@ -1,0 +1,24 @@
+$def with(delivery)
+$var currentpage = 'delivery'
+
+<div id="delivery">
+<ol style="max-width: 600%; text-align: left; margin-left: 15%; margin-bottom: 30px">
+<li><p>投递地址不是合法邮件地址将无法收到每日投递的MOBI文件</p></li>
+<li><p>投递地址为<em>@kindle.com</em>或者<em>@free.kindle.com</em>的用户<br/>请在亚马逊账户中心Digital Content -> Manage Your Kindle -> Personal Document Settings中<br/>将@skypiea.info加入Approved Personal Document E-mail List</p></li>
+<li><p>投递时间的时区为+08:00</p></li>
+</ol>
+
+<form action="delivery" method="POST">
+<label for="delivery_actived">
+<input id="delivery_actived"
+       name="actived" type="checkbox" $:{'checked="true"' if delivery.actived==1 else ''} value="1"/>开启投递</label>&nbsp;&nbsp;
+<label for="delivery_address">邮件地址</label>
+<input id="delivery_address" name="address" type="text" value="$delivery.address"/>&nbsp;&nbsp;
+<label for="delivery_hour">投递时间</label>
+<select id="delivery_hour" name="hour" value="$delivery.hour">
+$for i in xrange(24):
+  <option value="$i" $:{'selected="true"' if i==delivery.hour else ''}>${'%02d:00'%i}</value>
+</select>&nbsp;&nbsp;
+<input type="submit" value="保存设置"></input>
+</form>
+<div>

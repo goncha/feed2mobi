@@ -1,0 +1,1856 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+	<title>Planet Emacsen</title>
+	<link rel="self" href="http://planet.emacsen.org/atom.xml"/>
+	<link href="http://planet.emacsen.org/"/>
+	<id>http://planet.emacsen.org/atom.xml</id>
+	<updated>2011-08-04T03:02:35+00:00</updated>
+	<generator uri="http://www.planetplanet.org/">http://intertwingly.net/code/venus/</generator>
+
+	<entry>
+		<title type="html">Jesse Alama: delete-selection-mode: For when you just want to kill your text</title>
+		<link href="http://emacs-fan.blogspot.com/2011/08/delete-selection-mode-for-when-you-just.html"/>
+		<id>tag:blogger.com,1999:blog-32597201.post-6183164109215499337</id>
+		<updated>2011-08-03T13:43:59+00:00</updated>
+		<content type="html">&lt;p&gt;Even though I've been using emacs for a very long time, sometimes even very basic features of the editor can remain unknown.  It is both refreshing and annoying to discover that something that has made editing slightly annoying can be addressed simply and directly.&lt;/p&gt;&lt;p&gt;In my case, I have to confess that I didn't know about &lt;tt&gt;&lt;a href=&quot;http://www.emacswiki.org/emacs/DeleteSelectionMode&quot;&gt;delete-selection-mode&lt;/a&gt;&lt;/tt&gt;.  (Am I still allowed to be part of the emacs club?)&lt;/p&gt;&lt;p&gt;&lt;tt&gt;delete-selection-mode&lt;/tt&gt; is a minor mode that simply deletes the selected region of text if one starts typing something.  This is how it generally works on Mac OS X (and probably other OSs as well): if I select a region of text, typing something will simply dump the selected region of text, insert what I just typed, and adjust the cursor accordingly.  In emacs, for some reason, this is &lt;i&gt;not&lt;/i&gt;, by default, how regions of text behave.  By default, if one has a selected region of text and types something, the region is left &lt;i&gt;unchanged&lt;/i&gt;, and the typed text is inserted wherever the cursor was.  Normally, if one would want to delete a region (as opposed to kill it for possible future yanking), one would actually kill it, and simply not use the new text on the kill ring.  The result is mildly uncomfortable: it's wasteful to cut text that one doesn't intend to paste.&lt;/p&gt;&lt;p&gt;But with &lt;tt&gt;delete-selection-mode&lt;/tt&gt; turned on, one can simply hit &lt;tt&gt;DEL&lt;/tt&gt; when there's a region of text to be deleted, and that text is genuinely delete (à la &lt;tt&gt;delete-region&lt;/tt&gt;), and not put on the kill ring.  And when one wants to simply overwrite a region of text, just start typing; there's no need to (wastefully) kill the region first, and then start typing.&lt;/p&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://blogger.googleusercontent.com/tracker/32597201-6183164109215499337?l=emacs-fan.blogspot.com&quot; width=&quot;1&quot; /&gt;&lt;/div&gt;</content>
+		<author>
+			<name>Jesse Alama</name>
+			<email>noreply@blogger.com</email>
+			<uri>http://emacs-fan.blogspot.com/</uri>
+		</author>
+		<source>
+			<title type="html">Emacs: Your Next Text Editor</title>
+			<link rel="self" href="http://www.blogger.com/feeds/32597201/posts/default"/>
+			<id>tag:blogger.com,1999:blog-32597201</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html" xml:lang="en">Irreal: Some More Emacs Tips</title>
+		<link href="http://irreal.org/blog/?p=185"/>
+		<id>http://irreal.org/blog/?p=185</id>
+		<updated>2011-08-03T11:44:50+00:00</updated>
+		<content type="html" xml:lang="en">&lt;p&gt;&lt;a href=&quot;http://gurmeet.net/&quot;&gt;Gurmeet Manku&lt;/a&gt; shares some &lt;a href=&quot;http://xenon.stanford.edu/~manku/dotemacs.html&quot;&gt;Emacs Tips n Tricks for Everybody&lt;/a&gt; on his homepage. A lot of these will be familiar to most Emacs users and some are things I wouldn’t want to do but it’s a nice list of things you can add to your &lt;code&gt;.emacs&lt;/code&gt; file to make your development work easier and more enjoyable. &lt;/p&gt;
+&lt;p&gt; One interesting example is a pair of functions that swap the numeric keys with the shifted numeric keys (1 ↔ !, 2 ↔ @, 3 ↔ #, etc.). The idea is that this makes typing faster when editing C/C++ code. A companion function maps &lt;code&gt;__&lt;/code&gt; into &lt;code&gt;-&amp;gt;&lt;/code&gt; and &lt;code&gt;..&lt;/code&gt; into &lt;code&gt;[]&lt;/code&gt; for pointer notation and array indexing. I’m not sure I’d like this but if you do a lot of C/C++ and can deal with the schizophrenia it could be a time saver. &lt;/p&gt;
+&lt;p&gt; Another useful trick is to add &lt;/p&gt;
+&lt;pre class=&quot;src src-emacs-lisp&quot;&gt;(modify-syntax-entry ?- &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;w&quot;&lt;/span&gt;)
+&lt;/pre&gt;
+&lt;p&gt; to your &lt;code&gt;emacs-lisp-mode-hook&lt;/code&gt; so that &lt;code&gt;-&lt;/code&gt; is not considered a word delimiter. Similarly, &lt;/p&gt;
+&lt;pre class=&quot;src src-emacs-lisp&quot;&gt;(modify-syntax-entry ?_ &lt;span style=&quot;color: #8b2252;&quot;&gt;&quot;w&quot;&lt;/span&gt;)
+&lt;/pre&gt;
+&lt;p&gt; when added to &lt;code&gt;c-mode-common-hook&lt;/code&gt; will prevent &lt;code&gt;_&lt;/code&gt; from being a word delimiter. I don’t know why this isn’t built into Emacs. &lt;/p&gt;
+&lt;p&gt; There are a lot of other ideas in the article and it’s well worth a look if you’re interested in ways of streamlining your Emacs work flow. &lt;/p&gt;</content>
+		<author>
+			<name>jcs</name>
+			<uri>http://irreal.org/blog</uri>
+		</author>
+		<source>
+			<title type="html">Irreal » Emacs</title>
+			<subtitle type="html">The minds had long ago come up with a proper name for it; they called it the Irreal, but they thought of it as Infinite Fun. That was what they really knew it as. The Land of Infinite Fun. --Iain M. Banks, Excession</subtitle>
+			<link rel="self" href="http://irreal.org/blog/?tag=emacs&amp;feed=rss2"/>
+			<id>http://irreal.org/blog</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Tycho Garen: Interfaces in Enterprise Software</title>
+		<link href="http://tychoish.com/rhizome/interfaces-in-enterprise-software/"/>
+		<id>http://tychoish.com/rhizome/interfaces-in-enterprise-software/</id>
+		<updated>2011-08-03T04:00:00+00:00</updated>
+		<content type="html">&lt;p&gt;This post is a continuation of my &lt;span class=&quot;createlink&quot;&gt;&lt;a href=&quot;http://tychoish.com/ikiwiki.cgi?page=cyborg%2Fhuman-solution&amp;amp;from=rhizome%2Finterfaces-in-enterprise-software&amp;amp;do=create&quot; rel=&quot;nofollow&quot;&gt;?&lt;/a&gt;human solution to IT and IT policy
+issues&lt;/span&gt; series. This post discusses a couple of
+ideas about &quot;enterprise&quot; software, and its importance the kind of
+overall analysis of technology that this posts (and others on this
+site) engage in. In many ways this is a different angle on some of the
+same questions addressed in my &quot;&lt;a href=&quot;http://tychoish.com/./rhizome/caring-about-java/&quot;&gt;Caring about Java&lt;/a&gt;&quot;
+post: boring technologies are important, if not outright interesting.&lt;/p&gt;
+
+&lt;p&gt;There are two likely truths about software that make sense upon
+reflection, but are a bit weird when you think about it: &lt;/p&gt;
+
+&lt;ol&gt;
+&lt;li&gt;&lt;p&gt;The majority of software is used by a small minority of users. This
+includes software that's written for and used by other software
+developers, infrastructure, and the applications which are written
+for &quot;internal use.&quot; This includes various database, CRM,
+administrative tools, and other portals and tools that enterprise
+uses. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;Beautiful and intuitive interfaces are only worth constructing if
+your software has a large prospective userbase &lt;em&gt;or&lt;/em&gt; if you're
+writing software where a couple of competing products share a set
+of common features. Otherwise there's no real point to designing a
+really swanky user interface. &lt;/p&gt;&lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;I'm pretty sure that these theories hold up pretty well, and are
+reasonably logical. The following conclusions are, I think,
+particularly interesting:&lt;/p&gt;
+
+&lt;ul&gt;
+&lt;li&gt;&lt;p&gt;People, even non-technical users, adjust to really horrible user
+interfaces that are non-intuitive all the time. &lt;/p&gt;&lt;/li&gt;
+&lt;li&gt;&lt;p&gt;We think that graphical user interfaces are required for
+technological intelligibility, while the people who design software
+use GUIs as minimally as possible, and for the vast majority of
+software the user interface is the weakest point. &lt;/p&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;The obvious questions then, is: why don't we trust non-technical users
+with command lines? &lt;span class=&quot;createlink&quot;&gt;&lt;a href=&quot;http://tychoish.com/ikiwiki.cgi?page=discourse&amp;amp;from=rhizome%2Finterfaces-in-enterprise-software&amp;amp;do=create&quot; rel=&quot;nofollow&quot;&gt;?&lt;/a&gt;Discuss&lt;/span&gt;?&lt;/p&gt;</content>
+		<author>
+			<name>Tycho Garen</name>
+			<uri>http://tychoish.com/</uri>
+		</author>
+		<source>
+			<title type="html">tychoish</title>
+			<subtitle type="html">tychoish</subtitle>
+			<link rel="self" href="http://tychoish.com/index.rss"/>
+			<id>http://tychoish.com/</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Vincent Toups: A Survey of Syntactic Extension Techniques in the Lisp Family of Languages (Part 1)</title>
+		<link href="http://dorophone.blogspot.com/2011/07/survey-of-syntactic-extension.html"/>
+		<id>tag:blogger.com,1999:blog-8115687546775931822.post-197215827206061145</id>
+		<updated>2011-08-02T13:31:07+00:00</updated>
+		<content type="html">&lt;p&gt;Lisp is famous for, and in some sense, defined by (see
+&lt;a href=&quot;http://www.paulgraham.com/icad.html&quot;&gt;this&lt;/a&gt;), syntactic extension.  Syntactic extension is Lisp is
+a great example of a design trade off - Lisp picks a relatively high
+level representation of its base syntax (lists of lists and atoms),
+and then writing syntactic extensions is greatly simplified, because
+they simply transform that high level representation.  Syntax
+extensions don't have to worry about the nitty-gritty details of
+turning character streams into some kind of program representation
+(that is done for you, by the reader), and the code representation is
+simple enough to modify with the language itself, so extensions are
+easy to write.  The trade off is that you have to stick to Lisp's
+baseline syntax (unless you get really tricky).  What this means, in
+practice, is that even extended Lisp syntax will still be a list of
+lists and atoms (and chock full of parentheses, for which the language
+family is famous).&lt;/p&gt;
+
+&lt;p&gt;&lt;img alt=&quot;Transformation.&quot; src=&quot;http://dl.dropbox.com/u/1076954/syntax-extension.png&quot; title=&quot;&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Despite the simplicity of this scheme, wherein the reader transforms
+text into a code-representation, which is then transformed by macros,
+and then finally converted to machine code or bytecode or interpreted,
+various Lisp dialects have approached the question of syntactic
+extension differently.  Since I've recently gotten interested in macro
+hygiene, I thought it would be nice to write a series of posts about
+the different kinds of macro transformations available in various Lisp
+dialects.&lt;/p&gt;
+
+&lt;h2&gt;picoLisp&lt;/h2&gt;
+
+&lt;p&gt;&lt;a href=&quot;http://picoLisp.com/5000/-2.html&quot;&gt;picoLisp&lt;/a&gt; is a pretty bizarre Lisp variant which doesn't
+enjoy wide use, and has a pretty amazing set of &lt;a href=&quot;http://software-lab.de/doc/faq.html&quot;&gt;philosophical
+underpinnings&lt;/a&gt;.  PicoLisp is sufficiently different from
+other Lisps that I hesitated to cover it here, but it turns out to be
+extremely useful from a pedagogical point of view.  How come?  Because
+the code/data relationship, which is important in all Lisps, plays an
+even more central role in picoLisp.  We are going to end this post
+talking about hygienic macros in Scheme, and picoLisp, in a sense,
+represents the polar opposite approach, with other Lisps occupying an
+arguably uncomfortable or impure middle ground.  Code and data are so
+tightly coupled in picoLisp that the above picture of how syntactic
+extension doesn't even really apply.&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;center&gt;
+&lt;img alt=&quot;Smaller is Better&quot; src=&quot;http://dl.dropbox.com/u/1076954/david-goliath.jpg&quot; title=&quot;&quot; /&gt;
+&lt;/center&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;center&gt;&lt;a href=&quot;http://en.wikipedia.org/wiki/Goliath&quot;&gt;Smaller is Better&lt;/a&gt;&lt;/center&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;h3&gt;Code is Data&lt;/h3&gt;
+
+&lt;p&gt;So what do we really mean when we say code is data?  This is a bit
+fatuous, in a way - code is text, after all.  All Lisp variants I know
+still require the use to write text out into a file, which is then
+read by the Lisp environment and acted upon.  As suggested above,
+&quot;code is data&quot; really means that code is transformed from text into an
+intermediate form which is represented in terms of Lisp data types.
+We can then use the Lisp itself to transform that data or to execute
+it or interpret it.&lt;/p&gt;
+
+&lt;p&gt;What is the simplest thing we can do with Lisp data that may represent
+some code?  This one is easy: the simplest thing we can do is
+&lt;em&gt;nothing&lt;/em&gt;.  Doing nothing to piece of code/data is called &quot;quotation&quot;
+in Lisp.  It is represented by preceding an expression with the &lt;code&gt;'&lt;/code&gt;
+character.  Quoted expressions aren't evaluated - when the interpreter
+hits one, it just returns the data stored in the quotation.  A quoted
+expression is &lt;em&gt;read&lt;/em&gt; by the reader, but not evaluated.  It is just
+data.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;'a ;-&amp;gt; a
+'(this is some data) ;-&amp;gt; (this is some data)
+'(if t &quot;True&quot; &quot;False&quot;) ;-&amp;gt; (if t &quot;True&quot; &quot;False&quot;)
+(if t &quot;True&quot; &quot;False&quot;) ;-&amp;gt; &quot;True&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(N.B. You could &lt;a href=&quot;http://software-lab.de/down.html&quot;&gt;download picoLisp&lt;/a&gt; and try these
+examples.)&lt;/p&gt;
+
+&lt;p&gt;Every line above except the last is quoted, and evaluates to just the
+quoted data.  The last expression isn't quoted, and so it is actually
+evaluated by the interpreter.  &lt;code&gt;t&lt;/code&gt; is the true value, so the
+expression evaluates to the first clause, which is the &quot;string&quot;
+&quot;True&quot; (technically &quot;True&quot; is a symbol, since picoLisp only has one
+type which encompasses both strings and symbols).  The opposite of
+quotation is &lt;code&gt;eval&lt;/code&gt;uation.  This is represented as the function &lt;code&gt;eval&lt;/code&gt;
+in picoLisp:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(eval '(if t &quot;True&quot; &quot;False&quot;)) ;-&amp;gt; &quot;True&quot;
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A slightly less trivial example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(setq x 10)
+(setq q '(+ x 1))
+(eval q) ;-&amp;gt; 11
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;When &lt;code&gt;eval&lt;/code&gt; encounters a symbol, like &lt;code&gt;x&lt;/code&gt;, above, it just replaces it
+with the current value of that symbol wherever &lt;code&gt;eval&lt;/code&gt; is called.  So,
+if we run the above code and then say:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(let x 0 (eval q)) ;-&amp;gt; 1
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We get &lt;code&gt;1&lt;/code&gt;.  &lt;/p&gt;
+
+&lt;p&gt;This is one of the ways the picoLisp differs from most other Lisps.
+This behavior is called &quot;dynamic scope,&quot; and while most Lisps (even
+those that have this behavior) look upon it as a historical relic
+better thrown off or worked around, picoLisp embraces this behavior.
+This is because picoLisp is aiming for simplicity in its interpreter,
+and nothing is simpler than a symbol just meaning &quot;get what the value
+of this symbol is right here, right now.&quot;  As we'll see, &lt;code&gt;eval&lt;/code&gt; in
+newer Lisp dialects won't work this way.  &lt;/p&gt;
+
+&lt;p&gt;Ok, ok, we are sort of drifting.  We were talking about Macros.
+Rather surprisingly, picoLisp's documentation says that:&lt;/p&gt;
+
+&lt;blockquote&gt;
+  &lt;p&gt;Yes, there is a macro mechanism in picoLisp, to build and
+  immediately execute a list of expressions. But it is seldom
+  used. Macros are a kludge. Most things where you need macros in
+  other Lisps are directly expressible as functions in picoLisp, which
+  (as opposed to macros) can be applied, passed around, and debugged.&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;How can this be?  Well, functions in picoLisp have the option of &lt;em&gt;not
+evaluating their arguments&lt;/em&gt;.  In most languages, function calls
+proceed by first evaluating all of their arguments, &lt;em&gt;then&lt;/em&gt; binding
+those values to the variable names and then executing the body of the
+function.  This is how it works in picoLisp too, if you say:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(de fun (A)
+  (print &quot;Inside&quot;)
+  (print A))
+(fun (prog (print &quot;Argument evaluated.&quot;) 10))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;You get:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&quot;Argument evaluated.&quot;&quot;Inside&quot; 10-&amp;gt; 10
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;For non-Lispers, &lt;code&gt;prog&lt;/code&gt; is just a form which evaluates each of its
+sub-forms in order and returns the last value.  We are using it here
+to demonstrate when the argument expression is evaluated.&lt;/p&gt;
+
+&lt;p&gt;So when a function is called, its arguments are evaluated.  This is
+true in every Lisp I know (except for exotica like Lazy Lisp, in
+Racket).  This property is usually called, by the way, eagerness: the
+function is eager to know its argument's values before evaluating the
+body. &lt;/p&gt;
+
+&lt;p&gt;Unlike other Lisps, picoLisp lets you define functions which &lt;em&gt;don't&lt;/em&gt;
+evaluate their arguments immediately.  This is done by providing a
+single symbol instead of an argument list:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(de fun2 A
+  (print &quot;Inside&quot;)
+  (print (eval (car A))))
+(fun2 (prog (print &quot;Argument evaluated.&quot;) 10))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;(&lt;code&gt;car&lt;/code&gt; returns the first element of a list).&lt;/p&gt;
+
+&lt;p&gt;Results in:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;&quot;Inside&quot;&quot;Argument evaluated.&quot;10-&amp;gt; 10
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;The argument expression is not evaluated until we (unpack it and then)
+call eval on it.  Using this feature, we can do something which is
+usually impossible in other languages: write &lt;code&gt;if&lt;/code&gt; as a function.  In
+most languages you can't write if in any nice way.  In most Lisps,
+you've got to write a macro.  In picoLisp you can just write &lt;code&gt;if&lt;/code&gt; as
+an &quot;ordinary&quot; function:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(de my-if A
+ (if (eval (car A))
+     (eval (cadr A))
+     (eval (caddr A))))
+
+(my-if (&amp;lt; 1 0) 
+  (prog (print &quot;True Branch Evaled&quot;) t) 
+  (prog (print &quot;False Branch Evaled&quot;) nil))
+
+&quot;False Branch Evaled&quot;-&amp;gt; 67285752
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Note that &quot;True Branch Evaled&quot; is never printed.  The true branch is
+never evaluated.  &lt;/p&gt;
+
+&lt;p&gt;(Obviously we have to use the primitive &lt;code&gt;if&lt;/code&gt; - the example is meant to
+highlight optional evaluation of arguments, not how a primitive like
+if makes it into a language).  &lt;/p&gt;
+
+&lt;p&gt;Because functions can do this kind of thing, you can do some
+surprising things with picoLisp, like &lt;code&gt;map&lt;/code&gt; if over lists of
+branches.  I find it astonishing that the picoLisp docs provide this
+example and then say picoLisp goes for &quot;The principle of least
+astonishment.&quot;&lt;/p&gt;
+
+&lt;h2&gt;Variables, Scope, Eval, Quote and Lambda&lt;/h2&gt;
+
+&lt;p&gt;If you are used to other programming languages, picoLisp probably
+seems pretty bizarre.  But, if you're a little more open minded, you
+might think: wait a minute, this optional evaluation of input
+expressions is actually &lt;a href=&quot;http://en.wikipedia.org/wiki/Fexpr&quot;&gt;pretty handy&lt;/a&gt;!  I can write all my special
+forms as regular functions, and then they too can be first class
+values!  Why isn't every Lisp like this?&lt;/p&gt;
+
+&lt;p&gt;Well, I can't claim to understand the entire historical development of
+the Lisp family of languages, but I'm pretty sure that the main reason
+other Lisps moved away from this model is that they wanted to support
+&lt;em&gt;lexical scope&lt;/em&gt; (to be discussed below).  The watchword of picoLisp is
+simplicity: simplicity is why it is an interpreted language, rather
+than a compiled one, and simplicity shaped the design of the
+interpreter.  Dynamic variable scope is the &lt;em&gt;simplest thing&lt;/em&gt;, as far
+as an interpreter is concerned, and so picoLisp runs with it.  Because
+code is always evaluated with respect to a dynamic environment, the
+code itself doesn't need to remember anything like &quot;Which &lt;code&gt;x&lt;/code&gt; did the
+programmer mean in the peice of code &lt;code&gt;(+ x 1)&lt;/code&gt;.&quot;  It is simply assumed
+that, by default, &lt;code&gt;x&lt;/code&gt; refers to the &lt;code&gt;x&lt;/code&gt; in the current dynamic
+environment.  Under these semantic assumptions, a quotation is just a
+lambda expression without any arguments.  &lt;code&gt;Eval&lt;/code&gt; is just &lt;code&gt;funcall&lt;/code&gt; for
+functions that take no arguments.&lt;/p&gt;
+
+&lt;p&gt;This is, in fact, literally true in picoLisp, even for functions with
+arguments..  There is no lambda.  Anonymous functions are created with
+&lt;code&gt;quote&lt;/code&gt;ation.&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(mapcar '((X) (+ X 1)) (list 1 2 3 4))
+; -&amp;gt; (2 3 4 5)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Because variable binding is assumed to be handled by &lt;code&gt;eval&lt;/code&gt; and is
+assumed to be related only to where &lt;code&gt;eval&lt;/code&gt; is called, not to anything
+about where the lambda was defined, code in picoLisp need have no
+additional information associated with it.  It literally is just data.&lt;/p&gt;
+
+&lt;p&gt;In short, buzzword packed language: Restricting intepretation of
+variable binding to dynamic scope, picoLisp unifies function
+application and regular evaluation, and &lt;code&gt;quote&lt;/code&gt; and &lt;code&gt;lambda&lt;/code&gt;.  With
+minimal convention, the distinction between functions and special
+forms nearly vanishes!&lt;/p&gt;
+
+&lt;h2&gt;Lexical Scope?&lt;/h2&gt;
+
+&lt;p&gt;I keep going on about &lt;em&gt;dynamic scope&lt;/em&gt; above, and I even mentioned
+&lt;em&gt;lexical scope&lt;/em&gt; above, but what is &lt;em&gt;lexical scope&lt;/em&gt; and how does it
+impact upon the relationship between function application and
+evaluation and between quotation and lambda?&lt;/p&gt;
+
+&lt;p&gt;We are going to switch to &lt;em&gt;Emacs Lisp&lt;/em&gt; for some examples now, because
+Emacs Lisp supports &lt;em&gt;both&lt;/em&gt; lexical and dynamic scope and forces us to
+say explicitly which scoping rules we want to use.  This helps make
+the discussion of scope clearer.&lt;/p&gt;
+
+&lt;p&gt;(If you want to follow along, Download the &lt;a href=&quot;http://www.gnu.org/software/emacs/&quot;&gt;latest emacs&lt;/a&gt;, fire
+it up, and then press &quot;Alt-x ielm *ENTER*&quot;.  This will start up an
+Emacs Lisp read-eval-print loop.  There are better ways to interact
+with the Emacs Lisp interpreter, but this is the most familiar for
+non-emacs users.)&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;center&gt;
+&lt;img alt=&quot;Vi propaganda!&quot; src=&quot;http://www.loufranco.com/blog/files/page2_blog_entry54_1.gif&quot; title=&quot;&quot; /&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;/center&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;/p&gt;&lt;center&gt;Vi propaganda! (borrowed from &lt;a href=&quot;http://www.loufranco.com/blog/files/category-software-development.html&quot;&gt;here&lt;/a&gt;).&lt;/center&gt;&lt;p&gt;&lt;/p&gt;
+
+&lt;p&gt;Emacs Lisp is a relatively old Lisp dialect, and by default it is
+dynamically scoped.  There is a library that comes with Emacs that
+adds a lot of features from Common Lisp, including simulation of
+lexical-scope rules, so the first thing you need to do is require this
+package:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;*** Welcome to IELM ***  Type (describe-mode) for help.
+ELISP&amp;gt; (require 'cl)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;A quick dynamic scope example:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(let ((x 10))
+ (defun get-value-of-x () x)
+ (get-value-of-x))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Obviously evaluates to &lt;code&gt;10&lt;/code&gt;.  &lt;code&gt;get-value-of-x&lt;/code&gt; just returns the value of
+&lt;code&gt;x&lt;/code&gt;, whatever it is, when it is called.  Hence:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(let ((x 11))
+  (get-value-of-x))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Is &lt;code&gt;11&lt;/code&gt;.  If we call &lt;code&gt;get-value-of-x&lt;/code&gt; outside of a &lt;code&gt;let&lt;/code&gt; which binds
+&lt;code&gt;x&lt;/code&gt;, we'll get an error.  &lt;code&gt;x&lt;/code&gt;, at that point, has no value at all.&lt;/p&gt;
+
+&lt;p&gt;What if we use &lt;code&gt;lexical-let&lt;/code&gt; instead?  &lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(lexical-let ((x 10))
+ (defun get-value-of-x () x)
+ (get-value-of-x))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This is still &lt;code&gt;10&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;But, perhaps surprisingly, we can now say:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(get-value-of-x)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Outside of any &lt;code&gt;let&lt;/code&gt; expression which binds &lt;code&gt;x&lt;/code&gt; and get &lt;code&gt;10&lt;/code&gt; as the
+answer.  Perhaps even more surprisingly:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(let ((x 11))
+  (get-value-of-x))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Is still &lt;code&gt;10&lt;/code&gt;.  Even:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(lexical-let ((x 11))
+  (get-value-of-x))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;Is still &lt;code&gt;10&lt;/code&gt;.  In the context of a &lt;code&gt;lexical-let&lt;/code&gt;, symbols bound by
+that &lt;code&gt;lexical-let&lt;/code&gt; don't refer to whatever value is bound to that
+symbol &quot;right now&quot; in the dynamical environment, they refer to the
+particular lexical environment of the &lt;code&gt;lexical-let&lt;/code&gt; expression.
+Conceptually, any lambda expression appearing in a &lt;code&gt;lexical-let&lt;/code&gt; has
+to store more than just the list of symbols and lists that makes up
+its body; it also has to store the lexical environment to which those
+symbols refer.&lt;/p&gt;
+
+&lt;p&gt;(Lexical scope is called lexical scope because variables are
+interpreted by virtue of their &lt;em&gt;lexical&lt;/em&gt; context, literally where they
+appear in the source code, rather than where they are evaluated when
+the program is executed.)&lt;/p&gt;
+
+&lt;p&gt;Code might still be represented as a list of symbols and lists and
+atoms, but that representation &lt;em&gt;leaves out&lt;/em&gt; information about lexical
+context.  When we finally reach hygienic macros, when we talk about
+Scheme, we'll see that decorating the list-of-things representation of
+source code with &lt;em&gt;lexical information&lt;/em&gt; will be a key feature.&lt;/p&gt;
+
+&lt;p&gt;Let's drive this home before we adjourn part 1.  Consider:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(let ((x 10))
+  (setq code 'x)
+  (eval code))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;That is definitely &lt;code&gt;10&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;What about if we say:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(eval code)
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;We get an error: &quot;void variable x&quot;.  Also expected.&lt;/p&gt;
+
+&lt;p&gt;Now:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(lexical-let ((x 10))
+  (setq code 'x)
+  (eval code))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This, maybe surprisingly, gives an error too.  The real reason is that
+Emacs Lisp does some tricky things to simulate lexical scope, but it
+isn't totally obvious that eval should use the current lexical scope
+to evaluate terms.  The meaning of symbols passed to &lt;code&gt;eval&lt;/code&gt; in the
+context of lexical scope is suddenly non-trivial.  We can't execute
+the above, but lets try:&lt;/p&gt;
+
+&lt;pre&gt;&lt;code&gt;(lexical-let ((x 10))
+  (setq code 'x))
+
+(let ((x 11))
+  (eval code))
+&lt;/code&gt;&lt;/pre&gt;
+
+&lt;p&gt;This evaluates to &lt;code&gt;11&lt;/code&gt;.  The variable &lt;code&gt;code&lt;/code&gt; really just contains a
+piece of symbolic data.  That data doesn't remember anything about
+where it was defined - it forgets its lexical context - and so it
+can't evaluate correctly.  The addition of lexical scope &lt;em&gt;breaks the
+symmetry&lt;/em&gt; between &lt;code&gt;quote&lt;/code&gt;ation and &lt;code&gt;lambda&lt;/code&gt; expressions!  We didn't
+need &lt;code&gt;lambda&lt;/code&gt; in picoLisp because there was no lexical context to keep
+track of.  In other Lisps we need &lt;code&gt;defun&lt;/code&gt; and &lt;code&gt;lambda&lt;/code&gt; to function as
+&quot;smart quotations,&quot; which remember their lexical environment so that,
+upon invokation, they can behave correctly!&lt;/p&gt;
+
+&lt;p&gt;Because of the breakdown of this symmetry, and because Emacs Lisp
+doesn't provide picoLisp style functions, we need a whole new special
+form in Emacs Lisp to declare syntactic extension.&lt;/p&gt;
+
+&lt;h2&gt;Conclusions of Part 1&lt;/h2&gt;
+
+&lt;p&gt;Lexical scope is widely agreed to be the superior semantic mode for
+programming languages, principally because it makes reasoning about a
+piece of code mostly about looking at the text that defines the code,
+not at when the code is executed.  But now we can see that lexical
+scope comes at a price: it breaks the symmetry between code and data.
+We get the simplicity, as programmers, of being able to understand our
+code based on its lexical environment &quot;on the page&quot;.  But the
+compiler/interpreter now has to do extra work to execute code
+correctly.  Futhermore, naive modes of representing code as data are
+no longer complete: lists of lists and atoms don't contain lexical
+information. &lt;/p&gt;
+
+&lt;p&gt;Next time we'll talk about macros in Emacs/Common Lisp and Clojure
+(and maybe Arc (why the hell not?)).  With today's lessons in mind,
+we'll see most of the conceptual problems with macros in these
+systems are associated with the fact that macros manipulate an
+impoverished code representation.  &lt;/p&gt;
+
+&lt;p&gt;In subsequent posts, we'll look at macros in Scheme, and we'll see
+that the representation of code in that language is decorated with
+lexical information.  This makes writing &quot;well behaved&quot; macros easier,
+but makes writing macros a little more abstract and, arguably,
+difficult to understand.   &lt;/p&gt;
+
+&lt;p&gt;Thanks for reading!&lt;/p&gt;
+
+&lt;hr /&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://blogger.googleusercontent.com/tracker/8115687546775931822-197215827206061145?l=dorophone.blogspot.com&quot; width=&quot;1&quot; /&gt;&lt;/div&gt;</content>
+		<author>
+			<name>J.V. Toups</name>
+			<email>noreply@blogger.com</email>
+			<uri>http://dorophone.blogspot.com/search/label/emacs</uri>
+		</author>
+		<source>
+			<title type="html">Dorophone</title>
+			<subtitle type="html">Soon to be replaced with an Elaborate Platinum Mechanism.</subtitle>
+			<link rel="self" href="http://www.blogger.com/feeds/8115687546775931822/posts/default/-/emacs"/>
+			<id>tag:blogger.com,1999:blog-8115687546775931822</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">emacspeak: Welcome Press/Analyst Contact Tilden Labrador</title>
+		<link href="http://emacspeak.blogspot.com/2011/08/welcome-pressanalyst-contact-tilden.html"/>
+		<id>tag:blogger.com,1999:blog-20280042.post-7346123054934766410</id>
+		<updated>2011-08-02T01:19:02+00:00</updated>
+		<content type="html">&lt;div&gt;
+&lt;strong&gt;For Immediate Release:&lt;/strong&gt;
+&lt;em&gt;Monday, August 1, 2011&lt;/em&gt;&lt;br /&gt;
+&lt;br /&gt;
+&lt;h2&gt;
+
+Emacspeak Inc. Appoints New Press/Analyst Contact&lt;/h2&gt;
+&lt;div class=&quot;separator&quot; style=&quot;clear: both; text-align: center;&quot;&gt;
+&lt;a href=&quot;http://emacspeak.sourceforge.net/raman/tilden-labrador/tilden-bandana.jpg&quot; style=&quot;margin-left: 1em; margin-right: 1em;&quot;&gt;&lt;img alt=&quot;Tilden Labrador&quot; height=&quot;640&quot; src=&quot;http://emacspeak.sourceforge.net/raman/tilden-labrador/tilden-bandana.jpg&quot; width=&quot;404&quot; /&gt;&lt;/a&gt;&lt;/div&gt;
+&lt;br /&gt;
+Tilden Labrador, a young, energetic male  yellow Labrador, has
+ accepted the position of Press/Analyst contact for Emacspeak
+ Inc.   ---  in addition to his primary   responsibility of being
+ a  fulltime guide-dog.&lt;br /&gt;
+Hand-picked from an exclusive pool of high-quality caninedates, Tilden brings
+a large and level head to this  position of
+responsibility. Tilden grew up in Monroe Ct,  before going to
+school at Guiding Eyes For The Blind (GEB), NY.
+He graduated from GEB's Action program after excelling at
+obstacle avoidance and path planning in Yorktown Heights,
+peekskill and White Plains. He rounded out his education with a
+one-week practicum  on the Google campus in Mountain View CA.&lt;br /&gt;
+Tilden brings a fresh perspective to his new job --- he is the
+first male Labrador to  take on the role of Emacspeak Inc.'s
+press/analyst contact. Asked how he felt about this unique
+distinction, he pointed out:&lt;br /&gt;
+&quot;On the Internet no one knows you're a dog, leave alone what
+gender you are&quot;.&lt;br /&gt;
+Tilden promises to steer Emacspeak in a manner that would do
+his predecessors &lt;a href=&quot;http://emacspeak.sf.net/raman/aster-labrador&quot;&gt;Aster
+Labrador&lt;/a&gt; and &lt;a href=&quot;http://emacspeak.sf.net/raman/hubbell-labrador&quot;&gt;Hubbell
+Labrador&lt;/a&gt; proud.&lt;/div&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://blogger.googleusercontent.com/tracker/20280042-7346123054934766410?l=emacspeak.blogspot.com&quot; width=&quot;1&quot; /&gt;&lt;/div&gt;</content>
+		<author>
+			<name>T. V. Raman</name>
+			<email>noreply@blogger.com</email>
+			<uri>http://emacspeak.blogspot.com/</uri>
+		</author>
+		<source>
+			<title type="html">EMACSPEAK  The Complete Audio Desktop</title>
+			<subtitle type="html">Here is where I plan to Blog Emacspeak tricks and introduce new features as I implement them.</subtitle>
+			<link rel="self" href="http://www.blogger.com/feeds/20280042/posts/default"/>
+			<id>tag:blogger.com,1999:blog-20280042</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html" xml:lang="en">Irreal: Putting Shell Output In The Current Buffer</title>
+		<link href="http://irreal.org/blog/?p=182"/>
+		<id>http://irreal.org/blog/?p=182</id>
+		<updated>2011-08-01T21:15:00+00:00</updated>
+		<content type="html" xml:lang="en">&lt;p&gt;I’ve long used 【&lt;span class=&quot;key&quot;&gt;Meta&lt;/span&gt;+&lt;span class=&quot;key&quot;&gt;|&lt;/span&gt;】 to pipe a region to a shell command. I use it all the time to pipe &lt;code&gt;troff&lt;/code&gt; input to &lt;code&gt;groff&lt;/code&gt; and display the results with &lt;code&gt;gxditview&lt;/code&gt;. Recently I learned that if you specify a prefix arg it will place the results in the current buffer. The easiest way to do that is simply to type 【&lt;span class=&quot;key&quot;&gt;Meta&lt;/span&gt;+&lt;span class=&quot;key&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;key&quot;&gt;Meta&lt;/span&gt;+&lt;span class=&quot;key&quot;&gt;|&lt;/span&gt;】. The same trick works with 【&lt;span class=&quot;key&quot;&gt;Meta&lt;/span&gt;+&lt;span class=&quot;key&quot;&gt;!&lt;/span&gt;】. For example, if I want to insert a directory listing into the current buffer I could type 【&lt;span class=&quot;key&quot;&gt;Meta&lt;/span&gt;+&lt;span class=&quot;key&quot;&gt;1&lt;/span&gt; &lt;span class=&quot;key&quot;&gt;Meta&lt;/span&gt;+&lt;span class=&quot;key&quot;&gt;!&lt;/span&gt;】 &lt;code&gt;ls&lt;/code&gt;. &lt;/p&gt;
+&lt;p&gt; &lt;b&gt;Summary of Key Sequences&lt;/b&gt; &lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;【&lt;span class=&quot;key&quot;&gt;Meta&lt;/span&gt;+&lt;span class=&quot;key&quot;&gt;|&lt;/span&gt;】&lt;br /&gt;   Pipe the highlighted region to a shell command and place the output   in a ∗Shell Command Output∗ buffer. &lt;/li&gt;
+&lt;li&gt;【&lt;span class=&quot;key&quot;&gt;Meta&lt;/span&gt;+&lt;span class=&quot;key&quot;&gt;1&lt;/span&gt;   &lt;span class=&quot;key&quot;&gt;Meta&lt;/span&gt;+&lt;span class=&quot;key&quot;&gt;|&lt;/span&gt;】&lt;br /&gt;   Pipe the highlight region to a shell command and place the output in   the current buffer. &lt;/li&gt;
+&lt;li&gt;【&lt;span class=&quot;key&quot;&gt;Meta&lt;/span&gt;+&lt;span class=&quot;key&quot;&gt;!&lt;/span&gt;】&lt;br /&gt;   Run a shell command and place the output in a ∗Shell Command   Output∗ buffer. &lt;/li&gt;
+&lt;li&gt;【&lt;span class=&quot;key&quot;&gt;Meta&lt;/span&gt;+&lt;span class=&quot;key&quot;&gt;1&lt;/span&gt;   &lt;span class=&quot;key&quot;&gt;Meta&lt;/span&gt;+&lt;span class=&quot;key&quot;&gt;!&lt;/span&gt;】&lt;br /&gt;   Run a shell command and place the output in the current buffer. &lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt; &lt;b&gt;Update&lt;/b&gt;: prefix tag → prefix arg &lt;/p&gt;</content>
+		<author>
+			<name>jcs</name>
+			<uri>http://irreal.org/blog</uri>
+		</author>
+		<source>
+			<title type="html">Irreal » Emacs</title>
+			<subtitle type="html">The minds had long ago come up with a proper name for it; they called it the Irreal, but they thought of it as Infinite Fun. That was what they really knew it as. The Land of Infinite Fun. --Iain M. Banks, Excession</subtitle>
+			<link rel="self" href="http://irreal.org/blog/?tag=emacs&amp;feed=rss2"/>
+			<id>http://irreal.org/blog</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html" xml:lang="es">suso: Resumen de las novedades de Julio en Emacs-es</title>
+		<link href="http://gnu.manticore.es/node/1762"/>
+		<id>http://gnu.manticore.es/1762 at http://gnu.manticore.es</id>
+		<updated>2011-08-01T08:21:04+00:00</updated>
+		<content type="html">&lt;p&gt;Durante el mes de Julio pasado no hubo novedades en cuanto&lt;br /&gt;
+a la migración al nuevo sub-dominio de Emacs en español,&lt;br /&gt;
+pero sí se produjeron los siguientes once anuncios:&lt;/p&gt;
+&lt;p&gt;Actualizado el manual de Dired-x  -  &lt;a href=&quot;http://emacs-es.manticore.es/110701.html&quot; title=&quot;http://emacs-es.manticore.es/110701.html&quot;&gt;http://emacs-es.manticore.es/110701.html&lt;/a&gt;&lt;br /&gt;
+Actualizado el manual de Ebrowse  -  &lt;a href=&quot;http://emacs-es.manticore.es/110702.html&quot; title=&quot;http://emacs-es.manticore.es/110702.html&quot;&gt;http://emacs-es.manticore.es/110702.html&lt;/a&gt;&lt;br /&gt;
+Actualizado el manual de Ediff    -  &lt;a href=&quot;http://emacs-es.manticore.es/110703.html&quot; title=&quot;http://emacs-es.manticore.es/110703.html&quot;&gt;http://emacs-es.manticore.es/110703.html&lt;/a&gt;&lt;br /&gt;
+Actualizado el manual de Forms    -  &lt;a href=&quot;http://emacs-es.manticore.es/110704.html&quot; title=&quot;http://emacs-es.manticore.es/110704.html&quot;&gt;http://emacs-es.manticore.es/110704.html&lt;/a&gt;&lt;br /&gt;
+Actualizado el manual de la Barra Aceleradora -  &lt;a href=&quot;http://emacs-es.manticore.es/110705.html&quot; title=&quot;http://emacs-es.manticore.es/110705.html&quot;&gt;http://emacs-es.manticore.es/110705.html&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://gnu.manticore.es/node/1762&quot; target=&quot;_blank&quot;&gt;leer más&lt;/a&gt;&lt;/p&gt;</content>
+		<author>
+			<name>suso</name>
+			<uri>http://gnu.manticore.es/taxonomy/term/1/0</uri>
+		</author>
+		<source>
+			<title type="html">Mundo GNU - Emacs</title>
+			<link rel="self" href="http://gnu.manticore.es/taxonomy/term/1/0/feed"/>
+			<id>http://gnu.manticore.es/taxonomy/term/1/0</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Tycho Garen: Create Better Task Items</title>
+		<link href="http://tychoish.com/rhizome/create-better-task-items/"/>
+		<id>http://tychoish.com/rhizome/create-better-task-items/</id>
+		<updated>2011-08-01T04:00:00+00:00</updated>
+		<content type="html">&lt;p&gt;I was paging through a list of things that I made for myself during a
+call I was in a few weeks ago, and was utterly dismayed by how useless
+the items were on the list. I wasn't sure what needed to be done, I
+couldn't remember what things meant, and I was left with the sinking
+suspicion that I had forgotten something crucial. I write this, in
+part, as a lesson to my past self on how to write good task list
+items.&lt;/p&gt;
+
+&lt;p&gt;Hopefully you'll find it useful. &lt;/p&gt;
+
+&lt;p&gt;Task items must be actionable. You need to be able to read the subject
+or summary and know: what the project is, what kind of work it is,
+what needs to be done, and what very next thing you need to do is. &lt;/p&gt;
+
+&lt;p&gt;Tasks cannot be open ended. It's really tempting to write tasks in the
+form of &quot;work on a project&quot; or &quot;make progress on email backlog,&quot; but
+don't. How do you know if you've done the task? Is all progress the
+same? Is the actual work activity plainly obvious from an open ended
+task description?&lt;/p&gt;
+
+&lt;p&gt;Tasks need to concise. I'm a big fan of including some sort of status
+information and some sort of instruction and context with your tasks,
+but you need to be able to look at a task list and triage what to do
+next without thinking very much and without spending more than a few
+seconds deciphering messages from your past self. Write good
+summaries.&lt;/p&gt;
+
+&lt;p&gt;Try to organize your projects and tasks so that most of your task
+items are not dependent upon other items. Sometime dependencies are
+unavoidable, but I find if you're clever, you can chop things up into
+parallel tasks that are easier to work on but that accomplish the same
+goal. In some cases, long strings of dependent tasks can be just as
+troublesome as large open tasks, because in the moment they amount to
+clutter. &lt;/p&gt;
+
+&lt;p&gt;My post on &lt;span class=&quot;createlink&quot;&gt;&lt;a href=&quot;http://tychoish.com/ikiwiki.cgi?page=filtering-the-todo-list&amp;amp;from=rhizome%2Fcreate-better-task-items&amp;amp;do=create&quot; rel=&quot;nofollow&quot;&gt;?&lt;/a&gt;filtering the todo list&lt;/span&gt; may be of
+related interest. Also your &lt;a href=&quot;http://tychoish.com/./rhizome/create-better-task-items/discourse/&quot;&gt;feedback&lt;/a&gt; and suggestions from
+your own experience may be of interest to all of us! I look forward to
+hearing from you! &lt;/p&gt;</content>
+		<author>
+			<name>Tycho Garen</name>
+			<uri>http://tychoish.com/</uri>
+		</author>
+		<source>
+			<title type="html">tychoish</title>
+			<subtitle type="html">tychoish</subtitle>
+			<link rel="self" href="http://tychoish.com/index.rss"/>
+			<id>http://tychoish.com/</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Yann Hodique: Tweaking zsh completion for git checkout</title>
+		<link href="http://www.hodique.info/blog/2011/07/31/tweaking_zsh_completion_for_git_checkout"/>
+		<id>http://www.hodique.info/blog/2011/07/31/tweaking_zsh_completion_for_git_checkout</id>
+		<updated>2011-07-31T20:50:55+00:00</updated>
+		<content type="html">&lt;div class=&quot;level1&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;div class=&quot;styler styler-float-left&quot;&gt;
+&lt;p&gt;
+&lt;span class=&quot;vcard&quot;&gt;&lt;img alt=&quot;yann.hodique@gmail.com&quot; class=&quot;media photo fn&quot; height=&quot;40&quot; src=&quot;http://www.hodique.info/lib/exe/fetch.php?hash=15d77b&amp;amp;cache=recache&amp;amp;media=http%3A%2F%2Fwww.gravatar.com%2Favatar.php%3Fgravatar_id%3Dd9b955e7af49b0cbfd68c15947b25012%26default%3Dhttp%253A%252F%252Fwww.hodique.info%252Flib%252Fexe%252Ffetch.php%253Fhash%253Dd44619%2526cache%253Drecache%2526media%253Dhttp%25253A%25252F%25252Fwww.hodique.info%25252F%25252Flib%25252Fplugins%25252Favatar%25252Fmonsterid.php%25253Fseed%25253Dd9b955e7af49b0cbfd68c15947b25012%252526size%25253D40%252526.png%26size%3D40%26rating%3DR%26.jpg&quot; title=&quot;yann.hodique@gmail.com&quot; width=&quot;40&quot; /&gt;&lt;/span&gt;
+&lt;/p&gt;
+&lt;/div&gt;
+&lt;p&gt;
+&lt;/p&gt;&lt;p&gt;
+By default, zsh completion allows you to complete according to “git checkout” semantics.
+So &lt;code&gt;git checkout path/to/&amp;lt;TAB&amp;gt;&lt;/code&gt; will actually work for updating files from the index (and some other similar cases).
+&lt;/p&gt;
+
+&lt;p&gt;
+There's nothing to say about it, it's obviously correct. Now, there are 2 things that make it inconvenient for me:
+&lt;/p&gt;
+&lt;ul&gt;
+&lt;li class=&quot;level1&quot;&gt;&lt;div class=&quot;li&quot;&gt; first of all, I happen to work regularly with &lt;strong&gt;huge&lt;/strong&gt; repositories, with &lt;strong&gt;huge&lt;/strong&gt; working directories (approximately 35GB). Since the completion code ends up calling &lt;code&gt;git ls-files&lt;/code&gt;, even caching doesn't help that much reducing the time spent building the completion table. And I wouldn't want to pay the price even the first time.&lt;/div&gt;
+&lt;/li&gt;
+&lt;li class=&quot;level1&quot;&gt;&lt;div class=&quot;li&quot;&gt; second, my branches generally use a directory-like layout (like &lt;code&gt;t/bugfix/&amp;lt;id&amp;gt;&lt;/code&gt;, so that it makes the whole completion list rather confusing.&lt;/div&gt;
+&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;
+Due to the second point, I happen to always use &lt;code&gt;-&lt;/code&gt;&lt;code&gt;-&lt;/code&gt; to make it clear I'm refering to filenames in the above scenario.
+So instead of &lt;code&gt;git checkout path/to/&amp;lt;TAB&amp;gt;&lt;/code&gt;, I would actually always write &lt;code&gt;git checkout -&lt;/code&gt;&lt;code&gt;- path/to/&amp;lt;TAB&amp;gt;&lt;/code&gt;.
+&lt;/p&gt;
+
+&lt;p&gt;
+From there, the solution to my problem is obvious, I just have to disable filename completion until &lt;code&gt;-&lt;/code&gt;&lt;code&gt;-&lt;/code&gt; is seen.
+&lt;/p&gt;
+
+&lt;p&gt;
+Here's the code (put it as a &lt;code&gt;_git-checkout&lt;/code&gt; function in your &lt;code&gt;$fpath&lt;/code&gt;):
+&lt;/p&gt;
+&lt;dl class=&quot;file&quot;&gt;
+&lt;dt&gt;&lt;a class=&quot;mediafile mf_&quot; href=&quot;http://www.hodique.info/_export/code/blog/2011/07/31/tweaking_zsh_completion_for_git_checkout?codeblock=0&quot; title=&quot;Download Snippet&quot;&gt;_git-checkout&lt;/a&gt;&lt;/dt&gt;
+&lt;dd&gt;&lt;pre class=&quot;code file bash&quot;&gt;&lt;span class=&quot;kw3&quot;&gt;local&lt;/span&gt; &lt;span class=&quot;re2&quot;&gt;curcontext&lt;/span&gt;=&lt;span class=&quot;re1&quot;&gt;$curcontext&lt;/span&gt; state line
+&lt;span class=&quot;kw3&quot;&gt;declare&lt;/span&gt; &lt;span class=&quot;re5&quot;&gt;-A&lt;/span&gt; opt_args
+ 
+&lt;span class=&quot;kw3&quot;&gt;local&lt;/span&gt; new_branch_reflog_arg
+ 
+&lt;span class=&quot;kw1&quot;&gt;if&lt;/span&gt; &lt;span class=&quot;br0&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;br0&quot;&gt;(&lt;/span&gt; words&lt;span class=&quot;br0&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;br0&quot;&gt;(&lt;/span&gt;I&lt;span class=&quot;br0&quot;&gt;)&lt;/span&gt;-b&lt;span class=&quot;br0&quot;&gt;]&lt;/span&gt; &lt;span class=&quot;sy0&quot;&gt;&amp;gt;&lt;/span&gt; &lt;span class=&quot;nu0&quot;&gt;0&lt;/span&gt; &lt;span class=&quot;br0&quot;&gt;)&lt;/span&gt;&lt;span class=&quot;br0&quot;&gt;)&lt;/span&gt;; &lt;span class=&quot;kw1&quot;&gt;then&lt;/span&gt;
+    &lt;span class=&quot;re2&quot;&gt;new_branch_reflog_arg&lt;/span&gt;=&lt;span class=&quot;st_h&quot;&gt;'-l[create the new branch'&lt;/span&gt;&lt;span class=&quot;co3&quot;&gt;\'&lt;/span&gt;&lt;span class=&quot;st_h&quot;&gt;'s reflog]'&lt;/span&gt;
+&lt;span class=&quot;kw1&quot;&gt;else&lt;/span&gt;
+    &lt;span class=&quot;re2&quot;&gt;new_branch_reflog_arg&lt;/span&gt;=&lt;span class=&quot;st_h&quot;&gt;'-l[create the branch'&lt;/span&gt;&lt;span class=&quot;co3&quot;&gt;\'&lt;/span&gt;&lt;span class=&quot;st_h&quot;&gt;'s reflog]'&lt;/span&gt;
+&lt;span class=&quot;kw1&quot;&gt;fi&lt;/span&gt;
+ 
+&lt;span class=&quot;kw1&quot;&gt;if&lt;/span&gt; compset &lt;span class=&quot;re5&quot;&gt;-N&lt;/span&gt; &lt;span class=&quot;st_h&quot;&gt;'--'&lt;/span&gt;; &lt;span class=&quot;kw1&quot;&gt;then&lt;/span&gt;
+    __git_cached_files
+&lt;span class=&quot;kw1&quot;&gt;else&lt;/span&gt;
+    _arguments &lt;span class=&quot;re5&quot;&gt;-C&lt;/span&gt; &lt;span class=&quot;re5&quot;&gt;-S&lt;/span&gt; \
+        &lt;span class=&quot;st_h&quot;&gt;'-q[suppress feedback messages]'&lt;/span&gt; \
+                                                                                  \
+        - switch-branch \
+        &lt;span class=&quot;st_h&quot;&gt;'-f[force a complete re-read]'&lt;/span&gt; \
+        &lt;span class=&quot;st_h&quot;&gt;'-b[create a new branch based at given branch]: :__git_guard_branch-name'&lt;/span&gt; \
+        &lt;span class=&quot;br0&quot;&gt;{&lt;/span&gt;-t,--track&lt;span class=&quot;br0&quot;&gt;}&lt;/span&gt;&lt;span class=&quot;st_h&quot;&gt;'[set up configuration so pull merges from the start point]'&lt;/span&gt; \
+        &lt;span class=&quot;st_h&quot;&gt;'--no-track[override the branch.autosetupmerge configuration variable]'&lt;/span&gt; \
+        &lt;span class=&quot;re1&quot;&gt;$new_branch_reflog_arg&lt;/span&gt; \
+        &lt;span class=&quot;st_h&quot;&gt;'-m[3way merge current branch, working tree and new branch]'&lt;/span&gt; \
+        &lt;span class=&quot;st_h&quot;&gt;'::branch:__git_revisions'&lt;/span&gt; \
+                                                                                  \
+        - update-files \
+        &lt;span class=&quot;st_h&quot;&gt;'::tree-ish:__git_tree_ishs'&lt;/span&gt; &lt;span class=&quot;sy0&quot;&gt;&amp;amp;&amp;amp;&lt;/span&gt; &lt;span class=&quot;re2&quot;&gt;ret&lt;/span&gt;=&lt;span class=&quot;nu0&quot;&gt;0&lt;/span&gt;
+&lt;span class=&quot;kw1&quot;&gt;fi&lt;/span&gt;&lt;/pre&gt;
+&lt;/dd&gt;&lt;/dl&gt;
+
+&lt;p&gt;
+You can compare to the original version in &lt;code&gt;/usr/share/zsh/functions/Completion/Unix/_git&lt;/code&gt;
+&lt;/p&gt;
+&lt;div class=&quot;tags&quot;&gt;&lt;span&gt;
+	&lt;a class=&quot;wikilink1&quot; href=&quot;http://www.hodique.info/tags/zsh?do=showtag&amp;amp;tag=tags%3Azsh&quot; rel=&quot;tag&quot; title=&quot;tags:zsh&quot;&gt;zsh&lt;/a&gt;,
+	&lt;a class=&quot;wikilink1&quot; href=&quot;http://www.hodique.info/tags/code&quot; rel=&quot;tag&quot; title=&quot;tags:code&quot;&gt;code&lt;/a&gt;,
+	&lt;a class=&quot;wikilink1&quot; href=&quot;http://www.hodique.info/tags/git&quot; rel=&quot;tag&quot; title=&quot;tags:git&quot;&gt;git&lt;/a&gt;
+&lt;/span&gt;&lt;/div&gt;
+
+&lt;/div&gt;</content>
+		<author>
+			<name>Yann Hodique</name>
+			<uri>http://www.hodique.info/</uri>
+		</author>
+		<source>
+			<title type="html">Yann Hodique blog:2011</title>
+			<link rel="self" href="http://www.hodique.info/_blog.rss"/>
+			<id>http://www.hodique.info/</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html" xml:lang="en">Kunigami: Gtags on emacs</title>
+		<link href="http://kuniganotas.wordpress.com/2011/07/31/gtags-on-emacs/"/>
+		<id>http://kuniganotas.wordpress.com/?p=523</id>
+		<updated>2011-07-31T13:51:45+00:00</updated>
+		<content type="html" xml:lang="en">&lt;p&gt;In a &lt;a href=&quot;http://kuniganotas.wordpress.com/category/emacs/feed/2011/07/21/emacs-etags/&quot;&gt;previous post&lt;/a&gt; about emacs etags, I received a tip from Alex Ott suggesting gtags for C/C++.&lt;/p&gt;
+&lt;h3&gt;Installing&lt;/h3&gt;
+&lt;p&gt;On MacOS, you can get gtags through &lt;a href=&quot;http://www.macports.org/&quot;&gt;mac ports&lt;/a&gt;, installing the “&lt;code&gt;global&lt;/code&gt;” package.&lt;/p&gt;
+&lt;h3&gt;Usage&lt;/h3&gt;
+&lt;p&gt;To build the symbols table, it’s simple as doing:&lt;/p&gt;
+&lt;pre class=&quot;brush: plain;&quot;&gt;gtags
+&lt;/pre&gt;
+&lt;p&gt;at the root of the project.&lt;/p&gt;
+&lt;h3&gt;Usage on emacs&lt;/h3&gt;
+&lt;p&gt;First, you need to add a gtags-mode on emacs and tell it where to find the gtags script if gtags.el file is not installed in the default location (mac ports install it on &lt;code&gt;/opt/local/share/gtags&lt;/code&gt; by default). On the preferences files, I added these lines:&lt;/p&gt;
+&lt;pre class=&quot;brush: plain;&quot;&gt;(setq load-path (cons &quot;/opt/local/share/gtags/&quot; load-path))
+(autoload 'gtags-mode &quot;gtags&quot; &quot;&quot; t)
+&lt;/pre&gt;
+&lt;p&gt;Some useful commands:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;gtags-find-tag [tag name]&lt;/code&gt; — this command finds the definition of tag name.
+&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gtags-find-rtag [tag name]&lt;/code&gt; — this command finds the usage of the tag name&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;gtags-find-tag-from-here&lt;/code&gt; — this command is a smart version of the above. It will look up the name that is pointed by your cursor. If your cursor is on a definition, it will look for usage. On the other hand, if your cursor is on a usage, it will look for the definition.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;One may wish to bind this last command to some key.&lt;/p&gt;
+&lt;h3&gt;Reference&lt;/h3&gt;
+&lt;p&gt;&lt;a href=&quot;http://www.gnu.org/s/global/globaldoc.html&quot;&gt;http://www.gnu.org/s/global/globaldoc.html&lt;/a&gt;&lt;/p&gt;
+&lt;br /&gt;  &lt;a href=&quot;http://feeds.wordpress.com/1.0/gocomments/kuniganotas.wordpress.com/523/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/comments/kuniganotas.wordpress.com/523/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/godelicious/kuniganotas.wordpress.com/523/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/delicious/kuniganotas.wordpress.com/523/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/gofacebook/kuniganotas.wordpress.com/523/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/facebook/kuniganotas.wordpress.com/523/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/gotwitter/kuniganotas.wordpress.com/523/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/twitter/kuniganotas.wordpress.com/523/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/gostumble/kuniganotas.wordpress.com/523/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/stumble/kuniganotas.wordpress.com/523/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/godigg/kuniganotas.wordpress.com/523/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/digg/kuniganotas.wordpress.com/523/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/goreddit/kuniganotas.wordpress.com/523/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/reddit/kuniganotas.wordpress.com/523/&quot; /&gt;&lt;/a&gt; &lt;img alt=&quot;&quot; border=&quot;0&quot; height=&quot;1&quot; src=&quot;http://stats.wordpress.com/b.gif?host=kuniganotas.wordpress.com&amp;amp;blog=13050037&amp;amp;post=523&amp;amp;subd=kuniganotas&amp;amp;ref=&amp;amp;feed=1&quot; width=&quot;1&quot; /&gt;</content>
+		<author>
+			<name>kunigami</name>
+			<uri>http://kuniganotas.wordpress.com</uri>
+		</author>
+		<source>
+			<title type="html">Notes on software development » emacs</title>
+			<link rel="self" href="http://kuniganotas.wordpress.com/category/emacs/feed/"/>
+			<id>http://kuniganotas.wordpress.com</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Got Emacs?: Emacs GPL violation and a mature response</title>
+		<link href="http://feedproxy.google.com/~r/GotEmacs/~3/6h7NMZRKLk8/emacs-gpl-violation-and-mature-response.html"/>
+		<id>tag:blogger.com,1999:blog-3165518189103293420.post-9018629531820424789</id>
+		<updated>2011-07-30T16:59:48+00:00</updated>
+		<content type="html">&lt;div dir=&quot;ltr&quot; style=&quot;text-align: left;&quot;&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: inherit;&quot;&gt;Actually it should read as non compliance &lt;a href=&quot;http://lwn.net/Articles/453374/&quot;&gt;but I'll go with what I see on the interwebs&lt;/a&gt;.   Anyways, it appears that some grammar files are not included in the distribution and Dr. Stallman rightly acknowledgement the error and suggested a remediation.&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: inherit;&quot;&gt;&lt;br /&gt;
+&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: inherit;&quot;&gt;What I don't understand is, why people are worked up over this.  It appears to be a mistake and the developers are trying to fix it.  It's not like they bundled it and made a few millions of it and then got pantsed.  I always thought that it'd be a kinder version of 'cease and desist' or else....they themselves stop distribution of their own code.&lt;/span&gt;&lt;br /&gt;
+&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: inherit;&quot;&gt;&lt;br /&gt;
+&lt;/span&gt;&lt;br /&gt;
+&lt;div&gt;&lt;span class=&quot;Apple-style-span&quot; style=&quot;font-family: inherit;&quot;&gt;An&lt;span&gt;&lt;/span&gt;yways, here's &lt;a href=&quot;http://ebb.org/bkuhn/blog/2011/07/29/emacs.html&quot;&gt;another take on the same&lt;/a&gt;, mirroring my own views in a more mature fa&lt;span&gt;&lt;/span&gt;shion.&lt;/span&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;
+&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://blogger.googleusercontent.com/tracker/3165518189103293420-9018629531820424789?l=emacsworld.blogspot.com&quot; width=&quot;1&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://feedads.g.doubleclick.net/~a/pQgSltLGVlxEwOEx7hh0c2_imlY/0/da&quot;&gt;&lt;img border=&quot;0&quot; ismap=&quot;true&quot; src=&quot;http://feedads.g.doubleclick.net/~a/pQgSltLGVlxEwOEx7hh0c2_imlY/0/di&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://feedads.g.doubleclick.net/~a/pQgSltLGVlxEwOEx7hh0c2_imlY/1/da&quot;&gt;&lt;img border=&quot;0&quot; ismap=&quot;true&quot; src=&quot;http://feedads.g.doubleclick.net/~a/pQgSltLGVlxEwOEx7hh0c2_imlY/1/di&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class=&quot;feedflare&quot;&gt;
+&lt;a href=&quot;http://feeds.feedburner.com/~ff/GotEmacs?a=6h7NMZRKLk8:52eU6tLnXLQ:yIl2AUoC8zA&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://feeds.feedburner.com/~ff/GotEmacs?d=yIl2AUoC8zA&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.feedburner.com/~ff/GotEmacs?a=6h7NMZRKLk8:52eU6tLnXLQ:qj6IDK7rITs&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://feeds.feedburner.com/~ff/GotEmacs?d=qj6IDK7rITs&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.feedburner.com/~ff/GotEmacs?a=6h7NMZRKLk8:52eU6tLnXLQ:gIN9vFwOqvQ&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://feeds.feedburner.com/~ff/GotEmacs?i=6h7NMZRKLk8:52eU6tLnXLQ:gIN9vFwOqvQ&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/GotEmacs/~4/6h7NMZRKLk8&quot; width=&quot;1&quot; /&gt;</content>
+		<author>
+			<name>sivaram</name>
+			<email>noreply@blogger.com</email>
+			<uri>http://emacsworld.blogspot.com/</uri>
+		</author>
+		<source>
+			<title type="html">Got Emacs?</title>
+			<subtitle type="html">Postings on living in an Emacs world.  Posts will be mostly on using Emacs, related functions and tools.</subtitle>
+			<link rel="self" href="http://feeds.feedburner.com/GotEmacs"/>
+			<id>tag:blogger.com,1999:blog-3165518189103293420</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Justin Heyes-Jones: eredis update</title>
+		<link href="http://justinsboringpage.blogspot.com/2011/07/eredis-update.html"/>
+		<id>tag:blogger.com,1999:blog-4777243148323391813.post-1310783275001628299</id>
+		<updated>2011-07-30T07:09:08+00:00</updated>
+		<content type="html">I've been busy on my emacs redis client &lt;a href=&quot;http://code.google.com/p/eredis/&quot;&gt;eredis&lt;/a&gt; and it now supports the entire API. It still needs a bit more polish but it should be a workable Redis client now, and I will continue to play with the org-mode table integration which I think has a lot of potential uses: for example making a gui to edit server parameters in just a few seconds. &lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;Also made a new video showing some of the new org table creating commands and the monitor mode that shows the Redis commands as they are run on the server:&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://blogger.googleusercontent.com/tracker/4777243148323391813-1310783275001628299?l=justinsboringpage.blogspot.com&quot; width=&quot;1&quot; /&gt;&lt;/div&gt;</content>
+		<author>
+			<name>Justin</name>
+			<email>noreply@blogger.com</email>
+			<uri>http://justinsboringpage.blogspot.com/search/label/emacs</uri>
+		</author>
+		<source>
+			<title type="html">justinhj's coding blog</title>
+			<subtitle type="html">Programming related tips and comments. Lots of emacs, C++, some game AI, common lisp, python, java, c#, sql and whatever else I'm working on.</subtitle>
+			<link rel="self" href="http://www.blogger.com/feeds/4777243148323391813/posts/default/-/emacs"/>
+			<id>tag:blogger.com,1999:blog-4777243148323391813</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html" xml:lang="en-US">Phil Hagelberg: in which an operating system makes trade-offs</title>
+		<link href="http://technomancy.us/151"/>
+		<id>tag:technomancy.us,2007:in%20which%20an%20operating%20system%20makes%20trade-offs</id>
+		<updated>2011-07-29T19:27:51+00:00</updated>
+		<content type="html" xml:lang="en-US">&lt;p&gt;I've been a user of
+  Debian's &lt;a href=&quot;http://wiki.debian.org/Apt&quot;&gt;apt-get&lt;/a&gt; package
+  manager for nearly as long as I've been serious about computers,
+  and I love it. Going back to a system that lacked apt's depth and
+  stability would be like having to write with my non-dominant hand
+  or worse—going back to typing on a QWERTY layout. I have
+  seamless access to everything I need[&lt;a href=&quot;http://technomancy.us#fn1&quot;&gt;1&lt;/a&gt;], and it
+  never breaks unless I do something crazy like add unsupported
+  third-party repositories or run the unstable distribution. Who
+  could ask for more? So I'm quite proud to see
+  &lt;a href=&quot;https://github.com/technomancy/leiningen&quot;&gt;Leiningen&lt;/a&gt;
+  &lt;a href=&quot;http://anonscm.debian.org/gitweb/?p=pkg-java/leiningen.git&quot;&gt;getting
+  packaged for Debian&lt;/a&gt; with lots of help from the Java
+  Maintainers team.&lt;/p&gt;
+
+&lt;img align=&quot;right&quot; alt=&quot;debian rice&quot; src=&quot;http://technomancy.us/i/rice.jpg&quot; /&gt;
+
+&lt;p&gt;It's interesting to get a look inside the sausage factory of
+  packaging. The biggest hurdle for me as I was learning the ropes
+  was that all the packaging introductions assume you are building a
+  C program and
+  have &lt;a href=&quot;http://twitter.com/technomancy/status/85930967025459202&quot;&gt;familiarity
+  with makefiles&lt;/a&gt;. You can tell that the packaging culture has
+  its roots in C, and packages from other runtimes feel a bit
+  foreign.[&lt;a href=&quot;http://technomancy.us#fn2&quot;&gt;2&lt;/a&gt;] Even more so with a language like
+  Clojure... you're off into unexplored territory, blazing your own
+  trail.&lt;/p&gt;
+
+&lt;p&gt;The biggest change from what I'm used to is the notion that only
+  a single version of a package can be installed at a time. I think
+  I understand the motivation here: it's crucial that when a
+  security vulnerability is reported the affected packages and all
+  those that depend on them have access to the fix. I'm used to
+  developer-focused package managers that allow many versions to be
+  installed side-by-side, but that places the burden of security
+  updates on the developers using it since it's common for packages
+  to depend on exact versions rather than allowing bugfix versions
+  to sneak in. It's a lot more work to track down security issues, but
+  this is not a big deal in the context of developer-centric systems
+  since these particular users are less likely to mind having to pay
+  attention to that sort of detail; it's what they're paid to
+  do.&lt;/p&gt;
+
+&lt;p&gt;So there's a real tension here; end users want packages to just
+  work and be safe without thinking about them while developers
+  demand repeatability and control. Developers need the flexibility
+  to choose exactly when they want to pull in new versions of
+  libraries, while end users want things to hum along out of
+  sight.&lt;/p&gt;
+
+&lt;p&gt;The problem is that the one-version-of-a-package-at-a-time policy
+  doesn't always work in practice. Over time backwards compatibility
+  is the exception rather than the rule; in many cases there simply
+  is no substitute for having multiple versions of a package
+  installed simultaneously. And apt's answer here is just to create
+  a new package with the incompatible version number as part of the
+  package name. There's no clue that these packages are related, and
+  upgrades won't pick the new versions up. This is quite a shame,
+  because I love everything else about apt. I look at complicated
+  production deployment schemes and think to myself how much simpler
+  things would be if deploying were just a matter of adding our
+  internal apt repository and running apt-get install,
+  but... versions.&lt;/p&gt;
+
+&lt;p&gt;Of course, these gripes are not really relevant to having
+  Leiningen in Debian.[&lt;a href=&quot;http://technomancy.us#fn3&quot;&gt;3&lt;/a&gt;] Users of Debian-based
+  systems will be well-served by getting Leiningen through their OS,
+  and once it's on their system, they're free to use it to solve
+  their developer-centric problems. This plays to the strengths of
+  each system, and everybody wins.&lt;/p&gt;
+
+&lt;hr /&gt;
+
+&lt;p&gt;[&lt;a name=&quot;fn1&quot;&gt;1&lt;/a&gt;] Except Emacs; that's the only thing I still
+  build myself from
+  source. Though &lt;a href=&quot;http://emacs.naquadah.org/&quot;&gt;http://emacs.naquadah.org&lt;/a&gt;
+  looks like it delivers perfectly passable builds of 24 if you're
+  not interested in any of
+  the &lt;a href=&quot;http://bzr.savannah.gnu.org/lh/emacs/concurrency/files&quot;&gt;experimental&lt;/a&gt;
+  &lt;a href=&quot;http://bzr.savannah.gnu.org/lh/emacs/xwidget/files&quot;&gt;branches&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;[&lt;a name=&quot;fn2&quot;&gt;2&lt;/a&gt;] It's especially noticeable with Ruby and
+  the JVM. Part of this is due to the fact that the JVM has only
+  been free software for a relatively short period of time, and a
+  lot of the existing culture around Java distribution goes against
+  the grain of repeatable builds by ignoring source and shuttling
+  binary bytecode around everywhere.&lt;/p&gt;
+
+&lt;p&gt;[&lt;a name=&quot;fn3&quot;&gt;3&lt;/a&gt;] And it's looking like it'll make it into
+  Ubuntu 11.10 as well.&lt;/p&gt;</content>
+		<author>
+			<name>Phil Hagelberg</name>
+			<uri>http://technomancy.us/</uri>
+		</author>
+		<source>
+			<title type="html">Technomancy</title>
+			<link rel="self" href="http://technomancy.us/feed/atom"/>
+			<id>tag:technomancy.us,2007:blog/</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Flickr tag 'emacs': 2011-05-06 16.17.31</title>
+		<link href="http://www.flickr.com/photos/richardsmedley/5987493628/"/>
+		<id>tag:flickr.com,2004:/photo/5987493628</id>
+		<updated>2011-07-29T11:37:55+00:00</updated>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/richardsmedley/&quot;&gt;Richard_Smedley&lt;/a&gt; posted a photo:&lt;/p&gt;
+	
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/richardsmedley/5987493628/&quot; title=&quot;2011-05-06 16.17.31&quot;&gt;&lt;img alt=&quot;2011-05-06 16.17.31&quot; height=&quot;180&quot; src=&quot;http://farm7.static.flickr.com/6007/5987493628_4b3253b81e_m.jpg&quot; width=&quot;240&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;Emacs is my Operating System&lt;/p&gt;</content>
+		<author>
+			<name>Richard_Smedley</name>
+			<email>nobody@flickr.com</email>
+			<uri>http://www.flickr.com/photos/tags/emacs/</uri>
+		</author>
+		<source>
+			<title type="html">Recent Uploads tagged emacs</title>
+			<link rel="self" href="http://api.flickr.com/services/feeds/photos_public.gne?tags=emacs&amp;lang=en-us&amp;format=rss_200"/>
+			<id>http://www.flickr.com/photos/tags/emacs/</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html" xml:lang="en-us">Dimitri Fontaine: Emacs ANSI colors</title>
+		<link href="http://tapoueh.org/blog/2011/07/29-emacs-ansi-colors.html"/>
+		<id>http://tapoueh.org/blog/2011/07/29-emacs-ansi-colors.html</id>
+		<updated>2011-07-29T08:00:00+00:00</updated>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://tapoueh.org/emacs/index.html&quot;&gt;Emacs&lt;/a&gt; comes with a pretty good implementation of a terminal emulator, &lt;code&gt;M-x
+term&lt;/code&gt;.  Well not that good actually, but given what I use it for, it's just
+what I need.  Particulary if you add to that my &lt;a href=&quot;http://tapoueh.org/emacs/cssh.html&quot;&gt;cssh&lt;/a&gt; tool, so that
+connecting with &lt;code&gt;ssh&lt;/code&gt; to a remote host is just a &lt;code&gt;=C-= runs the command
+cssh-term-remote-open&lt;/code&gt; away, and completes on the host name thanks to
+&lt;code&gt;~/.ssh/known_hosts&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;Now, a problem that I still had to solve was the colors used in the
+terminal.  As I'm using the &lt;em&gt;tango&lt;/em&gt; color theme for emacs, the default &lt;em&gt;ANSI&lt;/em&gt;
+palette's blue color was not readable.  Here's how to fix that:&lt;/p&gt;
+
+&lt;pre class=&quot;src&quot;&gt;   (&lt;span style=&quot;color: #729fcf; font-weight: bold;&quot;&gt;require&lt;/span&gt; '&lt;span style=&quot;color: #8ae234;&quot;&gt;ansi-color&lt;/span&gt;)
+   (setq ansi-color-names-vector
+         (vector (frame-parameter nil 'background-color)
+               &lt;span style=&quot;color: #ad7fa8; font-style: italic;&quot;&gt;&quot;#f57900&quot;&lt;/span&gt; &lt;span style=&quot;color: #ad7fa8; font-style: italic;&quot;&gt;&quot;#8ae234&quot;&lt;/span&gt; &lt;span style=&quot;color: #ad7fa8; font-style: italic;&quot;&gt;&quot;#edd400&quot;&lt;/span&gt; &lt;span style=&quot;color: #ad7fa8; font-style: italic;&quot;&gt;&quot;#729fcf&quot;&lt;/span&gt;
+               &lt;span style=&quot;color: #ad7fa8; font-style: italic;&quot;&gt;&quot;#ad7fa8&quot;&lt;/span&gt; &lt;span style=&quot;color: #ad7fa8; font-style: italic;&quot;&gt;&quot;cyan3&quot;&lt;/span&gt; &lt;span style=&quot;color: #ad7fa8; font-style: italic;&quot;&gt;&quot;#eeeeec&quot;&lt;/span&gt;)
+         ansi-term-color-vector ansi-color-names-vector
+         ansi-color-map (ansi-color-make-color-map))
+&lt;/pre&gt;
+
+&lt;p&gt;Now your colors in an emacs terminal are easy to read, as you can see:&lt;/p&gt;
+
+&lt;blockquote&gt;
+&lt;p class=&quot;quoted&quot;&gt;&lt;img alt=&quot;&quot; src=&quot;http://tapoueh.org/../../images/emacs-tango-term-colors.png&quot; /&gt;&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;Hope you enjoy!&lt;/p&gt;</content>
+		<author>
+			<name>Dimitri Fontaine</name>
+			<email>dim@tapoueh.org</email>
+			<uri>http://tapoueh.org/index.html</uri>
+		</author>
+		<source>
+			<title type="html">tail -f /dev/dim</title>
+			<subtitle type="html">Dimitri Fontaine's blog</subtitle>
+			<link rel="self" href="http://tapoueh.org/rss/emacs.xml"/>
+			<id>http://tapoueh.org/index.html</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html" xml:lang="en">Alex Bennée: Perils of bleeding edge</title>
+		<link href="http://www.bennee.com/~alex/blog/2011/07/27/perils-of-bleeding-edge/"/>
+		<id>http://www.bennee.com/~alex/blog/?p=2359</id>
+		<updated>2011-07-27T15:55:04+00:00</updated>
+		<content type="html" xml:lang="en">&lt;p&gt;I’ve taken to running the latest &lt;em&gt;emacs&lt;/em&gt; from a source tree install. It works well enough and additional modes I use have been liberally ${VC} fetched into my &lt;em&gt;.emacs.d&lt;/em&gt;. However there are still a number of packages I’d like to use from Debian’s emacs version agnostic site-lisp directories. I came up with this:&lt;/p&gt;
+&lt;pre style=&quot;color: #dcdccc; background-color: #3f3f3f; font-size: 8pt;&quot;&gt; &lt;span style=&quot;color: #7f9f7f;&quot;&gt;;; &lt;/span&gt;&lt;span style=&quot;color: #7f9f7f;&quot;&gt;Add site-lisp to search path&lt;/span&gt;
+&lt;span style=&quot;color: #7f9f7f;&quot;&gt;;&lt;/span&gt;&lt;span style=&quot;color: #7f9f7f;&quot;&gt; &lt;/span&gt;
+&lt;span style=&quot;color: #7f9f7f;&quot;&gt;; &lt;/span&gt;&lt;span style=&quot;color: #7f9f7f;&quot;&gt;This is a work-around function for when I'm running bleeding &lt;/span&gt;
+&lt;span style=&quot;color: #7f9f7f;&quot;&gt;; &lt;/span&gt;&lt;span style=&quot;color: #7f9f7f;&quot;&gt;emacs from the source tree but still want Debian's developer &lt;/span&gt;
+&lt;span style=&quot;color: #7f9f7f;&quot;&gt;; &lt;/span&gt;&lt;span style=&quot;color: #7f9f7f;&quot;&gt;tools. I'd caution about having too many extra packages about that &lt;/span&gt;
+&lt;span style=&quot;color: #7f9f7f;&quot;&gt;; &lt;/span&gt;&lt;span style=&quot;color: #7f9f7f;&quot;&gt;have been merged into the source tree (cedet etc) lest it get &lt;/span&gt;
+&lt;span style=&quot;color: #7f9f7f;&quot;&gt;; &lt;/span&gt;&lt;span style=&quot;color: #7f9f7f;&quot;&gt;confused. &lt;/span&gt;
+(&lt;span style=&quot;color: #f0dfaf; font-weight: bold;&quot;&gt;defun&lt;/span&gt; &lt;span style=&quot;color: #8cd0d3;&quot;&gt;load-debian-site-lisp&lt;/span&gt;()
+&lt;span style=&quot;color: #8fb28f;&quot;&gt;&quot;Attempt to load Debian's site-lisp if it's there&quot;&lt;/span&gt;
+  (interactive)
+  (&lt;span style=&quot;color: #f0dfaf; font-weight: bold;&quot;&gt;when&lt;/span&gt; (and (not (member &lt;span style=&quot;color: #cc9393;&quot;&gt;&quot;/usr/share/emacs/site-lisp&quot;&lt;/span&gt; load-path))
+             (fboundp 'normal-top-level-add-subdirs-to-load-path))
+	      (&lt;span style=&quot;color: #f0dfaf; font-weight: bold;&quot;&gt;let*&lt;/span&gt; ((default-directory &lt;span style=&quot;color: #cc9393;&quot;&gt;&quot;/usr/share/emacs/site-lisp&quot;&lt;/span&gt;))
+      (normal-top-level-add-subdirs-to-load-path))))
+
+(load-debian-site-lisp) &lt;/pre&gt;
+&lt;p&gt;Which seems to work well enough to give me my &lt;em&gt;debian-changelog-mode&lt;/em&gt; back. However it’s still not seamless as I have to manually &lt;em&gt;(require ‘debian-changelog-mode)&lt;/em&gt; before loading a changelog which forces the issue with local variables. I suspect I’ll have to replicate the boilerplate that &lt;em&gt;/usr/share/emacs/site-lisp/debian-startup.el&lt;/em&gt; does but I can’t use because it doesn’t degrade gracefully if no &lt;em&gt;debian-emacs-flavour&lt;/em&gt; is defined. Suggestions for making this behaviour neater would be useful….&lt;/p&gt;</content>
+		<author>
+			<name>Alex</name>
+			<uri>http://www.bennee.com/~alex/blog</uri>
+		</author>
+		<source>
+			<title type="html">Alex's Adventures on the Infobahn » emacs</title>
+			<subtitle type="html">the wanderings of a supposed digital native</subtitle>
+			<link rel="self" href="http://www.bennee.com/~alex/blog/tag/emacs/feed/"/>
+			<id>http://www.bennee.com/~alex/blog</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Robert Adesam: Mairix on Windows-NT Emacs</title>
+		<link href="http://robert-adesam.blogspot.com/2011/05/mairix-on-windows-nt-emacs.html"/>
+		<id>tag:blogger.com,1999:blog-1139989336831951363.post-5437415988260803931</id>
+		<updated>2011-07-25T13:08:14+00:00</updated>
+		<content type="html">Problem -- calling &lt;a href=&quot;http://www.rpcurnow.force9.co.uk/mairix/&quot;&gt;Mairix&lt;/a&gt; under &lt;a href=&quot;http://cygwin.org/&quot;&gt;Cygwin&lt;/a&gt; via mairix.el on a &lt;a href=&quot;http://ftp.gnu.org/pub/gnu/emacs/windows/&quot;&gt;Windows-NT Emacs 23.2&lt;/a&gt; results in an error from &lt;a href=&quot;http://www.rpcurnow.force9.co.uk/mairix/&quot;&gt;Mairix&lt;/a&gt; not finding the output folder.&lt;br /&gt;&lt;br /&gt;The &lt;a href=&quot;http://www.rpcurnow.force9.co.uk/mairix/&quot;&gt;Mairix&lt;/a&gt; setup in &lt;a href=&quot;http://www.emacswiki.org/emacs/RobertAdesamConfig&quot;&gt;my Emacs init file&lt;/a&gt; is&lt;br /&gt;&lt;pre class=&quot;prettyprint lang-el&quot;&gt;(require 'mairix)&lt;br /&gt;(setq mairix-file-path &quot;~/mail&quot;&lt;br /&gt;      mairix-mail-program (quote vm)&lt;br /&gt;      mairix-search-file &quot;search&quot;)&lt;br /&gt;&lt;/pre&gt;The error message in the &lt;code&gt;*mairix output*&lt;/code&gt; buffer shows that &lt;a href=&quot;http://www.rpcurnow.force9.co.uk/mairix/&quot;&gt;Mairix&lt;/a&gt; is looking for the output folder, &lt;code&gt;search&lt;/code&gt;, in &lt;code&gt;mail/c:/cygwin/home/robert/mail/&lt;/code&gt;. The first &lt;code&gt;mail/&lt;/code&gt; part is &lt;a href=&quot;http://www.rpcurnow.force9.co.uk/mairix/&quot;&gt;Mairix&lt;/a&gt; prefixing &lt;em&gt;base&lt;/em&gt; to the expanded value of &lt;code&gt;mairix-file-path&lt;/code&gt;, &lt;code&gt;c:/cygwin/home/robert/mail&lt;/code&gt;. This prefixing is done due to the value not starting with a &lt;code&gt;/&lt;/code&gt; or a &lt;code&gt;.&lt;/code&gt;, see the &lt;code&gt;mairixrc(5)&lt;/code&gt; man page.&lt;br /&gt;&lt;br /&gt;My quick fix was to patch the function &lt;code&gt;mairix-call-mairix&lt;/code&gt; in mairix.el to prune away the &lt;code&gt;c:/cygwin&lt;/code&gt; part added by &lt;code&gt;expand-file-name&lt;/code&gt;. I actually redefined the function in &lt;a href=&quot;http://www.emacswiki.org/emacs/RobertAdesamConfig&quot;&gt;my Emacs init file&lt;/a&gt;, but also uploaded &lt;a href=&quot;http://www.emacswiki.org/emacs/RobertAdesamMairixPatch&quot;&gt;a patch&lt;/a&gt; for &lt;code&gt;mairix.el&lt;/code&gt; on the &lt;a href=&quot;http://www.emacswiki.org/&quot;&gt;EmacsWiki&lt;/a&gt;.&lt;br /&gt;&lt;br /&gt;I suspect there are much nicer ways to go about this, maybe locally make &lt;code&gt;expand-file-name&lt;/code&gt; not to expand &lt;code&gt;~&lt;/code&gt; to &lt;code&gt;c:/cygwin/home/robert/&lt;/code&gt; but to just &lt;code&gt;/home/robert/&lt;/code&gt;.&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://blogger.googleusercontent.com/tracker/1139989336831951363-5437415988260803931?l=robert-adesam.blogspot.com&quot; width=&quot;1&quot; /&gt;&lt;/div&gt;</content>
+		<author>
+			<name>Robert Adesam</name>
+			<email>robert@adesam.se</email>
+			<uri>http://robert-adesam.blogspot.com/search/label/emacs</uri>
+		</author>
+		<source>
+			<title type="html">Robert Adesam</title>
+			<subtitle type="html">About Technology in General and Emacs in Particular.</subtitle>
+			<link rel="self" href="http://www.blogger.com/feeds/1139989336831951363/posts/default/-/emacs"/>
+			<id>tag:blogger.com,1999:blog-1139989336831951363</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Justin Heyes-Jones: eredis: a Redis client in emacs lisp</title>
+		<link href="http://justinsboringpage.blogspot.com/2011/07/eredis-redis-client-in-emacs-lisp.html"/>
+		<id>tag:blogger.com,1999:blog-4777243148323391813.post-4641705860991542206</id>
+		<updated>2011-07-25T08:24:31+00:00</updated>
+		<content type="html">&lt;a href=&quot;http://4.bp.blogspot.com/-vgnyCCDQNKA/Ti0npIdQ6YI/AAAAAAAAFvQ/iYAfeenzv68/s1600/exampleeredis.png&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; id=&quot;BLOGGER_PHOTO_ID_5633202296508705154&quot; src=&quot;http://4.bp.blogspot.com/-vgnyCCDQNKA/Ti0npIdQ6YI/AAAAAAAAFvQ/iYAfeenzv68/s320/exampleeredis.png&quot; style=&quot;cursor: pointer; cursor: hand; width: 320px; height: 100px;&quot; /&gt;&lt;/a&gt;&lt;br /&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;I set up a google code project today for &lt;a href=&quot;http://bit.ly/noZp92&quot;&gt;&lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_0&quot;&gt;eredis&lt;/span&gt;&lt;/a&gt;. A &lt;a href=&quot;http://redis.io/&quot;&gt;&lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_1&quot;&gt;Redis&lt;/span&gt;&lt;/a&gt; client in &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_2&quot;&gt;emacs&lt;/span&gt; lisp. &lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;The program consists of a single &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_3&quot;&gt;emacs&lt;/span&gt; lisp file&lt;a href=&quot;http://code.google.com/p/eredis/source/browse/trunk/eredis.el&quot;&gt; &lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_4&quot;&gt;eredis&lt;/span&gt;.&lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_5&quot;&gt;el&lt;/span&gt; &lt;/a&gt; &lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;span class=&quot;blsp-spelling-error&quot; id=&quot;SPELLING_ERROR_6&quot;&gt;emacs&lt;/span&gt; lisp includes facilities for writing network applications. In my code I use `make-network-process' to open a connection to a specified redis server. Then the Redis api is exposed. &lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;One nice feature of emacs I have used is org-table-mode. This lets you edit and manage the data in a Redis server in an org table. For example, you can grab all keys matching a pattern and create an org table from the key value pairs, then edit that table. You can then send it back to Redis with interactive commands that send either the whole table, or just the current row back to Redis using mset or set.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;This work flow is not safe when working with multiple users, if you care about overwriting each others data. For example, I could store the last values you got from Redis in addition to your edited values. When you go to set a new value I first grab it from Redis, check if it has changed since you got it, and if so warn you (showing you the new value). For many work flows this would work well. For example the use case of a group of users editing a shared DB of configuration data. &lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt; &lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div&gt;&lt;br /&gt;&lt;/div&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://blogger.googleusercontent.com/tracker/4777243148323391813-4641705860991542206?l=justinsboringpage.blogspot.com&quot; width=&quot;1&quot; /&gt;&lt;/div&gt;</content>
+		<author>
+			<name>Justin</name>
+			<email>noreply@blogger.com</email>
+			<uri>http://justinsboringpage.blogspot.com/search/label/emacs</uri>
+		</author>
+		<source>
+			<title type="html">justinhj's coding blog</title>
+			<subtitle type="html">Programming related tips and comments. Lots of emacs, C++, some game AI, common lisp, python, java, c#, sql and whatever else I'm working on.</subtitle>
+			<link rel="self" href="http://www.blogger.com/feeds/4777243148323391813/posts/default/-/emacs"/>
+			<id>tag:blogger.com,1999:blog-4777243148323391813</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html" xml:lang="en">Vinh Nguyen: research paper management or library with emacs</title>
+		<link href="http://blog.nguyenvq.com/2011/07/24/research-paper-management-or-library-with-emacs/"/>
+		<id>http://blog.nguyenvq.com/?p=991</id>
+		<updated>2011-07-24T15:12:00+00:00</updated>
+		<content type="html" xml:lang="en">&lt;div class=&quot;topsy_widget_data topsy_theme_jade&quot; style=&quot;float: right; margin-left: 0.75em;&quot;&gt;&lt;/div&gt;
+&lt;p&gt;Despite the availability of softwares such as &lt;a href=&quot;http://www.mendeley.com/&quot;&gt;Mendeley&lt;/a&gt;, &lt;a href=&quot;http://www.zotero.org/&quot;&gt;Zotero&lt;/a&gt;, and &lt;a href=&quot;http://jabref.sourceforge.net/&quot;&gt;JabRef&lt;/a&gt;, I like to store my papers (&lt;code&gt;pdf&lt;/code&gt; files) and citation information (&lt;code&gt;bib&lt;/code&gt; files) using a directory stucture, enter notes into a text file (&lt;code&gt;org-mode&lt;/code&gt;), view notes and bibliographic information using a single file, cite references in LaTeX from a single &lt;code&gt;bib&lt;/code&gt; file, and manage papers in Emacs using &lt;code&gt;dired&lt;/code&gt;.  I choose to manage my references using the &lt;a href=&quot;http://www.bibtex.org/&quot;&gt;bib&lt;/a&gt; format because it is the de facto standard in academia (at least in my field), and hence, is easily exported from the publisher’s website.  In addition, I write all my papers using LaTeX for which I utilize &lt;code&gt;bibtex&lt;/code&gt; whenever a reference is made; if I were to write papers using another program that utilizes a different format for bibliographies, I can easily convert the &lt;code&gt;bib&lt;/code&gt; files using &lt;a href=&quot;http://bibutils.refbase.org/&quot;&gt;bibutils&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;This post was originally motivated by &lt;a href=&quot;http://tincman.wordpress.com/2011/01/04/research-paper-management-with-emacs-org-mode-and-reftex/&quot;&gt;this&lt;/a&gt; post which outlines a method to manage papers in emacs and org-mode.  However, the workflow did not fit me particularly well, and so I came up with a setup and workflow of my own.  I’ve been using this workflow for the last half a year and never got around to outlining it until the recent org-bibtex &lt;a href=&quot;http://www.mail-archive.com/emacs-orgmode@gnu.org/msg40814.html&quot;&gt;discussion&lt;/a&gt; reminded me to do so.  I will first describe my setup and then its usage.  I then end with some tips on starting your academic paper library and other thoughts.  It is assumed that papers are available in pdf format.  All filenames used throughout should not contain spaces, just to be safe.&lt;/p&gt;
+
+&lt;h2&gt;Setup&lt;/h2&gt;
+
+&lt;p&gt;The base directory for the research papers I download and their corresponding &lt;code&gt;bib&lt;/code&gt; files is &lt;code&gt;~/Documents/Literature&lt;/code&gt;.  In this base directory, I have a folder &lt;code&gt;scripts&lt;/code&gt; for storing scripts that help me manage the files.  I also have the files &lt;code&gt;books.bib&lt;/code&gt; and &lt;code&gt;software.bib&lt;/code&gt; for storing citation information for books and software.  The main files, &lt;code&gt;bibliography.bib&lt;/code&gt; and &lt;code&gt;literature.org&lt;/code&gt; are generated and updated using scripts and hence, are set to be non-writable by me in order to avoid manual editing that will be lost when the next update occurs.&lt;/p&gt;
+
+&lt;p&gt;I split my papers into subjects or categories according to directories in the base directory such as &lt;code&gt;./EstimatingEquations&lt;/code&gt;, &lt;code&gt;./Survival/&lt;/code&gt;, etc.  In each of the subject directory, I have a &lt;code&gt;category.org&lt;/code&gt; file that assists with structuring the &lt;code&gt;literature.org&lt;/code&gt; file.  An example of the &lt;code&gt;category.org&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;div&gt;&lt;pre class=&quot;brush: plain; title: ; notranslate&quot;&gt;* Estimating Equations                                  :EstimatingEquations:
+
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Place the following scripts in your script directory, &lt;code&gt;./scripts/&lt;/code&gt;.&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;LitCreateDir.sh&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div&gt;&lt;pre class=&quot;brush: bash; title: ; notranslate&quot;&gt;#! /bin/bash
+
+## arguments are pdf files
+
+for file in &quot;$@&quot;
+do
+bn=`basename &quot;$file&quot;`
+NameNoExt=${bn%.*} ## no extension
+Ext=${bn/*./} ## extension http://www.linuxforums.org/forum/programming-scripting/128625-how-get-file-extension-without-dot.html
+if [ `echo $Ext | tr [:upper:] [:lower:] ` = &quot;pdf&quot; ] ## only do pdf files
+then
+mkdir &quot;$NameNoExt&quot;
+mv &quot;$file&quot; &quot;$NameNoExt/&quot;
+touch &quot;$NameNoExt/bib.bib&quot;
+touch &quot;$NameNoExt/notes.org&quot;
+if [ -f &quot;$NameNoExt.bib&quot; ]  ## file exists?
+then
+mv -f &quot;$NameNoExt.bib&quot; &quot;$NameNoExt/bib.bib&quot;
+cd &quot;$NameNoExt&quot;
+LitNotes.sh
+cd ..
+fi
+fi
+done
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;code&gt;LitUpdate.sh&lt;/code&gt;:&lt;/p&gt;
+
+&lt;div&gt;&lt;pre class=&quot;brush: bash; title: ; notranslate&quot;&gt;#! /bin/bash
+
+basedir=&quot;$HOME/Documents/Literature&quot;
+bibfile=&quot;$basedir/bibliography.bib&quot;
+litfile=&quot;$basedir/literature.org&quot;
+
+## delete old files
+cd $basedir
+rm -f $bibfile $litfile
+
+## create $bibfile
+find ./ -iname &quot;*.bib&quot; -print0 | xargs -0 cat &amp;gt; /tmp/bibliography.bib ## -0, some folders have &quot;'&quot; in name; *.bib and not just bib.bib to get books.bib as well
+mv /tmp/bibliography.bib ./
+# find ./ -iname &quot;*.bib&quot; -print0 &amp;gt; bibfiles.txt
+# xargs -0 cat &amp;lt; bibfiles.txt &amp;gt; $bibfile
+## books
+##cat books.bib &amp;gt;&amp;gt; $bibfile ## above should already pick up books
+
+
+## create $litfile
+echo &quot;#+title: Literature
+#+author: YOUR NAME HERE
+#+email: YOUR EMAIL HERE
+&quot; &amp;gt;&amp;gt; $litfile
+for directory in `ls -p | grep &quot;/&quot;` ## directories in Literature
+do
+cd &quot;$directory&quot;
+if [ -f category.org ]
+then
+cat category.org &amp;gt;&amp;gt; $litfile
+##find ./ -iname &quot;notes.org&quot; -print0 | xargs -0 cat &amp;gt;&amp;gt; $litfile ## need to add in links to paper, location, bib, notes
+for notes in `find ./ -iname &quot;notes.org&quot;`
+do
+fullpath=`readlink -f &quot;$notes&quot;`
+##fullpath=`realpath &quot;$notes&quot;` ## http://www.commandlinefu.com/commands/view/7999/get-the-absolute-path-of-a-file?utm_source=feedburner&amp;amp;utm_medium=feed&amp;amp;utm_campaign=Feed%3A+Command-line-fu+%28Command-Line-Fu%29&amp;amp;utm_content=Google+Reader
+paperdir=`dirname &quot;$fullpath&quot;` ## directory name of directory with notes.org
+pdf=`find &quot;$paperdir&quot; -iname &quot;*.pdf&quot;`
+# cat &quot;$notes&quot; &amp;gt;&amp;gt; $litfile
+# echo &quot;*** [[file:$pdf][paper]] [[file:$paperdir/][location]] [[file:$paperdir/bib.bib][bib]] [[file:$paperdir/notes.org][notes]]&quot; &amp;gt;&amp;gt; $litfile
+head -n1 &quot;$notes&quot; &amp;gt;&amp;gt; $litfile
+echo &quot;*** [[file:$pdf][paper]] [[file:$paperdir/][location]] [[file:$paperdir/bib.bib][bib]] [[file:$paperdir/notes.org][notes]]&quot; &amp;gt;&amp;gt; $litfile
+sed '1 d' &quot;$notes&quot; &amp;gt;&amp;gt; $litfile
+done
+fi
+cd ..
+done
+
+## make file read-only, so I have to manually go to the individual files to edit
+chmod ugo=r $litfile $bibfile
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Place the following in your emacs init file:&lt;/p&gt;
+
+&lt;div&gt;&lt;pre class=&quot;brush: plain; title: ; notranslate&quot;&gt;;; Literature
+(defun dired-literature-create-directory-from-pdf ()
+(interactive)
+(save-window-excursion
+(dired-do-async-shell-command
+&quot;$HOME/Documents/Literature/scripts/LitCreateDir.sh&quot; current-prefix-arg
+(dired-get-marked-files t current-prefix-arg))))
+(define-key dired-mode-map (kbd &quot;s-l d&quot;) 'dired-literature-create-directory-from-pdf)
+
+(defun literature-update ()
+(interactive)
+(shell-command &quot;LitUpdate.sh&quot;)
+)
+(global-set-key (kbd &quot;s-l u&quot;) 'literature-update)
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;h2&gt;Usage&lt;/h2&gt;
+
+&lt;p&gt;I recommend the pdf file be named &lt;code&gt;AuthorYearTitle.pdf&lt;/code&gt; to be consistent across all papers.  The &lt;code&gt;Title&lt;/code&gt; of course should be short and descriptive.  Whenever  I download a pdf paper, I make it MANDATORY that I also download the corresponding &lt;code&gt;bib&lt;/code&gt; file (too many times did I have to cite a paper I thought I’d never cite).  Nearly all publishers can export to &lt;code&gt;bib&lt;/code&gt;, including &lt;a href=&quot;http://www.jstor.org/&quot;&gt;JSTOR&lt;/a&gt;.  If the publishing site doesn’t have this feature, I recommend googling the article in &lt;a href=&quot;http://scholar.google.com/&quot;&gt;Google Scholar&lt;/a&gt; and exporting the &lt;code&gt;bib&lt;/code&gt; file from the search results via “Export to BibTeX” (needs to be turned on in the Google Scholar settings); if this too isn’t available, then I will write my own &lt;code&gt;bib&lt;/code&gt; file manually.  Name this file &lt;code&gt;AuthorYearTitle.bib&lt;/code&gt;, identically the same as the pdf file except the file extension (this is crucial for the scripts to work).  I usually find myself visiting the downloaded &lt;code&gt;bib&lt;/code&gt; file and editing it according to my preference.  For example, I don’t like to have leading spaces in each line and I want each tag (e.g., journal) to be encapsulated by curly braces and end with a comma, even if it is the last tag.  Also, make sure that there is at least one empty line at the end of the &lt;code&gt;bib&lt;/code&gt; file; more on this in the “Other Thoughts” section.&lt;/p&gt;
+
+&lt;p&gt;Suppose I downloaded these files in &lt;code&gt;/tmp&lt;/code&gt;.  In emacs, I will use dired to cut and paste these two files into the subject directory that it belongs to; for example, &lt;code&gt;./Survival&lt;/code&gt;.  In dired, I will move the cursor to the pdf file and hit &lt;code&gt;s-l d&lt;/code&gt; (d for directory); for multiple papers downloaded and moved at the same time, just mark the pdf files first before running &lt;code&gt;s-l d&lt;/code&gt;.  This will create a directory &lt;code&gt;AuthorYearTitle&lt;/code&gt; in &lt;code&gt;./Survival&lt;/code&gt; for each marked paper, move the corresponding pdf and bib files into the newly created directory, and generate a templated &lt;code&gt;notes.org&lt;/code&gt; whose content will be generated from the tags in the &lt;code&gt;bib&lt;/code&gt; file:&lt;/p&gt;
+
+&lt;div&gt;&lt;pre class=&quot;brush: plain; title: ; notranslate&quot;&gt;** Author (Year) Title
+*** Notes
+
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Things learned and notes regarding the content of the paper is meant to be typed into &lt;code&gt;notes.org&lt;/code&gt; file so that I can review my thoughts later (and not have to necessarily re-read a paper to see what I learned).&lt;/p&gt;
+
+&lt;p&gt;Why do I store each paper in its own directory?  I want the paper, &lt;code&gt;bib&lt;/code&gt; file, and my notes to be self-contained in a single entity, and a directory is the best way to achieve this goal.  That way, I can move (to a new category?) or copy (send to a colleague?) the paper with all the information intact.&lt;/p&gt;
+
+&lt;p&gt;After downloading new papers or moving papers around into a different (new?) categroy, running &lt;code&gt;s-l u&lt;/code&gt; updates my &lt;code&gt;bibliography.bib&lt;/code&gt; and &lt;code&gt;literature.org&lt;/code&gt; file.  All &lt;code&gt;bib&lt;/code&gt; files (papers, books, and software) are concatenated into a single &lt;code&gt;bibliography.bib&lt;/code&gt; file so that a single &lt;code&gt;\bibliography{$HOME/Documents/Literature/bibliography.bib}&lt;/code&gt; can be inserted in all my LaTeX files that make use of references.  All &lt;code&gt;category.org&lt;/code&gt; and &lt;code&gt;notes.org&lt;/code&gt; files are concatenated into a single &lt;code&gt;literature.org&lt;/code&gt; file to create a single “library” where I can view all the available information; the paper, location, bib, and notes file can also be opened using &lt;code&gt;C-c o&lt;/code&gt; (org-mode link).  Since it is a text file, all the power of emacs (and other tools) can be used on this file: ordinary searches, regex searches, etc.  This way, I can search my thoughts (via notes) to find or trace ideas back to a paper.  Here is a snippet of what a generated &lt;code&gt;literature.org&lt;/code&gt; file looks like:&lt;/p&gt;
+
+&lt;div&gt;&lt;pre class=&quot;brush: plain; title: ; notranslate&quot;&gt;#+title: Literature
+#+author: MY NAME
+#+email: MY EMAIL
+
+* Estimating Equations                                  :EstimatingEquations:
+** White, Halbert (1982) Maximum Likelihood Estimation of Misspecified Models :EstimatingEquations:
+*** [[file:/home/vinh/Documents/Literature/EstimatingEquations/White1982MLEMisspecifiedModels/White1982MLEMisspecifiedModels.pdf][paper]] [[file:/home/vinh/Documents/Literature/EstimatingEquations/White1982MLEMisspecifiedModels/][location]] [[file:/home/vinh/Documents/Literature/EstimatingEquations/White1982MLEMisspecifiedModels/bib.bib][bib]] [[file:/home/vinh/Documents/Literature/EstimatingEquations/White1982MLEMisspecifiedModels/notes.org][notes]]
+*** Notes
+
+** Whitney K. Newey and Daniel McFadden (1994) Chapter 36 Large sample estimation and hypothesis testing
+*** [[file:/home/vinh/Documents/Literature/EstimatingEquations/NeweyMcFadden1994LargeSampleEstimationTesting/NeweyMcFadden1994LargeSampleEstimationTesting.pdf][paper]] [[file:/home/vinh/Documents/Literature/EstimatingEquations/NeweyMcFadden1994LargeSampleEstimationTesting/][location]] [[file:/home/vinh/Documents/Literature/EstimatingEquations/NeweyMcFadden1994LargeSampleEstimationTesting/bib.bib][bib]] [[file:/home/vinh/Documents/Literature/EstimatingEquations/NeweyMcFadden1994LargeSampleEstimationTesting/notes.org][notes]]
+*** Notes
+
+** Cox, D. R. (1993) Unbiased Estimating Equations Derived from Statistics that are Functions of a Parameter
+*** [[file:/home/vinh/Documents/Literature/EstimatingEquations/Cox1993UnbiasedEstEqDerived/Cox1993UnbiasedEstEqDerived.pdf][paper]] [[file:/home/vinh/Documents/Literature/EstimatingEquations/Cox1993UnbiasedEstEqDerived/][location]] [[file:/home/vinh/Documents/Literature/EstimatingEquations/Cox1993UnbiasedEstEqDerived/bib.bib][bib]] [[file:/home/vinh/Documents/Literature/EstimatingEquations/Cox1993UnbiasedEstEqDerived/notes.org][notes]]
+*** Notes
+
+...
+
+* Genetics                                                     :Genetics:
+** French, Benjamin and Lumley, Thomas and Monks, Stephanie A. and Rice, Kenneth M. and Hindorff, Lucia A. and Reiner, Alexander P. and Psaty, Bruce M. (2006) Simple estimates of haplotype relative risks in case-control data
+*** [[file:/home/vinh/Documents/Literature/Genetics/FrenchLumley+Others2006HaplotypesRelativeRisk/FrenchLumley+Others2006HaplotypesRelativeRisk.pdf][paper]] [[file:/home/vinh/Documents/Literature/Genetics/FrenchLumley+Others2006HaplotypesRelativeRisk/][location]] [[file:/home/vinh/Documents/Literature/Genetics/FrenchLumley+Others2006HaplotypesRelativeRisk/bib.bib][bib]] [[file:/home/vinh/Documents/Literature/Genetics/FrenchLumley+Others2006HaplotypesRelativeRisk/notes.org][notes]]
+*** Notes
+
+** Follmann, Dean and Proschan, Michael and Leifer, Eric (2003) Multiple Outputation: Inference for Complex Clustered Data by Averaging Analyses from Independent Data
+*** [[file:/home/vinh/Documents/Literature/Genetics/FollmanProschanLeifer2003MultipleOutputation/FollmanProschanLeifer2003MultipleOutputation.pdf][paper]] [[file:/home/vinh/Documents/Literature/Genetics/FollmanProschanLeifer2003MultipleOutputation/][location]] [[file:/home/vinh/Documents/Literature/Genetics/FollmanProschanLeifer2003MultipleOutputation/bib.bib][bib]] [[file:/home/vinh/Documents/Literature/Genetics/FollmanProschanLeifer2003MultipleOutputation/notes.org][notes]]
+*** Notes
+
+** Lin, D.Y. and Zeng, D. and Millikan, R. (2005) Maximum likelihood estimation of haplotype effects and haplotype-environment interactions in association studies
+*** [[file:/home/vinh/Documents/Literature/Genetics/LinZengMillikan2005MLEHaplotype/LinZengMillikan2005MLEHaplotype.pdf][paper]] [[file:/home/vinh/Documents/Literature/Genetics/LinZengMillikan2005MLEHaplotype/][location]] [[file:/home/vinh/Documents/Literature/Genetics/LinZengMillikan2005MLEHaplotype/bib.bib][bib]] [[file:/home/vinh/Documents/Literature/Genetics/LinZengMillikan2005MLEHaplotype/notes.org][notes]]
+*** Notes
+
+** Lin, DY and Zeng, D. (2006) Likelihood-based inference on haplotype effects in genetic association studies
+*** [[file:/home/vinh/Documents/Literature/Genetics/LinZeng2006LikelihoodInferenceHaplotype/LinZeng2006LikelihoodInferenceHaplotype.pdf][paper]] [[file:/home/vinh/Documents/Literature/Genetics/LinZeng2006LikelihoodInferenceHaplotype/][location]] [[file:/home/vinh/Documents/Literature/Genetics/LinZeng2006LikelihoodInferenceHaplotype/bib.bib][bib]] [[file:/home/vinh/Documents/Literature/Genetics/LinZeng2006LikelihoodInferenceHaplotype/notes.org][notes]]
+*** Notes
+
+...
+
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;Note that the update process can take seconds or more due to the concatenation.  My library is ever-growing so it will only get longer and longer to update.  I’m not sure if I can ever speed up this process (let me know if you have ideas).&lt;/p&gt;
+
+&lt;p&gt;After running the update process, &lt;code&gt;reftex-reset-mode&lt;/code&gt; should be run in an opened LaTeX file if you want to make use of the most current information with RefTeX.&lt;/p&gt;
+
+&lt;p&gt;I make use of emacs’s bookmark capabalities (&lt;code&gt;C-x r b&lt;/code&gt;) to visit these files easily in emacs.&lt;/p&gt;
+
+&lt;h2&gt;Getting started&lt;/h2&gt;
+
+&lt;p&gt;Most researchers have their downloaded pdf files in one location or multiple locations (category).  To get started, I recommend spending time to rename the files according to &lt;code&gt;AuthorYearTitle.pdf&lt;/code&gt;, and downloading or creating a separate &lt;code&gt;bib&lt;/code&gt; file for each paper.  Then place the files into their category directories (create &lt;code&gt;category.org&lt;/code&gt; as well).  In emacs dired, mark all the pdf files in each category, run &lt;code&gt;s-l d&lt;/code&gt; to generate a self-contained directory for each paper.  After this is done on all the categories, run &lt;code&gt;s-l u&lt;/code&gt; to update.  The file &lt;code&gt;bibliography.bib&lt;/code&gt; can now be used in your LaTeX documents.  The file &lt;code&gt;literature.org&lt;/code&gt; can be now be used as an all in one library.&lt;/p&gt;
+
+&lt;h2&gt;Other thoughts&lt;/h2&gt;
+
+&lt;p&gt;Each &lt;code&gt;bib&lt;/code&gt; file should have at least one empty line at the end of the file or things may go wrong in the &lt;code&gt;bibliography.bib&lt;/code&gt; file; this paper is concatenated from multiple files, and multiple lines could be joined into one line if the newline character isn’t present at the end of the file.&lt;/p&gt;
+
+&lt;p&gt;I also have a &lt;code&gt;bibliography.tex&lt;/code&gt; file to generate a pdf file with all my papers:&lt;/p&gt;
+
+&lt;div&gt;&lt;pre class=&quot;brush: plain; title: ; notranslate&quot;&gt;documentclass{article}
+usepackage{fullpage}
+usepackage{natbib}
+
+begin{document}
+
+cite{*}
+bibliographystyle{apa}
+bibliography{bibliography}
+
+end{document}
+&lt;/pre&gt;&lt;/div&gt;
+
+&lt;p&gt;One thing I would like to be able to do is edit the literature.org file (notes portion) directly and have the changes reflected in the individual &lt;code&gt;notes.org&lt;/code&gt; files.  I haven’t thought of a process to do this well.  It would be nice to view multiple files in a single buffer as if the buffer is showing a single file so that when I edit a portion of the buffer, it actually is a different file depending on its location.&lt;/p&gt;
+
+&lt;p&gt;I’m not sure if anyone will find my workflow useful, but I just wanted to document it for the masses.&lt;/p&gt;</content>
+		<author>
+			<name>Vinh Nguyen</name>
+			<uri>http://blog.nguyenvq.com</uri>
+		</author>
+		<source>
+			<title type="html">Super Nerdy Cool » emacs</title>
+			<subtitle type="html">My (technical) adventures through the professional world...</subtitle>
+			<link rel="self" href="http://blog.nguyenvq.com/tag/emacs/feed/"/>
+			<id>http://blog.nguyenvq.com</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Flickr tag 'emacs': hackers at work</title>
+		<link href="http://www.flickr.com/photos/daverugby83/5965479074/"/>
+		<id>tag:flickr.com,2004:/photo/5965479074</id>
+		<updated>2011-07-22T22:32:18+00:00</updated>
+		<content type="html">&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/people/daverugby83/&quot;&gt;Dave_B_&lt;/a&gt; posted a photo:&lt;/p&gt;
+	
+&lt;p&gt;&lt;a href=&quot;http://www.flickr.com/photos/daverugby83/5965479074/&quot; title=&quot;hackers at work&quot;&gt;&lt;img alt=&quot;hackers at work&quot; height=&quot;149&quot; src=&quot;http://farm7.static.flickr.com/6013/5965479074_ed0f5d8717_m.jpg&quot; width=&quot;240&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;32&quot; of emacs and fdisk!&lt;/p&gt;</content>
+		<author>
+			<name>Dave_B_</name>
+			<email>nobody@flickr.com</email>
+			<uri>http://www.flickr.com/photos/tags/emacs/</uri>
+		</author>
+		<source>
+			<title type="html">Recent Uploads tagged emacs</title>
+			<link rel="self" href="http://api.flickr.com/services/feeds/photos_public.gne?tags=emacs&amp;lang=en-us&amp;format=rss_200"/>
+			<id>http://www.flickr.com/photos/tags/emacs/</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Got Emacs?: TeX Live 2011 release available</title>
+		<link href="http://feedproxy.google.com/~r/GotEmacs/~3/dDCM5FTgkns/tex-live-2011-release-available.html"/>
+		<id>tag:blogger.com,1999:blog-3165518189103293420.post-4678096245718759180</id>
+		<updated>2011-07-22T17:19:13+00:00</updated>
+		<content type="html">&lt;div dir=&quot;ltr&quot; style=&quot;text-align: left;&quot;&gt;&lt;div&gt;&lt;a href=&quot;http://permalink.gmane.org/gmane.comp.tex.ctan.announce/8800&quot;&gt;&lt;/a&gt;Looks like the &lt;a href=&quot;http://permalink.gmane.org/gmane.comp.tex.ctan.announce/8800&quot;&gt;&lt;span id=&quot;goog_812994368&quot;&gt;&lt;/span&gt;TeXLive 2011 binaries are now available&lt;span id=&quot;goog_812994369&quot;&gt;&lt;/span&gt;&lt;/a&gt; along with a recommendation to do a network install instead of  a iso download and then installing.&lt;/div&gt;&lt;div&gt;&lt;br /&gt;
+&lt;/div&gt;&lt;div&gt;&lt;br /&gt;
+&lt;span&gt;&lt;span&gt;&lt;span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://blogger.googleusercontent.com/tracker/3165518189103293420-4678096245718759180?l=emacsworld.blogspot.com&quot; width=&quot;1&quot; /&gt;&lt;/div&gt;
+&lt;p&gt;&lt;a href=&quot;http://feedads.g.doubleclick.net/~a/_0iDk23ytAZk_feapwE0jj8_wMI/0/da&quot;&gt;&lt;img border=&quot;0&quot; ismap=&quot;true&quot; src=&quot;http://feedads.g.doubleclick.net/~a/_0iDk23ytAZk_feapwE0jj8_wMI/0/di&quot; /&gt;&lt;/a&gt;&lt;br /&gt;
+&lt;a href=&quot;http://feedads.g.doubleclick.net/~a/_0iDk23ytAZk_feapwE0jj8_wMI/1/da&quot;&gt;&lt;img border=&quot;0&quot; ismap=&quot;true&quot; src=&quot;http://feedads.g.doubleclick.net/~a/_0iDk23ytAZk_feapwE0jj8_wMI/1/di&quot; /&gt;&lt;/a&gt;&lt;/p&gt;&lt;div class=&quot;feedflare&quot;&gt;
+&lt;a href=&quot;http://feeds.feedburner.com/~ff/GotEmacs?a=dDCM5FTgkns:ersZriMbBGk:yIl2AUoC8zA&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://feeds.feedburner.com/~ff/GotEmacs?d=yIl2AUoC8zA&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.feedburner.com/~ff/GotEmacs?a=dDCM5FTgkns:ersZriMbBGk:qj6IDK7rITs&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://feeds.feedburner.com/~ff/GotEmacs?d=qj6IDK7rITs&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.feedburner.com/~ff/GotEmacs?a=dDCM5FTgkns:ersZriMbBGk:gIN9vFwOqvQ&quot;&gt;&lt;img border=&quot;0&quot; src=&quot;http://feeds.feedburner.com/~ff/GotEmacs?i=dDCM5FTgkns:ersZriMbBGk:gIN9vFwOqvQ&quot; /&gt;&lt;/a&gt;
+&lt;/div&gt;&lt;img height=&quot;1&quot; src=&quot;http://feeds.feedburner.com/~r/GotEmacs/~4/dDCM5FTgkns&quot; width=&quot;1&quot; /&gt;</content>
+		<author>
+			<name>sivaram</name>
+			<email>noreply@blogger.com</email>
+			<uri>http://emacsworld.blogspot.com/</uri>
+		</author>
+		<source>
+			<title type="html">Got Emacs?</title>
+			<subtitle type="html">Postings on living in an Emacs world.  Posts will be mostly on using Emacs, related functions and tools.</subtitle>
+			<link rel="self" href="http://feeds.feedburner.com/GotEmacs"/>
+			<id>tag:blogger.com,1999:blog-3165518189103293420</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html" xml:lang="en">Kunigami: Emacs etags</title>
+		<link href="http://kuniganotas.wordpress.com/2011/07/21/emacs-etags/"/>
+		<id>http://kuniganotas.wordpress.com/?p=499</id>
+		<updated>2011-07-21T15:15:25+00:00</updated>
+		<content type="html" xml:lang="en">&lt;p&gt;etags is a simple way to find the definition of a function. This is very useful if you’re reading code from a large application.&lt;/p&gt;
+&lt;p&gt;You can run the following command at the root of the sources:&lt;/p&gt;
+&lt;pre class=&quot;brush: plain;&quot;&gt;find . | grep -P &quot;(c|cpp|h|hpp)$&quot; | etags -
+&lt;/pre&gt;
+&lt;p&gt;(Sorry, I don’t know how to do it directly with &lt;code&gt;find&lt;/code&gt;)&lt;/p&gt;
+&lt;p&gt;Then, when using emacs, just place the cursor above the function name and type &lt;/p&gt;
+&lt;p&gt;&lt;code&gt;M-.&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;This will take you to the function definition.&lt;/p&gt;
+&lt;p&gt;References:&lt;/p&gt;
+&lt;p&gt;http://www.gnu.org/software/libtool/manual/emacs/Tags.html&lt;/p&gt;
+&lt;br /&gt;  &lt;a href=&quot;http://feeds.wordpress.com/1.0/gocomments/kuniganotas.wordpress.com/499/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/comments/kuniganotas.wordpress.com/499/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/godelicious/kuniganotas.wordpress.com/499/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/delicious/kuniganotas.wordpress.com/499/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/gofacebook/kuniganotas.wordpress.com/499/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/facebook/kuniganotas.wordpress.com/499/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/gotwitter/kuniganotas.wordpress.com/499/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/twitter/kuniganotas.wordpress.com/499/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/gostumble/kuniganotas.wordpress.com/499/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/stumble/kuniganotas.wordpress.com/499/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/godigg/kuniganotas.wordpress.com/499/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/digg/kuniganotas.wordpress.com/499/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/goreddit/kuniganotas.wordpress.com/499/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/reddit/kuniganotas.wordpress.com/499/&quot; /&gt;&lt;/a&gt; &lt;img alt=&quot;&quot; border=&quot;0&quot; height=&quot;1&quot; src=&quot;http://stats.wordpress.com/b.gif?host=kuniganotas.wordpress.com&amp;amp;blog=13050037&amp;amp;post=499&amp;amp;subd=kuniganotas&amp;amp;ref=&amp;amp;feed=1&quot; width=&quot;1&quot; /&gt;</content>
+		<author>
+			<name>kunigami</name>
+			<uri>http://kuniganotas.wordpress.com</uri>
+		</author>
+		<source>
+			<title type="html">Notes on software development » emacs</title>
+			<link rel="self" href="http://kuniganotas.wordpress.com/category/emacs/feed/"/>
+			<id>http://kuniganotas.wordpress.com</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html" xml:lang="en">Mickey Petersen: Searching in Buffers with Occur Mode</title>
+		<link href="http://www.masteringemacs.org/articles/2011/07/20/searching-buffers-occur-mode/"/>
+		<id>http://www.masteringemacs.org/?p=422</id>
+		<updated>2011-07-20T17:14:46+00:00</updated>
+		<content type="html" xml:lang="en">&lt;p&gt;The Emacs &lt;code&gt;M-x occur&lt;/code&gt; (also bound to &lt;code&gt;M-s o&lt;/code&gt;) command is a useful replacement for &lt;em&gt;GNU grep&lt;/em&gt;, when your only requirement is searching open buffers in Emacs. Like &lt;em&gt;grep&lt;/em&gt;, the occur command will take a regular expression and print, in a separate buffer, all the lines that match the expression. One really nifty thing about occur is that it will preserve the faces (the colors, or syntax highlighting, if you will) in the displayed matches.&lt;/p&gt;
+&lt;p&gt;The default command, &lt;code&gt;M-x occur&lt;/code&gt;, will only search the active buffer, but its cousins &lt;code&gt;M-x multi-occur&lt;/code&gt; and &lt;code&gt;M-x multi-occur-in-matching-buffers&lt;/code&gt; will search the buffers you specify, or all buffers that match a given regexp pattern, respectively.&lt;/p&gt;
+&lt;p&gt;There’s a few helper commands that will make your life easier, such as &lt;code&gt;occur-rename-buffer&lt;/code&gt; that renames an &lt;code&gt;*Occur*&lt;/code&gt; output buffer so it includes the names of the buffers it searched. Useful if you want to search for different things. This command is also bound to &lt;code&gt;r&lt;/code&gt; in the &lt;code&gt;*Occur*&lt;/code&gt; buffer itself.&lt;/p&gt;
+&lt;p&gt;You can also re-run the occur command by pressing &lt;code&gt;g&lt;/code&gt; in the output buffer. (Note: this is actually a standard, of sorts, used by most interactive buffers including &lt;code&gt;dired&lt;/code&gt;, &lt;code&gt;compile&lt;/code&gt; and &lt;code&gt;grep&lt;/code&gt;.)&lt;/p&gt;
+&lt;p&gt;Another useful feature is its support for the compilation mode commands &lt;code&gt;next/previous-error&lt;/code&gt; (&lt;code&gt;M-g M-n&lt;/code&gt; and &lt;code&gt;M-g M-p&lt;/code&gt; respectively), as they enable you to cycle through the list of occur matches from within the source buffer itself.&lt;/p&gt;
+&lt;p&gt;In a similar vein, you can enable follow mode in the &lt;code&gt;*Occur*&lt;/code&gt; buffer by pressing &lt;code&gt;C-c C-f&lt;/code&gt;, and future calls to &lt;code&gt;M-n&lt;/code&gt; and &lt;code&gt;M-p&lt;/code&gt; in the &lt;code&gt;*Occur*&lt;/code&gt; buffer will automatically jump to the correct match in the source buffer.&lt;/p&gt;
+&lt;h2&gt;Making Occur a little more useful&lt;/h2&gt;
+&lt;p&gt;My only complaint about occur is that it does not let you quickly search a set of buffers that match a specific major mode — arguably a common use case if you’re a programmer. The code seen below will search all open buffers that share the same mode as the active buffer.&lt;/p&gt;
+
+&lt;div class=&quot;wp_syntax&quot;&gt;&lt;div class=&quot;code&quot;&gt;&lt;pre class=&quot;lisp&quot; style=&quot;font-family: monospace;&quot;&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;eval-when-compile
+  &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;require 'cl&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;
+ 
+&lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #b1b100;&quot;&gt;defun&lt;/span&gt; get-buffers-matching-mode &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;mode&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;
+  &lt;span style=&quot;color: #ff0000;&quot;&gt;&quot;Returns a list of buffers where their major-mode is equal to MODE&quot;&lt;/span&gt;
+  &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #b1b100;&quot;&gt;let&lt;/span&gt; &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;buffer-mode-matches '&lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;
+   &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #b1b100;&quot;&gt;dolist&lt;/span&gt; &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;buf &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;buffer-&lt;span style=&quot;color: #b1b100;&quot;&gt;list&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;
+     &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;with-current-buffer buf
+       &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #b1b100;&quot;&gt;if&lt;/span&gt; &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #b1b100;&quot;&gt;eq&lt;/span&gt; mode major-mode&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;
+           &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;add-to-&lt;span style=&quot;color: #b1b100;&quot;&gt;list&lt;/span&gt; 'buffer-mode-matches buf&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;
+   buffer-mode-matches&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;
+ 
+&lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #b1b100;&quot;&gt;defun&lt;/span&gt; multi-occur-in-this-mode &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;
+  &lt;span style=&quot;color: #ff0000;&quot;&gt;&quot;Show all lines matching REGEXP in buffers with this major mode.&quot;&lt;/span&gt;
+  &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;interactive&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;
+  &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;multi-occur
+   &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;get-buffers-matching-mode major-mode&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;
+   &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;&lt;span style=&quot;color: #b1b100;&quot;&gt;car&lt;/span&gt; &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;occur-read-primary-args&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;
+ 
+&lt;span style=&quot;color: #808080; font-style: italic;&quot;&gt;;; global key for `multi-occur-in-this-mode' - you should change this.&lt;/span&gt;
+&lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;global-set-key &lt;span style=&quot;color: #66cc66;&quot;&gt;(&lt;/span&gt;kbd &lt;span style=&quot;color: #ff0000;&quot;&gt;&quot;C-&amp;lt;f2&amp;gt;&quot;&lt;/span&gt;&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt; 'multi-occur-in-this-mode&lt;span style=&quot;color: #66cc66;&quot;&gt;)&lt;/span&gt;&lt;/pre&gt;&lt;/div&gt;&lt;/div&gt;
+
+&lt;p&gt;&lt;a class=&quot;a2a_dd a2a_target addtoany_share_save&quot; href=&quot;http://www.addtoany.com/share_save#url=http%3A%2F%2Fwww.masteringemacs.org%2Farticles%2F2011%2F07%2F20%2Fsearching-buffers-occur-mode%2F&amp;amp;title=Searching%20in%20Buffers%20with%20Occur%20Mode&quot; id=&quot;wpa2a_4&quot;&gt;Share&lt;/a&gt;&lt;/p&gt;</content>
+		<author>
+			<name>mickey</name>
+			<uri>http://www.masteringemacs.org</uri>
+		</author>
+		<source>
+			<title type="html">Mastering Emacs</title>
+			<subtitle type="html">a blog about mastering the world's best text editor</subtitle>
+			<link rel="self" href="http://www.masteringemacs.org/feed/"/>
+			<id>http://www.masteringemacs.org</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html" xml:lang="en-us">Dimitri Fontaine: Emacs Cheat Sheet</title>
+		<link href="http://tapoueh.org/blog/2011/07/20-emacs-cheat-sheet.html"/>
+		<id>http://tapoueh.org/blog/2011/07/20-emacs-cheat-sheet.html</id>
+		<updated>2011-07-20T08:44:00+00:00</updated>
+		<content type="html">&lt;p&gt;I stumbled upon the following &lt;em&gt;cheat sheet&lt;/em&gt; for &lt;a href=&quot;http://www.gnu.org/software/emacs/&quot;&gt;Emacs&lt;/a&gt; yesterday, and it's
+worth sharing.  I already learnt or discovered again some nice default
+chords, like for example &lt;code&gt;C-x C-o runs the command delete-blank-lines&lt;/code&gt; and
+&lt;code&gt;C-M-o runs the command split-line&lt;/code&gt;.  I guess I will use the later one a lot.&lt;/p&gt;
+
+&lt;center&gt;
+&lt;p&gt;&lt;a class=&quot;image-link&quot; href=&quot;http://tapoueh.org/../../images/emacs-cheat-sheet.png&quot;&gt;
+&lt;img src=&quot;http://tapoueh.org/../../images/emacs-cheat-sheet-tn.png&quot; /&gt;&lt;/a&gt;&lt;/p&gt;
+&lt;/center&gt;
+
+&lt;p&gt;Hope you'll like it!&lt;/p&gt;</content>
+		<author>
+			<name>Dimitri Fontaine</name>
+			<email>dim@tapoueh.org</email>
+			<uri>http://tapoueh.org/index.html</uri>
+		</author>
+		<source>
+			<title type="html">tail -f /dev/dim</title>
+			<subtitle type="html">Dimitri Fontaine's blog</subtitle>
+			<link rel="self" href="http://tapoueh.org/rss/emacs.xml"/>
+			<id>http://tapoueh.org/index.html</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Alex Ott: Emacs/Cedet article in Belorussian</title>
+		<link href="http://alexott.blogspot.com/2011/07/emacscedet-article-in-belorussian.html"/>
+		<id>tag:blogger.com,1999:blog-6862508.post-2211089256314048411</id>
+		<updated>2011-07-18T17:03:32+00:00</updated>
+		<content type="html">My &lt;a href=&quot;http://alexott.net/en/writings/emacs-devenv/EmacsCedet.html&quot;&gt;Emacs/Cedet article&lt;/a&gt; now has &lt;a href=&quot;http://webhostingrating.com/libs/EmacsCedet-be&quot;&gt;translation to Belorussian&lt;/a&gt;...&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://blogger.googleusercontent.com/tracker/6862508-2211089256314048411?l=alexott.blogspot.com&quot; width=&quot;1&quot; /&gt;&lt;/div&gt;</content>
+		<author>
+			<name>Alex Ott</name>
+			<email>alexott@gmail.com</email>
+			<uri>http://alexott.blogspot.com/search/label/emacs</uri>
+		</author>
+		<source>
+			<title type="html">Alex Ott's blog</title>
+			<subtitle type="html">Blog dedicated to Software Development, Unixes, Content Filtering, Emacs, Lisp, and other things.</subtitle>
+			<link rel="self" href="http://www.blogger.com/feeds/6862508/posts/default/-/emacs"/>
+			<id>tag:blogger.com,1999:blog-6862508</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html" xml:lang="en">Draptik: Rails and Emacs: Rsense and Auto-Complete</title>
+		<link href="http://draptik.wordpress.com/2011/07/17/rails-and-emacs-rsense-and-auto-complete/"/>
+		<id>http://draptik.wordpress.com/?p=438</id>
+		<updated>2011-07-17T02:24:23+00:00</updated>
+		<content type="html" xml:lang="en">&lt;p&gt;If you’re developing Rails with &lt;a href=&quot;http://www.gnu.org/software/emacs/&quot; target=&quot;_blank&quot; title=&quot;Emacs&quot;&gt;Emacs&lt;/a&gt; and using &lt;a href=&quot;http://rinari.rubyforge.org/&quot; target=&quot;_blank&quot; title=&quot;Rinari&quot;&gt;Rinari&lt;/a&gt; here are two more extensions you might like:&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://cx4a.org/software/auto-complete/&quot;&gt;http://cx4a.org/software/auto-complete/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;and&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;http://cx4a.org/software/rsense/&quot;&gt;http://cx4a.org/software/rsense/&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Installation. Just  as described. Code completion for ruby-on-rails with emacs!&lt;/p&gt;
+&lt;p&gt;And the package is written in Java(!), Very cool!&lt;/p&gt;
+&lt;p&gt;I am impressed!&lt;/p&gt;
+&lt;br /&gt;  &lt;a href=&quot;http://feeds.wordpress.com/1.0/gocomments/draptik.wordpress.com/438/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/comments/draptik.wordpress.com/438/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/godelicious/draptik.wordpress.com/438/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/delicious/draptik.wordpress.com/438/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/gofacebook/draptik.wordpress.com/438/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/facebook/draptik.wordpress.com/438/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/gotwitter/draptik.wordpress.com/438/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/twitter/draptik.wordpress.com/438/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/gostumble/draptik.wordpress.com/438/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/stumble/draptik.wordpress.com/438/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/godigg/draptik.wordpress.com/438/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/digg/draptik.wordpress.com/438/&quot; /&gt;&lt;/a&gt; &lt;a href=&quot;http://feeds.wordpress.com/1.0/goreddit/draptik.wordpress.com/438/&quot; rel=&quot;nofollow&quot;&gt;&lt;img alt=&quot;&quot; border=&quot;0&quot; src=&quot;http://feeds.wordpress.com/1.0/reddit/draptik.wordpress.com/438/&quot; /&gt;&lt;/a&gt; &lt;img alt=&quot;&quot; border=&quot;0&quot; height=&quot;1&quot; src=&quot;http://stats.wordpress.com/b.gif?host=draptik.wordpress.com&amp;amp;blog=7267980&amp;amp;post=438&amp;amp;subd=draptik&amp;amp;ref=&amp;amp;feed=1&quot; width=&quot;1&quot; /&gt;</content>
+		<author>
+			<name>draptik</name>
+			<uri>http://draptik.wordpress.com</uri>
+		</author>
+		<source>
+			<title type="html">Draptik's Blog » emacs</title>
+			<subtitle type="html">mostly tech notes...</subtitle>
+			<link rel="self" href="http://draptik.wordpress.com/tag/emacs/feed/"/>
+			<id>http://draptik.wordpress.com</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html" xml:lang="en">Mickey Petersen: Repeating Commands in Emacs</title>
+		<link href="http://www.masteringemacs.org/articles/2011/07/15/repeating-commands-emacs/"/>
+		<id>http://www.masteringemacs.org/?p=416</id>
+		<updated>2011-07-15T00:00:01+00:00</updated>
+		<content type="html" xml:lang="en">&lt;p&gt;Repeating a command you just carried out is a surprisingly useful thing to do, yet most people are completely unaware that bound to &lt;code&gt;C-x z&lt;/code&gt; is Emacs’s &lt;code&gt;repeat&lt;/code&gt; command.&lt;/p&gt;
+&lt;p&gt;Like the &lt;code&gt;.&lt;/code&gt; command in vi, the &lt;code&gt;repeat&lt;/code&gt; command will repeat the last action, &lt;em&gt;skipping&lt;/em&gt; any input events (like character input.)&lt;/p&gt;
+&lt;p&gt;To save you from press the rather awkward keybind every time you want to repeat something, you can repeatedly press &lt;code&gt;z&lt;/code&gt; after your first invocation to call &lt;code&gt;repeat&lt;/code&gt;. Of course, you can also use the universal argument to repeat the command &lt;em&gt;N&lt;/em&gt; number of times.&lt;/p&gt;
+&lt;p&gt;As I mentioned in my article on Mastering Keybindings in Emacs, you can also repeat (and edit!) complex commands like &lt;code&gt;query-replace-regexp&lt;/code&gt; by typing &lt;code&gt;C-x M-:&lt;/code&gt; or &lt;code&gt;C-x M-ESC&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;a class=&quot;a2a_dd a2a_target addtoany_share_save&quot; href=&quot;http://www.addtoany.com/share_save#url=http%3A%2F%2Fwww.masteringemacs.org%2Farticles%2F2011%2F07%2F15%2Frepeating-commands-emacs%2F&amp;amp;title=Repeating%20Commands%20in%20Emacs&quot; id=&quot;wpa2a_8&quot;&gt;Share&lt;/a&gt;&lt;/p&gt;</content>
+		<author>
+			<name>mickey</name>
+			<uri>http://www.masteringemacs.org</uri>
+		</author>
+		<source>
+			<title type="html">Mastering Emacs</title>
+			<subtitle type="html">a blog about mastering the world's best text editor</subtitle>
+			<link rel="self" href="http://www.masteringemacs.org/feed/"/>
+			<id>http://www.masteringemacs.org</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html" xml:lang="en">&quot;Dan's Blog&quot;: Emacs Notes: User Key Bindings, Shell Prompt, Font Size</title>
+		<link href="http://blog.dskang.com/2011/07/14/emacs-notes-user-key-bindings-shell-prompt-font-size/?utm_source=rss&amp;utm_medium=rss&amp;utm_campaign=emacs-notes-user-key-bindings-shell-prompt-font-size"/>
+		<id>http://blog.dskang.com/?p=162</id>
+		<updated>2011-07-14T08:53:28+00:00</updated>
+		<content type="html" xml:lang="en">&lt;p&gt;&lt;strong&gt;Reserved user key bindings:&lt;/strong&gt; I was fretting over which keybinding to use for magit-status, but it turns out that &lt;code&gt;C-c letter&lt;/code&gt; bindings are &lt;a href=&quot;http://www.gnu.org/software/emacs/elisp/html_node/Key-Binding-Conventions.html&quot;&gt;reserved for users&lt;/a&gt;. Sweet.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Emacs shell:&lt;/strong&gt; If your emacs shell is &lt;a href=&quot;http://superuser.com/questions/31533/how-do-i-fix-my-prompt-in-emacs-shell-mode&quot;&gt;spitting out nasty gibberish&lt;/a&gt; in your prompt, try&lt;br /&gt;
+&lt;code&gt;unset PROMPT_COMMAND&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Font size:&lt;/strong&gt; If you want to &lt;a href=&quot;http://stackoverflow.com/questions/294664/how-to-set-the-font-size-in-emacs&quot;&gt;resize your font&lt;/a&gt;, add&lt;br /&gt;
+&lt;code&gt;(custom-set-faces '(default ((t (:height 100)))))&lt;/code&gt;&lt;br /&gt;
+to your .emacs (with 100 being your own number, of course).&lt;/p&gt;
+&lt;p&gt;&lt;strong&gt;Fantastic Emacs blog:&lt;/strong&gt; &lt;a href=&quot;http://www.masteringemacs.org/&quot;&gt;http://www.masteringemacs.org/&lt;/a&gt;&lt;/p&gt;</content>
+		<author>
+			<name>dskang</name>
+			<uri>http://blog.dskang.com</uri>
+		</author>
+		<source>
+			<title type="html">Dan's Blog » Emacs</title>
+			<link rel="self" href="http://blog.dskang.com/category/emacs/feed/"/>
+			<id>http://blog.dskang.com</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Aaron Hawley: Learning Emacs key bindings</title>
+		<link href="http://aaronhawley.livejournal.com/28413.html"/>
+		<id>urn:lj:livejournal.com:atom1:aaronhawley:28413</id>
+		<updated>2011-07-13T19:15:58+00:00</updated>
+		<content type="html">&lt;p&gt;Emacs key bindings are intimidating at first since they are quite distinct from those used in other applications and platforms.  The following is based on discussion on the Emacs IRC channel and is posted to the &lt;a href=&quot;http://www.emacswiki.org/emacs/LearningEmacs&quot; rel=&quot;nofollow&quot;&gt;Emacs Wiki&lt;/a&gt;.&lt;/p&gt;
+
+&lt;p&gt;After studying the tutorial that comes with Emacs, most people learn best by doing and not just by reading over a list of commands and trying to memorize them. Get yourself a text file to play around with. Make a backup copy if you're nervous about losing it. But don't worry -- Emacs makes it hard to lose your work, and it has a great undo command: `&lt;kbd&gt;C-/&lt;/kbd&gt;' or `&lt;kbd&gt;C-_&lt;/kbd&gt;'.&lt;/p&gt;
+
+&lt;p&gt;Keep the following advice in mind.&lt;/p&gt;
+
+&lt;ol&gt;
+ &lt;li&gt;Try to memorize the most commonly used commands in the tutorial.
+ &lt;/li&gt;&lt;li&gt;Use Apropos or help to find commands to accomplish a task.
+ &lt;/li&gt;&lt;li&gt;Run the command for a task with `&lt;kbd&gt;M-x&lt;/kbd&gt;' and typing it in.
+ &lt;/li&gt;&lt;li&gt;Run the command again by using `&lt;kbd&gt;M-x M-p&lt;/kbd&gt;' or by typing it in again.
+ &lt;/li&gt;&lt;li&gt;On the third time, see if the command is bound to a key binding with `&lt;kbd&gt;C-h w&lt;/kbd&gt;'.
+ &lt;/li&gt;&lt;li&gt;If you forget a key binding (sometimes you forget even the basic commands introduced in the tutorial), try `&lt;kbd&gt;C-h w M-p&lt;/kbd&gt;' to peek at it again or use `&lt;kbd&gt;C-h b&lt;/kbd&gt;' to browse the available bindings.
+ &lt;/li&gt;&lt;li&gt;If you can't burn a key binding in to your brain with this approach, then you're not using it enough and it doesn't deserve a key binding.
+ &lt;/li&gt;&lt;li&gt;If a key binding is atrocious, only then bind the command to an unused key.
+&lt;/li&gt;&lt;/ol&gt;
+
+&lt;p&gt;Some beginners rush too quickly and add or change key bindings. This avoids learning Emacs and risks spending more time configuring. Competency with `&lt;kbd&gt;M-x&lt;/kbd&gt;' and help are actually core Emacs skills for life. `&lt;kbd&gt;M-x&lt;/kbd&gt;' should become your command line in Emacs.&lt;/p&gt;</content>
+		<author>
+			<name>Aaron S. Hawley</name>
+			<uri>http://aaronhawley.livejournal.com/</uri>
+		</author>
+		<source>
+			<title type="html">refusal computing</title>
+			<subtitle type="html">Aaron S. Hawley</subtitle>
+			<link rel="self" href="http://aaronhawley.livejournal.com/data/atom"/>
+			<id>urn:lj:livejournal.com:atom1:aaronhawley</id>
+		</source>
+	</entry>
+
+	<entry>
+		<title type="html">Bart Lantz: Cool Things to do in Emacs' Dired Mode</title>
+		<link href="http://denverdroid.blogspot.com/2011/07/cool-things-to-do-in-emacs-dired-mode.html"/>
+		<id>tag:blogger.com,1999:blog-7035860407900002000.post-6430511721541717440</id>
+		<updated>2011-07-10T03:50:23+00:00</updated>
+		<content type="html">&lt;div class=&quot;outline-3&quot; id=&quot;outline-container-1_1&quot;&gt;
+&lt;p&gt;&lt;/p&gt;
+
+&lt;div class=&quot;outline-4&quot; id=&quot;outline-container-1_1_1&quot;&gt;
+&lt;h2 id=&quot;sec-1_1_1&quot;&gt;Delete some files in the &lt;i&gt;Downloads&lt;/i&gt; folder &lt;/h2&gt;
+&lt;div class=&quot;outline-text-4&quot; id=&quot;text-1_1_1&quot;&gt;
+
+&lt;p&gt;My Downloads folder is always out of control. There are always a
+ton of pdf files that I opened once in a browser but don't need to
+save. It's a pain to open a GUI file navigator, like Nautilus, and
+double click on each pdf file to view it and see if it should be
+tossed. However with Emacs, trimming my Downloads directory of old
+files is quick and easy.  &lt;/p&gt; &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;div class=&quot;outline-4&quot; id=&quot;outline-container-1_1_2&quot;&gt;
+&lt;h2 id=&quot;sec-1_1_2&quot;&gt;Viewing Pdfs in Emacs &lt;/h2&gt;
+&lt;div class=&quot;outline-text-4&quot; id=&quot;text-1_1_2&quot;&gt;
+
+&lt;p&gt;If you see a pdf with an uninformative name like 2010-09.pdf just
+hit &amp;lt;&lt;b&gt;enter&lt;/b&gt;&amp;gt; when the cursor is on the file name, (when
+the file name is at point). Emacs will open the pdf in a new
+buffer. Once you have viewed the pdf and have decided its face you can
+quickly kill the pdf buffer with '&lt;b&gt;k&lt;/b&gt;' and you'll be returned to
+the directory. Now, if the pdf is unimportant, queue it to be deleted
+with '&lt;b&gt;d&lt;/b&gt;'. If you want to keep the file, but give it a better
+name, type 'R' to rename it. 
+
+To unqueue a file for deletion, use '&lt;b&gt;u&lt;/b&gt;'. And finally to
+delete all the files currently queued for deletion, type 'x'.  &lt;/p&gt; &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;a href=&quot;http://www.flickr.com/photos/redbike/5919681539/&quot; title=&quot;Dired mode emacs by denverfiddler, on Flickr&quot;&gt;&lt;img alt=&quot;Dired mode emacs&quot; height=&quot;313&quot; src=&quot;http://farm7.static.flickr.com/6144/5919681539_d0ff5a1193.jpg&quot; width=&quot;500&quot; /&gt;&lt;/a&gt;
+&lt;p&gt;&lt;/p&gt;
+
+
+&lt;div class=&quot;outline-4&quot; id=&quot;outline-container-1_1_3&quot;&gt;
+&lt;h2 id=&quot;sec-1_1_3&quot;&gt;Delete old Emacs backup files &lt;/h2&gt;
+&lt;div class=&quot;outline-text-4&quot; id=&quot;text-1_1_3&quot;&gt;
+
+&lt;p&gt;If you have a lot of backup files that emacs created with ~ appended to
+the file name, you can quickly queue them all for deletion by typing '&lt;b&gt;~&lt;/b&gt;'.
+&lt;/p&gt;
+
+&lt;h2&gt;Here's the List of Directory Organizing Commands&lt;/h2&gt;
+&lt;table border=&quot;2&quot; cellpadding=&quot;6&quot; cellspacing=&quot;0&quot; frame=&quot;hsides&quot; rules=&quot;groups&quot;&gt;
+&lt;caption&gt;&lt;/caption&gt;
+&lt;colgroup&gt;&lt;col class=&quot;left&quot; /&gt;&lt;col class=&quot;left&quot; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th class=&quot;left&quot; scope=&quot;col&quot;&gt;key combo&lt;/th&gt;&lt;th class=&quot;left&quot; scope=&quot;col&quot;&gt;command&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;&amp;lt;enter&amp;gt;&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;open file at point&lt;/td&gt;&lt;/tr&gt;
+
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;d&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;Queue File For Deletion&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;u&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;Unqueue File&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;~&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;Queue Backup Files for Del&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;x&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;eXecute Queued Delete Jobs&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;R&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;Rename File&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;k&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;Kill PDF Buffer&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+
+
+
+&lt;p&gt;&lt;/p&gt;
+&lt;div class=&quot;outline-3&quot; id=&quot;outline-container-1_3&quot;&gt;
+&lt;h2 id=&quot;sec-1_3&quot;&gt;Edit Zip'd or Tar-gz'd archives in place &lt;/h2&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-1_3&quot;&gt;
+
+&lt;p&gt;If you need to edit a file inside a zip or tar archive, simply open
+the archive by hitting &amp;lt;enter&amp;gt; on the name in Dired mode, then
+click on the file. Edit the file and save it with '&lt;b&gt;C-x C-s&lt;/b&gt;',
+and then do another &lt;b&gt;C-x C-s&lt;/b&gt; inside the zip buffer to save the
+archive with the file changes. The archive will be compressed again
+with your changes.  &lt;/p&gt; &lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;div class=&quot;outline-3&quot; id=&quot;outline-container-1_4&quot;&gt;
+&lt;h2 id=&quot;sec-1_4&quot;&gt;OMG!: Change File Owner, Group, Mode &lt;/h2&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-1_4&quot;&gt;
+
+&lt;table border=&quot;2&quot; cellpadding=&quot;6&quot; cellspacing=&quot;0&quot; frame=&quot;hsides&quot; rules=&quot;groups&quot;&gt;
+&lt;caption&gt;&lt;/caption&gt;
+&lt;colgroup&gt;&lt;col class=&quot;left&quot; /&gt;&lt;col class=&quot;left&quot; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th class=&quot;left&quot; scope=&quot;col&quot;&gt;key combo&lt;/th&gt;&lt;th class=&quot;left&quot; scope=&quot;col&quot;&gt;command&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;O&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;change owner&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;M&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;change mode&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;G&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;change group&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;Z&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;compress file&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+
+
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;div class=&quot;outline-3&quot; id=&quot;outline-container-1_5&quot;&gt;
+&lt;h1 id=&quot;sec-1_5&quot;&gt;Encrypt, Decrypt Files &lt;/h1&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-1_5&quot;&gt;
+
+&lt;p&gt;Use '&lt;b&gt;:e&lt;/b&gt;' to encrypt the file at point. Emacs will ask who you want to
+encrypt the file for (ie whose public key to use to encrypt the file.)
+You can also encrypt the file symmetrically with a password. Once the
+file is encrypted, there will be two files in the directory: the
+original file and the encrypted file with '.gpg' added to the file
+name. 
+&lt;/p&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;div class=&quot;outline-4&quot; id=&quot;outline-container-1_5_1&quot;&gt;
+&lt;h2 id=&quot;sec-1_5_1&quot;&gt;Decrypt &lt;/h2&gt;
+&lt;div class=&quot;outline-text-4&quot; id=&quot;text-1_5_1&quot;&gt;
+
+&lt;p&gt;To open the symmetrically encrypted file, click on its name and you
+will be prompted for a password. You can also type '&lt;b&gt;:d&lt;/b&gt;' when
+the filename is at point.
+&lt;/p&gt;
+&lt;/div&gt;
+
+ &lt;/div&gt;
+
+&lt;div class=&quot;outline-4&quot; id=&quot;outline-container-1_5_2&quot;&gt;
+&lt;h2 id=&quot;sec-1_5_2&quot;&gt;EasyPG Assistant Docs &lt;/h2&gt;
+&lt;div class=&quot;outline-text-4&quot; id=&quot;text-1_5_2&quot;&gt;
+
+&lt;p&gt;The program that is used to encrypt the file's is EasyPG Assistant.
+&lt;a href=&quot;http://www.gnu.org/software/emacs/manual/html_mono/epa.html&quot;&gt;EasyPG Assistant Manual&lt;/a&gt;
+&lt;/p&gt;
+
+
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;div class=&quot;outline-3&quot; id=&quot;outline-container-1_7&quot;&gt;
+&lt;h2 id=&quot;sec-1_7&quot;&gt;Get More Help &lt;/h2&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-1_7&quot;&gt;
+
+&lt;p&gt;Type 'C-hm' (describe mode) while in dired-mode, to pop open a help
+buffer, with a description of dired mode and a list of commands.
+&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;/div&gt;
+&lt;p&gt;&lt;/p&gt;
+&lt;div class=&quot;outline-3&quot; id=&quot;outline-container-1_8&quot;&gt;
+&lt;h2 id=&quot;sec-1_8&quot;&gt;All Key Combinations named in post &lt;/h2&gt;
+&lt;div class=&quot;outline-text-3&quot; id=&quot;text-1_8&quot;&gt;
+
+
+&lt;table border=&quot;2&quot; cellpadding=&quot;6&quot; cellspacing=&quot;0&quot; frame=&quot;hsides&quot; rules=&quot;groups&quot;&gt;
+&lt;caption&gt;&lt;/caption&gt;
+&lt;colgroup&gt;&lt;col class=&quot;left&quot; /&gt;&lt;col class=&quot;left&quot; /&gt;
+&lt;/colgroup&gt;
+&lt;thead&gt;
+&lt;tr&gt;&lt;th class=&quot;left&quot; scope=&quot;col&quot;&gt;key combo&lt;/th&gt;&lt;th class=&quot;left&quot; scope=&quot;col&quot;&gt;command&lt;/th&gt;&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;d&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;mark file for deletion&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;u&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;unmark file&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;x&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;eXecute queued deletions&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;R&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;rename/move file&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;O&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;change owner&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;M&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;change mode&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;G&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;change group&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;Z&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;compress file&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;y&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;show only certain file type&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;w&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;copy file name&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;RET&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;open file at point&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;k&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;if in pdf buffer, kill&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;C-x C-s&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;Save file or  archive&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;i&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;insert sub-directory&lt;/td&gt;&lt;/tr&gt;
+&lt;tr&gt;&lt;td class=&quot;left&quot;&gt;~&lt;/td&gt;&lt;td class=&quot;left&quot;&gt;mark all backup files for deletion&lt;/td&gt;&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;a href=&quot;http://denverdroid.blogspot.com/2011/07/cool-things-to-do-in-emacs-dired-mode.html&quot;&gt;Cool Things to do in Emacs' Dired Mode&lt;/a&gt;&lt;div class=&quot;blogger-post-footer&quot;&gt;&lt;img alt=&quot;&quot; height=&quot;1&quot; src=&quot;https://blogger.googleusercontent.com/tracker/7035860407900002000-6430511721541717440?l=denverdroid.blogspot.com&quot; width=&quot;1&quot; /&gt;&lt;/div&gt;</content>
+		<author>
+			<name>Bart Lantz</name>
+			<email>noreply@blogger.com</email>
+			<uri>http://denverdroid.blogspot.com/search/label/emacs</uri>
+		</author>
+		<source>
+			<title type="html">Denver Droid</title>
+			<subtitle type="html">Musings on Drupal, Emacs, Linux and the occasional robot.</subtitle>
+			<link rel="self" href="http://www.blogger.com/feeds/7035860407900002000/posts/default/-/emacs"/>
+			<id>tag:blogger.com,1999:blog-7035860407900002000</id>
+		</source>
+	</entry>
+
+</feed>

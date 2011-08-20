@@ -1,0 +1,9 @@
+#!/bin/sh
+
+if [ -d data ]; then
+	rm -rf data/*
+else
+	mkdir data
+fi
+
+python feed.py

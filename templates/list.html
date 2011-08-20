@@ -1,0 +1,28 @@
+$def with(feeds, prevOffset, nextOffset, page)
+$var currentpage = page
+
+$if context.get('account'):
+  <div id="new-feed"><form action="subscribe" method="POST"><input type="text" name="feed" size="60" maxlength="400"></input><input type="submit" value="添加新FEED"></input></form></div>
+
+<div id="feed-list">
+$for feed in feeds:
+  <div class="feed">
+  <div>
+  <a href="$feed.url">RSS</a>
+  $if context.get('account'):
+    $if feed.subscribed:
+      <a class="important" href="unsubscribe/$feed.id">退订</a>
+    $else:
+      <a href="subscribe/$feed.id">订阅</a>
+  </div>
+  $if 'account_count' in feed:
+    <span class="count">$feed.account_count</span>
+  <div><h1>$feed.title</h1><span>$feed.description</span></div>
+  </div>
+$if not (prevOffset is None):
+  <a style="font-size: 1.3em" href="$(self.currentpage)?o=$prevOffset">上一页</a>
+$if not (prevOffset is None) and not (nextOffset is None):
+  &nbsp;&nbsp;|&nbsp;&nbsp;
+$if not (nextOffset is None):
+  <a style="font-size: 1.3em" href="$(self.currentpage)?o=$nextOffset">下一页</a>
+</div>

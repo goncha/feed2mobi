@@ -1,0 +1,187 @@
+/* Ref to http://s.wordpress.org/style/wp4.css?12 */
+/* Reset ------------------------ */
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,
+h6,pre,form,fieldset,input,p,blockquote,table,
+th,td { margin: 0; padding: 0; }
+fieldset,img,abbr { border: 0; }
+address,caption,cite,code,dfn,h1,h2,h3,
+h4,h5,h6,th,var { font-style: normal; font-weight: normal; }
+caption,th { text-align: left; }
+q:before,q:after { content: ''; }
+a { color: #666; text-decoration: none; }
+body {
+	font-size: 62.5%;
+	/* background: #f7f7f7; */
+	background: #fff;
+	font-family: "Lucida Grande",Verdana,"Bitstream Vera Sans",Arial,sans-serif;
+	line-height: 22px;
+	color: #555;
+	margin-bottom: 40px;
+}
+
+/* ------------------------------ */
+.important {
+color: crimson;
+}
+
+.wrapper {
+width: 960px;
+margin: 0 auto;
+clear: both;
+}
+
+#header {
+height: 88px;
+min-width: 960px;
+background: #dcdcdc;
+}
+
+#header h1 a {
+display: block;
+background: url(/static/logo.png) center left no-repeat;
+width: 301px;
+height: 88px;
+text-indent: -9999px;
+float: left;
+}
+
+#head-account {
+float: right;
+margin-right: 14px;
+height: 48px;
+padding-top: 6px;
+font-family: "Lucida Grande",Tahoma,"Bitstream Vera Sans",Arial,sans-serif;
+font-weight: normal;
+line-height: 34px;
+font-size: 14px;
+text-shadow: #eee 0px 1px 0px;
+}
+
+#head-account a {
+padding: 0 9px;
+}
+
+#header ul {
+margin-right: 14px;
+float: right;
+list-style: none;
+min-width: 500px;
+}
+
+#header ul li {
+float: left;
+position:relative;
+}
+
+#header ul li a {
+font-family: "Lucida Grande",Tahoma,"Bitstream Vera Sans",Arial,sans-serif;
+font-weight: normal;
+display: block;
+line-height: 34px;
+padding: 0 9px;
+font-size: 14px;
+color: #666;
+text-shadow: #eee 0px 1px 0px;
+}
+
+#header ul li a:hover {
+color: #d54e21;
+}
+
+#header ul li a.current {
+color: #555;
+background: #f7f7f7;
+border: 1px solid #c6c6c6;
+border-bottom:none;
+margin-top:-1px;
+-moz-border-radius-topleft: 3px;
+-khtml-border-top-left-radius: 3px;
+-webkit-border-top-left-radius: 3px;
+border-top-left-radius: 3px;
+-moz-border-radius-topright: 3px;
+-khtml-border-top-right-radius: 3px;
+-webkit-border-top-right-radius: 3px;
+border-top-right-radius: 3px;
+text-shadow: #c6d9e9 1px 1px 1px;
+}
+
+#msg-wrapper {
+display: none;
+text-align: center;
+z-index: 100;
+position: absolute;
+top: 0;
+height: auto;
+width: 100%;
+}
+#msg {
+display: inline-block;
+background: #FFFBCC;
+border: 2px solid #E6DB55;
+-moz-border-radius: 3px 3px 3px 3px;
+-khtml-border-radius: 3px 3px 3px 3px;
+-webkit-border-radius: 3px 3px 3px 3px;
+border-radius: 3px 3px 3px 3px;
+font: 1.3em Times,"Times New Roman",serif;
+padding: 2px 4px;
+text-align: center;
+}
+
+#content {
+margin-top: 20px;
+}
+
+#feed-list, #new-feed {
+margin-left: 15%;
+}
+
+#new-feed {
+margin-bottom: 20px;
+}
+
+.count {
+font-family: Georgia,Tahoma,Arial,sans-serif;
+font-size: 5em;
+font-wight: bold;
+font-style: italic;
+margin-right: 8px;
+}
+
+.feed {
+margin-top: 10px;
+}
+
+.feed div {
+display: inline-block;
+text-align: left;
+vertical-align: middle;
+max-width: 600px;
+}
+
+.feed div span {
+font-size: 1.5em;
+margin-left: 12px;
+font-style: italic;
+}
+
+.feed div a {
+font-family: "Lucida Grande",Tahoma,"Bitstream Vera Sans",Arial,sans-serif;
+font-weight: normal;
+display: block;
+line-height: 20px;
+padding: 0 9px;
+font-size: 14px;
+text-shadow: #eee 0px 1px 0px;
+}
+
+#delivery {
+font-size: 14px;
+text-align: center;
+}
+
+#footer {
+clear: both;
+padding-top: 40px;
+text-align: center;
+font-size: 14px;
+}

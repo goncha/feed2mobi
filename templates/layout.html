@@ -1,0 +1,37 @@
+$def with(content)
+$var pages = [('top', '热门订阅'), ('new', '最新订阅'), ('subscribed', '我的订阅'), ('delivery','投递设置')]
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Feed2Mobi</title>
+  <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js" type="text/javascript"></script> -->
+  <link type="text/css" href="/static/main.css" rel="stylesheet"></link>
+  <script type="text/javascript">
+  </script>
+</head>
+<body>
+<div id="msg-wrapper"><div id="msg">Hello MsgBox!</div></div>
+<div id="header">
+  <div class="wrapper">
+    <h1><a href="/">Feed2Mobi</a></h1>
+    <div id="head-account">
+	$if context.get('account'):
+          $context.account ,<a class="important" href="logout">退出</a>
+	$else:
+          <a href="login">使用Google账号登录</a>
+    </div>
+    <ul>
+      $if context.get('account'):
+        $for page in self.pages:
+          <li><a $:{'class="current"' if content.currentpage==page[0] else ''} href="$page[0]">$page[1]</a></li>
+    </ul>
+  </div>
+</div>
+<div id="content">
+$:content
+</div>
+<div id="footer">Created by (goncha at gmail.com)</div>
+</body>
+</html>
