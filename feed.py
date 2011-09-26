@@ -283,6 +283,7 @@ CREATE TABLE IF NOT EXISTS account
  delivery_address TEXT,
  delivery_hour INTEGER DEFAULT 8,
  delivery_actived INTEGER NOT NULL DEFAULT 0,
+ delivery_bundle INTEGER NOT NULL DEFAULT 20,
  actived INTEGER NOT NULL DEFAULT 1
 )
 ''',
@@ -593,12 +594,13 @@ ORDER BY feed.id DESC
 
             db = self._db
             accounts = list(db.select(['account'],
-                                      what='id,delivery_address',
+                                      what='id,delivery_address,delivery_bundle',
                                       where='actived=1 AND delivery_actived=1 AND delivery_hour=$hour',
                                       vars=locals()))
 
             for account in accounts:
                 address = account.delivery_address
+                bundle = account.delivery_bundle
 
                 with db.transaction() as tx:
                     entries = list(db.select(['account_entry', 'entry', 'feed'],
@@ -617,7 +619,7 @@ account_entry.account_id=$account_id
                                              order='account_entry.feed_id ASC, account_entry.entry_id ASC',
                                              vars={'account_id':account.id}))
 
-                    if entries:
+                    if entries and (bundle == 0 or len(entries) >= bundle):
                         mobi = None
                         try:
                             mobi = kindlegen.execute(title, date, entries)

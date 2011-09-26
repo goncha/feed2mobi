@@ -9,16 +9,36 @@ $var currentpage = 'delivery'
 </ol>
 
 <form action="delivery" method="POST">
-<label for="delivery_actived">
-<input id="delivery_actived"
-       name="actived" type="checkbox" $:{'checked="true"' if delivery.actived==1 else ''} value="1"/>开启投递</label>&nbsp;&nbsp;
-<label for="delivery_address">邮件地址</label>
-<input id="delivery_address" name="address" type="text" value="$delivery.address"/>&nbsp;&nbsp;
-<label for="delivery_hour">投递时间</label>
-<select id="delivery_hour" name="hour" value="$delivery.hour">
+<center>
+<table border="0">
+<tr>
+<td><label for="delivery_actived">开启投递</label></td>
+<td><input id="delivery_actived"
+       name="actived" type="checkbox" $:{'checked="true"' if delivery.actived==1 else ''} value="1"/></td>
+</tr>
+<tr>
+<td><label for="delivery_address">邮件地址</label></td>
+<td><input id="delivery_address" name="address" type="text" value="$delivery.address"/></td>
+</tr>
+<tr>
+<td><label for="delivery_hour">投递时间</label></td>
+<td><select id="delivery_hour" name="hour" value="$delivery.hour">
 $for i in xrange(24):
   <option value="$i" $:{'selected="true"' if i==delivery.hour else ''}>${'%02d:00'%i}</value>
-</select>&nbsp;&nbsp;
-<input type="submit" value="保存设置"></input>
+</select></td>
+</tr>
+<tr>
+<td><label for="delivery_bundle">投递最少文章数</label></td>
+<td><select id="delivery_bundle" name="bundle" value="$delivery.bundle">
+$for i in xrange(10,60,10):
+  <option value="$i" $:{'selected="true"' if i==delivery.bundle else ''}>${'%02d'%i}</value>
+</select></td>
+</tr>
+<tr>
+<td/>
+<td><input type="submit" value="保存设置"></input></td>
+</tr>
+</table>
+</center>
 </form>
 <div>

@@ -210,7 +210,7 @@ class delivery(app.page):
     @require_auth
     def GET(self):
         delivery = list(db.select(['account'],
-                                  what='delivery_hour hour,delivery_address address,delivery_actived actived',
+                                  what='delivery_hour hour,delivery_address address,delivery_actived actived,delivery_bundle bundle',
                                   where='id=$account',
                                   vars={'account': session['account_id']}))
         return render.delivery(delivery[0])
@@ -220,6 +220,7 @@ class delivery(app.page):
         i = web.input()
         actived = int(i.get('actived',0))
         hour = int(i.get('hour', 8))
+        bundle = int(i.get('bundle', 20))
         address = i.get('address', None)
         if address:
             address = address.strip()
@@ -229,6 +230,7 @@ class delivery(app.page):
                   delivery_actived = actived,
                   delivery_hour = hour,
                   delivery_address = address,
+                  delivery_bundle = bundle,
                   vars={'account': session['account_id']})
         raise web.seeother(web.ctx.home + web.http.url('/delivery'))
 
