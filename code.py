@@ -18,7 +18,7 @@ if not os.path.exists(datapath):
     os.makedirs(datapath)
 
 # Webpy config
-#web.config.debug = True
+web.config.debug = True
 
 # Webpy app instance
 app = web.auto_application()
@@ -256,6 +256,9 @@ if __name__ == '__main__':
             mgr.kindlegen(hour)
     else:
         app.run()
+
+# uWSGI requires this variable
+application = app.wsgifunc()
 
 # Local Variables: **
 # comment-column: 56 **
