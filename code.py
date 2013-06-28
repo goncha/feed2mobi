@@ -18,7 +18,7 @@ if not os.path.exists(datapath):
     os.makedirs(datapath)
 
 # Webpy config
-web.config.debug = True
+web.config.debug = False
 
 # Webpy app instance
 app = web.auto_application()
