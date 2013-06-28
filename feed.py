@@ -161,6 +161,12 @@ class Rss2Feed(Feed):
             pubdate = self._text(item, 'pubDate')
             summary = self._text(item, 'description')
             content = self._text(item, 'content:encoded')
+
+            if url is None:
+                if title is None:
+                    continue
+                else:
+                    url = hashlib.sha1(title.encode('utf-8')).hexdigest()
             yield (url, title, author, pubdate, summary, content)
 
 
@@ -216,6 +222,13 @@ class AtomFeed(Feed):
             pubdate = self._text(item, 'a:updated', 'a:published')
             summary = self._text(item, 'a:summary')
             content = self._text(item, 'a:content')
+
+            if url is None:
+                if title is None:
+                    continue
+                else:
+                    url = hashlib.sha1(title.encode('utf-8')).hexdigest()
+
             yield (url, title, author if author else feedAuthor,
                    pubdate, summary, content)
 
