@@ -17,13 +17,10 @@ $var pages = [('top', '热门订阅'), ('new', '最新订阅'), ('subscribed', '
   <div class="wrapper">
     <h1><a href="/">Feed2Mobi</a></h1>
     <div id="head-account">
-	$if context.get('account'):
-          $context.account ,<a class="important" href="logout">退出</a>
-	$else:
-          <a href="login">使用Google账号登录</a>
+	$:openid.form('/openid')
     </div>
     <ul>
-      $if context.get('account'):
+      $if context.get('account_id'):
         $for page in self.pages:
           <li><a $:{'class="current"' if content.currentpage==page[0] else ''} href="$page[0]">$page[1]</a></li>
     </ul>

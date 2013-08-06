@@ -1,7 +1,7 @@
 $def with(feeds, prevOffset, nextOffset, page)
 $var currentpage = page
 
-$if context.get('account'):
+$if context.get('account_id'):
   <div id="new-feed"><form action="subscribe" method="POST"><input type="text" name="feed" size="60" maxlength="400"></input><input type="submit" value="添加新FEED"></input></form></div>
 
 <div id="feed-list">
