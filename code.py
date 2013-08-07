@@ -42,15 +42,14 @@ mgr = feed.FeedManager(db, datapath=datapath)
 # ----------------------------------------
 app.add_mapping(r'/openid', 'web.webopenid.host')
 
-def set_auth_info(fn):
-    def new_func(*args, **kws):
-        oid = web.webopenid.status()
-        if oid:
-            account_id, account_actived = mgr.account(oid)
-            web.ctx.account_id = account_id
-            web.ctx.account_actived = account_actived
-        return fn(*args, **kws)
-    return new_func
+def auth_info_processor(handler):
+    oid = web.webopenid.status()
+    if oid:
+        account_id, account_actived = mgr.account(oid)
+        web.ctx.account_id = account_id
+        web.ctx.account_actived = account_actived
+    return handler()
+app.add_processor(auth_info_processor)
 
 
 def require_auth(fn):
@@ -72,7 +71,6 @@ class top(app.page):
     path='^/(?:top)?(?:\?o=[0-9]+)?$'
     pagesize = 15
 
-    @set_auth_info
     def GET(self):
         i = web.input()
         offset = int(i.get('o', 0))
@@ -93,7 +91,6 @@ class top(app.page):
 class new(top):
     path='^/new(?:\?o=[0-9]+)?$'
 
-    @set_auth_info
     def GET(self):
         i = web.input()
         offset = int(i.get('o', 0))
@@ -106,7 +103,6 @@ class new(top):
 class subscribed(top):
     path='^/subscribed(?:\?o=[0-9]+)?$'
 
-    @set_auth_info
     @require_auth
     def GET(self):
         i = web.input()
@@ -120,7 +116,6 @@ class subscribed(top):
 class subscribe(app.page):
     path='^/subscribe/([0-9]+)$'
 
-    @set_auth_info
     @require_auth
     def GET(self, feed):
         mgr.subscribe(feed, web.ctx.get('account_id'))
@@ -130,7 +125,6 @@ class subscribe(app.page):
 class subscribe1(app.page):
     path='^/subscribe$'
 
-    @set_auth_info
     @require_auth
     def POST(self):
         i = web.input()
@@ -141,7 +135,6 @@ class subscribe1(app.page):
 class unsubscribe(app.page):
     path='^/unsubscribe/([0-9]+)$'
 
-    @set_auth_info
     @require_auth
     def GET(self, feed):
         mgr.unsubscribe(feed, web.ctx.get('account_id'))
@@ -150,7 +143,6 @@ class unsubscribe(app.page):
 
 class delivery(app.page):
 
-    @set_auth_info
     @require_auth
     def GET(self):
         delivery = list(db.select(['account'],
@@ -159,7 +151,6 @@ class delivery(app.page):
                                   vars={'account': web.ctx.get('account_id')}))
         return render.delivery(delivery[0])
 
-    @set_auth_info
     @require_auth
     def POST(self):
         i = web.input()
