@@ -29,9 +29,13 @@ app = web.auto_application()
 db = web.database(dbn='sqlite', db=os.path.join(datapath, 'feed2mobi.db'))
 
 # Webpy template
+def pass_auth():
+    '''Ref auth_info_processor'''
+    return web.ctx.get('account_id') and web.ctx.get('account_actived')
+
 render = web.template.render(base='layout',
                              globals={'openid': web.webopenid,
-                                      'context': web.ctx})
+                                      'pass_auth': pass_auth})
 
 # Feed manager
 mgr = feed.FeedManager(db, datapath=datapath)

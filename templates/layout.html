@@ -20,7 +20,7 @@ $var pages = [('top', '热门订阅'), ('new', '最新订阅'), ('subscribed', '
 	$:openid.form('/openid')
     </div>
     <ul>
-      $if context.get('account_id'):
+      $if pass_auth():
         $for page in self.pages:
           <li><a $:{'class="current"' if content.currentpage==page[0] else ''} href="$page[0]">$page[1]</a></li>
     </ul>
