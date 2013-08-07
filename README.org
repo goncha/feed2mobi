@@ -6,13 +6,13 @@ options and a commond line to fetch feeds, generate and deliver .mobi file.
 It's designed for Kindle user to wireless sync feeds to their device or programs.
 
 ** Requirement
- - lxml: parse RSS, Atom xml and HTML
- - webpy: database interface and web UI
- - python: >2.5
- - mutt: to send mail
+  - lxml: parse RSS, Atom xml and HTML
+  - webpy: database interface and web UI
+  - python: >2.5
+  - mutt: to send mail
 
 ** Installation
 
- - Use cron to run code.py --update periodically for syncing feeds.
- - Use cron to run code.py --kindlegen to generate .mobi and delivery to mailbox
- - Use code.py [PORT] to run simple web UI
+ - Use cron to run =code.py --update= periodically for syncing feeds.
+ - Use cron to run =code.py --kindlegen= to generate .mobi and delivery to mailbox
+ - Use =code.py [PORT]= to run simple web UI
