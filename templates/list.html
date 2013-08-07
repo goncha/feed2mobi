@@ -9,7 +9,7 @@ $for feed in feeds:
   <div class="feed">
   <div>
   <a href="$feed.url">RSS</a>
-  $if context.get('account'):
+  $if context.get('account_id'):
     $if feed.subscribed:
       <a class="important" href="unsubscribe/$feed.id">退订</a>
     $else:
