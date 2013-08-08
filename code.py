@@ -42,14 +42,14 @@ def openid_form(openid_loc):
           <strong>%s</strong>
           <input type="hidden" name="action" value="logout" />
           <input type="hidden" name="return_to" value="%s" />
-          <button type="submit" class="btn">Logout</button>
+          <button type="submit" class="btn btn-inverse">Logout</button>
         </form>''' % (openid_loc, oid, web.ctx.fullpath)
     else:
         return '''
         <form method="post" action="%s" class="navbar-form pull-right">
           <input type="text" name="openid" value="" placeholder="Your OpenID" class="span3"/>
           <input type="hidden" name="return_to" value="%s" />
-          <button type="submit" class="btn">Login</button>
+          <button type="submit" class="btn btn-primary">Login</button>
         </form>''' % (openid_loc, web.ctx.fullpath)
 
 render = web.template.render(base='layout',
