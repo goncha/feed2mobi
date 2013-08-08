@@ -20,7 +20,7 @@ if not os.path.exists(datapath):
     os.makedirs(datapath)
 
 # Webpy config
-web.config.debug = False
+web.config.debug = True
 
 # Webpy app instance
 app = web.auto_application()
@@ -37,20 +37,19 @@ def openid_form(openid_loc):
     oid = web.openid.status()
     if oid:
         return '''
-        <form method="post" action="%s">
+        <form method="post" action="%s" class="navbar-form pull-right">
           <img src="http://openid.net/login-bg.gif" alt="OpenID" />
           <strong>%s</strong>
           <input type="hidden" name="action" value="logout" />
           <input type="hidden" name="return_to" value="%s" />
-          <button type="submit">Logout</button>
+          <button type="submit" class="btn">Logout</button>
         </form>''' % (openid_loc, oid, web.ctx.fullpath)
     else:
         return '''
-        <form method="post" action="%s">
-          <input type="text" name="openid" value=""
-            style="background: url(http://openid.net/login-bg.gif) no-repeat; padding-left: 18px; background-position: 0 50%%;" />
+        <form method="post" action="%s" class="navbar-form pull-right">
+          <input type="text" name="openid" value="" placeholder="Your OpenID" class="span3"/>
           <input type="hidden" name="return_to" value="%s" />
-          <button type="submit">Login by OpenID</button>
+          <button type="submit" class="btn">Login</button>
         </form>''' % (openid_loc, web.ctx.fullpath)
 
 render = web.template.render(base='layout',
