@@ -33,8 +33,28 @@ def pass_auth():
     '''Ref auth_info_processor'''
     return web.ctx.get('account_id') and web.ctx.get('account_actived')
 
+def openid_form(openid_loc):
+    oid = web.openid.status()
+    if oid:
+        return '''
+        <form method="post" action="%s">
+          <img src="http://openid.net/login-bg.gif" alt="OpenID" />
+          <strong>%s</strong>
+          <input type="hidden" name="action" value="logout" />
+          <input type="hidden" name="return_to" value="%s" />
+          <button type="submit">Logout</button>
+        </form>''' % (openid_loc, oid, web.ctx.fullpath)
+    else:
+        return '''
+        <form method="post" action="%s">
+          <input type="text" name="openid" value=""
+            style="background: url(http://openid.net/login-bg.gif) no-repeat; padding-left: 18px; background-position: 0 50%%;" />
+          <input type="hidden" name="return_to" value="%s" />
+          <button type="submit">Login by OpenID</button>
+        </form>''' % (openid_loc, web.ctx.fullpath)
+
 render = web.template.render(base='layout',
-                             globals={'openid': web.webopenid,
+                             globals={'openid_form': openid_form,
                                       'pass_auth': pass_auth})
 
 # Feed manager

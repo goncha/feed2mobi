@@ -3,40 +3,40 @@ $var currentpage = 'delivery'
 
 <div id="delivery">
 <ol style="max-width: 600%; text-align: left; margin-left: 15%; margin-bottom: 30px">
-<li><p>投递地址不是合法邮件地址将无法收到每日投递的MOBI文件</p></li>
-<li><p>投递地址为<em>@kindle.com</em>或者<em>@free.kindle.com</em>的用户<br/>请在亚马逊账户中心Digital Content -> Manage Your Kindle -> Personal Document Settings中<br/>将@skypiea.info加入Approved Personal Document E-mail List</p></li>
-<li><p>投递时间的时区为+08:00</p></li>
+<li>Kindle address is <code>@free.kindle.com</code> or <code>@kindle.com</code> (Chinese user can use <code>@free.kindle.cn</code> or <code>@kindle.cn</code>).<br> If use other email address, you won't receive file on your Kindle device or app.</li>
+<li>Kindle user shoud add <code>@skypiea.info</code> into <b>Approved Personal Document E-mail List</b> (Digital Content -> Manage Your Kindle -> <br>Personal Document Settings of your Amazon account) to allow this site send file to Kindle Personal Document Service.</p></li>
+<li><p>Delivery timezone is +08:00</p></li>
 </ol>
 
 <form action="delivery" method="POST">
 <center>
 <table border="0">
 <tr>
-<td><label for="delivery_actived">开启投递</label></td>
+<td><label for="delivery_actived">Enable Delivery</label></td>
 <td><input id="delivery_actived"
        name="actived" type="checkbox" $:{'checked="true"' if delivery.actived==1 else ''} value="1"/></td>
 </tr>
 <tr>
-<td><label for="delivery_address">邮件地址</label></td>
+<td><label for="delivery_address">Kindle Address</label></td>
 <td><input id="delivery_address" name="address" type="text" value="$delivery.address"/></td>
 </tr>
 <tr>
-<td><label for="delivery_hour">投递时间</label></td>
+<td><label for="delivery_hour">Hour of Delivery</label></td>
 <td><select id="delivery_hour" name="hour" value="$delivery.hour">
 $for i in xrange(24):
   <option value="$i" $:{'selected="true"' if i==delivery.hour else ''}>${'%02d:00'%i}</value>
 </select></td>
 </tr>
 <tr>
-<td><label for="delivery_bundle">投递最少文章数</label></td>
+<td><label for="delivery_bundle">Only at least</label></td>
 <td><select id="delivery_bundle" name="bundle" value="$delivery.bundle">
 $for i in xrange(10,60,10):
   <option value="$i" $:{'selected="true"' if i==delivery.bundle else ''}>${'%02d'%i}</value>
-</select></td>
+</select> articles</td>
 </tr>
 <tr>
 <td/>
-<td><input type="submit" value="保存设置"></input></td>
+<td><input type="submit" value="Save"></input></td>
 </tr>
 </table>
 </center>

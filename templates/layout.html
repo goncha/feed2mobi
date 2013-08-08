@@ -1,5 +1,5 @@
 $def with(content)
-$var pages = [('top', '热门订阅'), ('new', '最新订阅'), ('subscribed', '我的订阅'), ('delivery','投递设置')]
+$var pages = [('top', 'Top Feeds'), ('new', 'New Feeds'), ('subscribed', 'My Feeds'), ('delivery','Delivery')]
 
 <!DOCTYPE html>
 <html>
@@ -17,7 +17,7 @@ $var pages = [('top', '热门订阅'), ('new', '最新订阅'), ('subscribed', '
   <div class="wrapper">
     <h1><a href="/">Feed2Mobi</a></h1>
     <div id="head-account">
-	$:openid.form('/openid')
+	$:openid_form('/openid')
     </div>
     <ul>
       $if pass_auth():

@@ -2,7 +2,7 @@ $def with(feeds, prevOffset, nextOffset, page)
 $var currentpage = page
 
 $if pass_auth():
-  <div id="new-feed"><form action="subscribe" method="POST"><input type="text" name="feed" size="60" maxlength="400"></input><input type="submit" value="添加新FEED"></input></form></div>
+  <div id="new-feed"><form action="subscribe" method="POST"><input type="text" name="feed" size="60" maxlength="400"></input><input type="submit" value="Add Feed"></input></form></div>
 
 <div id="feed-list">
 $for feed in feeds:
@@ -11,9 +11,9 @@ $for feed in feeds:
   <a href="$feed.url">RSS</a>
   $if pass_auth():
     $if feed.subscribed:
-      <a class="important" href="unsubscribe/$feed.id">退订</a>
+      <a class="important" href="unsubscribe/$feed.id">DEL</a>
     $else:
-      <a href="subscribe/$feed.id">订阅</a>
+      <a href="subscribe/$feed.id">SUB</a>
   </div>
   $if 'account_count' in feed:
     <span class="count">$feed.account_count</span>
