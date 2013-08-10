@@ -2,27 +2,47 @@ $def with(feeds, prevOffset, nextOffset, page)
 $var currentpage = page
 
 $if pass_auth():
-  <div id="new-feed"><form action="subscribe" method="POST"><input type="text" name="feed" size="60" maxlength="400"></input><input type="submit" value="Add Feed"></input></form></div>
+  <div class="row">
+    <div class="span10 offset1 text-center">
+      <form action="subscribe" method="post" class="form-inline">
+        <input type="text" name="feed" maxlength="400" class="input-xxlarge" placeholder="Input a feed link here"/>
+	<input type="submit" value="Add Feed" class="btn btn-primary"/>
+      </form>
+    </div>
+  </div>
 
-<div id="feed-list">
+<div class="row">
+<div class="span10 offset1">
+<table class=".table">
 $for feed in feeds:
-  <div class="feed">
-  <div>
-  <a href="$feed.url">RSS</a>
-  $if pass_auth():
-    $if feed.subscribed:
-      <a class="important" href="unsubscribe/$feed.id">DEL</a>
-    $else:
-      <a href="subscribe/$feed.id">SUB</a>
-  </div>
-  $if 'account_count' in feed:
-    <span class="count">$feed.account_count</span>
-  <div><h1>$feed.title</h1><span>$feed.description</span></div>
-  </div>
+  <tr>
+  <td>
+    <ul class="unstyled">
+    <li><a href="$feed.url"><i class="icon-file" title="Go to this RSS link"></i></a></li>
+    $if pass_auth():
+      $if feed.subscribed:
+        <li><a href="unsubscribe/$feed.id"><i class="icon-star-empty" title="Unsubscribe this RSS link"></i></a></li>
+      $else:
+        <li><a href="subscribe/$feed.id"><i class="icon-star" title="Subscribe this RSS link"></i></a></li>
+    </ul>
+  </td>
+  <td>
+    <span class="icon-bar"></span>
+    $if 'account_count' in feed:
+    <span style="font-size: 3em"><bold><em>$feed.account_count</em></bold></span>
+    <span class="icon-bar"></span>
+  </td>
+  <td>
+    <h4>$feed.title</h4>
+    <span>$feed.description</span>
+  </td>
+  </tr>
+</table>
+<p>
 $if not (prevOffset is None):
-  <a style="font-size: 1.3em" href="$(self.currentpage)?o=$prevOffset">上一页</a>
-$if not (prevOffset is None) and not (nextOffset is None):
-  &nbsp;&nbsp;|&nbsp;&nbsp;
+  <a href="$(self.currentpage)?o=$prevOffset">Previous</a>
 $if not (nextOffset is None):
-  <a style="font-size: 1.3em" href="$(self.currentpage)?o=$nextOffset">下一页</a>
+  <a class="pull-right" href="$(self.currentpage)?o=$nextOffset">Next</a>
+</p>
+</div>
 </div>

@@ -24,28 +24,35 @@ $code:
   <title>Feed2Mobi</title>
 </head>
 <body>
-  <div class="navbar navbar-fixed-top">
-    <div class="navbar-inner">
-      <div class="container">
-        <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-	</button>
-        <a class="brand" href="#">Feed2Mobi</a>
-        <div class="nav-collapse collapse">
-          <ul class="nav">
-	  $for page in self.pages:
-            <li class="$page[2]"><a href="$page[0]">$page[1]</a></li>
-          </ul>
-	  $:openid_form('/openid')
-        </div>
+<div class="navbar navbar-fixed-top">
+  <div class="navbar-inner">
+    <div class="container">
+      <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="brand" href="#">Feed2Mobi</a>
+      <div class="nav-collapse collapse">
+        <ul class="nav">
+	$for page in self.pages:
+          <li class="$page[2]"><a href="$page[0]">$page[1]</a></li>
+        </ul>
+	$:openid_form('/openid')
       </div>
     </div>
   </div>
-  <div class="container">
-    $:content
-    <footer><p>Created by (goncha at gmail.com)</p></footer>
-  </div>
+</div> <!-- END: navbar-->
+
+<div class="container">
+<!-- Main content -->
+$:content
+
+<div class="row">
+  <footer class="span4 offset4"><p class="text-center">Created by (goncha at gmail.com)</p></footer>
+</div> <!-- END: container -->
+
+</div> <!-- END: container -->
+
 </body>
 </html>
