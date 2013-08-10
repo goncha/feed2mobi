@@ -7,6 +7,7 @@ It's designed for Kindle user to wireless sync feeds to their device or programs
 
 ** Requirement
   - lxml: parse RSS, Atom xml and HTML
+  - python-openid: OpenID authentication module
   - webpy: database interface and web UI
   - python: >2.5
   - mutt: to send mail
