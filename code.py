@@ -6,7 +6,7 @@ import os
 
 import feed
 import web
-import web.webopenid
+import webopenid
 
 
 # Chdir into this module file's directory
@@ -33,27 +33,8 @@ def pass_auth():
     '''Ref auth_info_processor'''
     return web.ctx.get('account_id') and web.ctx.get('account_actived')
 
-def openid_form(openid_loc):
-    oid = web.openid.status()
-    if oid:
-        return '''
-        <form method="post" action="%s" class="navbar-form pull-right">
-          <img src="http://openid.net/login-bg.gif" alt="OpenID" />
-          <strong>%s</strong>
-          <input type="hidden" name="action" value="logout" />
-          <input type="hidden" name="return_to" value="%s" />
-          <button type="submit" class="btn btn-inverse">Logout</button>
-        </form>''' % (openid_loc, oid, web.ctx.fullpath)
-    else:
-        return '''
-        <form method="post" action="%s" class="navbar-form pull-right">
-          <input type="text" name="openid" value="" placeholder="Your OpenID" class="span3"/>
-          <input type="hidden" name="return_to" value="%s" />
-          <button type="submit" class="btn btn-primary">Login</button>
-        </form>''' % (openid_loc, web.ctx.fullpath)
-
 render = web.template.render(base='layout',
-                             globals={'openid_form': openid_form,
+                             globals={'openid_form': webopenid.openid_form,
                                       'pass_auth': pass_auth})
 
 # Feed manager
@@ -63,10 +44,18 @@ mgr = feed.FeedManager(db, datapath=datapath)
 # ----------------------------------------
 # OpenID service
 # ----------------------------------------
-app.add_mapping(r'/openid', 'web.webopenid.host')
+web.config.session_parameters.cookie_name = "openid_session_id"
+session = web.session.Session(app, web.session.DiskStore('data/sessions'))
+webopenid.session = session
+
+import openid.store.filestore
+webopenid.store = openid.store.filestore.FileOpenIDStore('data/store')
+
+app.add_mapping(r'/openid', 'webopenid.host')
+
 
 def auth_info_processor(handler):
-    oid = web.webopenid.status()
+    oid = webopenid.status()
     if oid:
         account_id, account_actived = mgr.account(oid)
         web.ctx.account_id = account_id
