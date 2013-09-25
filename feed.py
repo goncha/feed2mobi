@@ -522,7 +522,7 @@ ORDER BY feed.id DESC
                 try:
                     self._update(feed.id, entry)
                 except:
-                    print 'Error save entry `%s`,' % (entry.url,), sys.exc_info()[0]
+                    print 'Error save entry `%s`,' % (entry[0],), sys.exc_info()[0]
 
             db.update('feed', where='id=$id', vars={'id':feed.id},
                       last_updated=feedObj.lastUpdated(),
