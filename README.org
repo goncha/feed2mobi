@@ -1,8 +1,7 @@
 * feed2mobi - subscribe feeds, fetch feeds, generate .mobi, deliver to your mailbox
 
 #+CAPTION: travis status
-#+NAME: https://www.travis-ci.org/goncha/feed2mobi
-[[https://www.travis-ci.org/goncha/feed2mobi.png?branch%3Dmaster][https://www.travis-ci.org/goncha/feed2mobi.png?branch=master]]
+[[https://www.travis-ci.org/goncha/feed2mobi.png?branch%3Dmaster][https://www.travis-ci.org/goncha/feed2mobi]]
 
 
 This project includes a simple web UI to subscribe feeds and set delivery
