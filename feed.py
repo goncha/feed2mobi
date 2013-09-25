@@ -28,6 +28,17 @@ def cd(path):
     return ChangeDir(path)
 
 
+def normalize_url(url):
+    from urlparse import urlparse
+    from urllib import pathname2url
+
+    o = urlparse(url)
+    if not o.netloc:
+        return 'file:' + pathname2url(os.path.abspath(url))
+    else:
+        return url
+
+
 class FeedFactory(object):
 
     _feedTypes=[]
@@ -37,7 +48,7 @@ class FeedFactory(object):
         '''
         Return tuple of feed object, last-modified, etag.
         '''
-        req = Request(url)
+        req = Request(normalize_url(url))
         if lastModified:
             req.add_header('if-modified-since', lastModified)
         if etag:
@@ -49,7 +60,8 @@ class FeedFactory(object):
             # HTTP 304 not modifed raise an exception
             resp = error
 
-        if resp.code != 200:
+        # url of local file returns empty code
+        if resp.code and resp.code != 200:
             return None
 
         feedDoc = etree.parse(resp)
@@ -241,6 +253,8 @@ class FeedManager(object):
     '''
     Manage user accounts and feed subscription.
 
+        >>> import os
+        >>> os.makedirs('data')
         >>> import web
         >>> db = web.database(dbn='sqlite', db='data/feed2mobi.db')
         >>> mgr = FeedManager(db)
