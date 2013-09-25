@@ -283,7 +283,7 @@ class FeedManager(object):
         2
         >>> feeds[0].id
         1
-        >>> feeds[0].subscribed
+        >>> feeds[0].account_count
         2
         >>> len(mgr.list(limit=1, offset=0))
         1
@@ -293,7 +293,7 @@ class FeedManager(object):
         2
         >>> feeds[1].id
         2
-        >>> feeds[1].subscribed
+        >>> feeds[1].account_count
         0
         >>> len(mgr.listSubscribed(1))
         1
